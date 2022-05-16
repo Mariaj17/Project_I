@@ -8,7 +8,9 @@
     font-weight: bolder;
 }
 
-/* <!-- button para regressar para homepage/button to return for the homepage --> */
+/* ---------------------------------------------- */
+/* VERSÃO DESKTOP/DESKTOP VERSION */
+/* BOTÃO PARA REGRESSAR PARA HOMEPAGE/BUTTON TO RETURN TO THE HOMEPAGE*/
 .returnHomeBtn{
 position: absolute; 
 width: 203px;
@@ -21,7 +23,6 @@ border-radius: 12px;
 border: none;
 }
 
-/* Versão desktop/Desktop Version = /* estilo do contéudo do botão//style of the button content*/
 button{
     color: #fff;
 }
@@ -45,36 +46,27 @@ button{
     align-items: center;
 }
 
+/* ---------------------------------------------------------------------------------- */
+/* Versão Mobile/Mobile Version */
+@media all and (max-width: 500px){
+    .returnHomeBtn{
+    position: absolute;
+    width: 97px;
+    height: 40px;
+    left: 20px;
+    top: 25px;
+    background: #005086;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    color:#005086;
+  }
 
+  .returnHomeIcon{
+    position:absolute;
+    left:37%;
+    color:#ffff;
+    }
+  /* ilustração|ilustration */
 
-
-
-/* botão Iniciar Sessão/button for log in */
-.loginSubmission{
-width: 185px;
-height: 46px;
-left: 629px;
-top: 554px;
-background: #FFFFFF;
-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 12px;
-border:none;
-color:#005086;
 }
-
-/* link style do botão Iniciar Sessão */
-.loginLink{
-    text-decoration: none;
-    color: #fff;
-}
-
-.loginLink:hover{
-    color:#fff;
-}
-
-
-
-
-
-
 
