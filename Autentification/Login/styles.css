@@ -1,5 +1,4 @@
 /* Fonte da aplicação /Font of the App */
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Arima+Madurai:wght@800&family=Bree+Serif&family=Bungee+Shade&family=Butcherman&family=Cormorant+SC:wght@300&family=Creepster&family=Diplomata+SC&family=Eater&family=Frijole&family=Germania+One&family=Hanalei+Fill&family=IM+Fell+DW+Pica+SC&family=IM+Fell+Double+Pica+SC&family=IM+Fell+Great+Primer+SC&family=Inknut+Antiqua:wght@300&family=Jomolhari&family=Julius+Sans+One&family=Lacquer&family=Libre+Franklin:wght@300&family=Metal+Mania&family=Monofett&family=Nosifer&family=Pinyon+Script&family=Quintessential&family=Syncopate&family=Trade+Winds&family=UnifrakturMaguntia&display=swap');
 @import url('https://www.cufonfonts.com/font/feather-2');
 
 
@@ -17,17 +16,34 @@ height: 46px;
 left: 33px;
 top: 34px;
 background: #005086;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
 border-radius: 12px;
 border: none;
 }
 
-/* estilo do contéudo do botão//style of the button content*/
+/* Versão desktop/Desktop Version = /* estilo do contéudo do botão//style of the button content*/
 button{
     color: #fff;
 }
 
+
 .returnHomeIcon{
+    width:24px;
+    height:24px;
+    transform: rotate(-180deg);
     background-color: #005086;
-    
 }
+
+.returnHomeIcon{
+    position: relative;
+    right: 16%;
+}
+
+button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

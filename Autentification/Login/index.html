@@ -13,9 +13,28 @@
 </head>
 <body>
 <!--button para regressar para homepage/button to return for the homepage-->
-<!--Desktop Version-->
-<a href="/Homepage/talkey.html"><button class="button returnHomeBtn"><span class="iconify returnHomeIcon" data-icon="material-symbols:exit-to-app-sharp"></span>HOME</button></a>
+<!--Versão Desktop/Desktop Version-->
+<a href="/Homepage/talkey.html"><button class="button returnHomeBtn"><span class="iconify returnHomeIcon" data-icon="material-symbols:exit-to-app-sharp"></span>Home</button></a>
 
+<!-- Formulário de Login/Login Form -->
+<!--Versão Desktop/Desktop Version-->
+<div class="login-form-container">
+    <!-- injetar a homepage com autentificação no action do form no submit no botão INCIAR SESSÃO -->
+  <form action="">
+    <input type="radio" id="studentOp" value="aluno" required>
+    <label for="studentOp">aluno</label>
+    <input type="radio" id="teacherOp" value="professor" required>
+    <label for="teacherOp">professor</label>
+    <div><br></div>
+    <label for="username"></label>
+    <input type="text" id="username" placeholder="Username" required>
+    <div><br></div>
+    <label for="password"></label>
+    <input type="text" id="password" placeholder="Password" required>
+    <div><br></div>
+    
+  </form>
+</div>
 <script src="/Autentification/Login/index.js"></script>
 </body>
 </html>
