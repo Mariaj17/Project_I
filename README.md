@@ -6,8 +6,8 @@ A pasta media contem duas subpastas :
 - "images" para armazenar todas as imagens da aplicação;
 - "videos" para armazenar todos os vídeos referentes as aulas da aplicação.
 
+*ficheiros atuais para desenvolvimento
 
-*ficheiros atuais na pasta 
 A pasta HTML contem os ficheiros html da aplicação : 
 - Login.html*
 - Register.html*
