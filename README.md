@@ -10,3 +10,7 @@ A pasta media contem duas subpastas :
 A pasta HTML contem os ficheiros html da aplicação : *ficheiros atuais na pasta 
 - Login.html*
 - Register.html*
+
+A pasta CSS contem os ficheiros css de estilização da aplicação : * ficheiros atuais na pasta
+-Login.css*
+-Register.css*
