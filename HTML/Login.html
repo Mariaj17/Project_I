@@ -11,44 +11,48 @@
 <!-- Iconify SVG framework from Figma -->
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   <link rel="stylesheet" href="/CSS/Login.css">
-  <!-- For the icon off the App to show on the tab -->
+  <!-- For the icon of the App to show on the tab -->
   <link rel="icon" href="/Media/images/Talkey - icone.png" />
 </head>
 <body>
 <!-- Button HOME to return to the homepage -->
 <!-- href of the button will change in further updates -->
 <a class="buttonHome" href="/index.html"><span class="iconify" data-icon="material-symbols:exit-to-app"></span><span class="contentbtn">Home</span></a>
-<!-- SLOGAN LOGIN MESSAGE -->
-<p class="header-login-slogan">FAÇA LOGIN</p>
-<p class="subheader-login-slogan">ABRE O SEU CONHECIMENTO AO ALEMÃO</p>
-<!-- Login ilustration -->
-<img class="login-ilustration" src="/Media/images/login-desktop-drawn-svg.svg" alt="login-ilustration">
-
-
-<!-- Background for the form Form -->
-<div class="background-form"></div>
-<!-- LOGIN FORM -->
-<!-- action form will submit for the mainpage, WILL BE CHANGE IN FURTHER UPDATES!! -->
-    <form action="/index.html">
-            <input type="radio" id="student" value="aluno">
-            <label class="textstudent" for="student">aluno</label>
-            <input type="radio" id="teacher" value="professor">
-            <label class="textteacher" for="teacher">professor</label>
-        <!-- USERNAME & PASSWORD INPUTFIELDS -->
-        <!-- REQUIRED WILL BE CHANGED WITH CSS -->
+<!-- LOGIN SECTION -->
+<!-- the action form will be changed in further updates -->
+<form action="/index.html" class="main-login">
+    <div class="left-login">
+        <p class="heading-slogan">FAÇA LOGIN</p>
+        <p class="subheading-slogan">ABRE O SEU CONHECIMENTO AO ALEMÃO</p>
+        <img class="ilustration" src="/Media/images/login-desktop-drawn-svg.svg" alt="login-ilustration">
+    </div>
+    <div class="right-login">
+        <div class="card-login">
+            <div class="radio-buttons">
+                <label for="student"><input type="radio" name="optradio" id="student"><span class="student-line-heigth"> aluno</span></label>
+                <label for="teacher"><input type="radio" name="optradio" id="teacher"><span class="teacher-line-heigth"> professor</span></label>
+        </div>
         <div class="textfield">
             <label for="username"></label>
-            <input type="text" id="username" required>
-            <br>
+            <input type="text" name="username" id="username" placeholder="USERNAME">
             <label for="psw"></label>
-            <input type="password" id="psw" required>
+            <input type="password" name="password" id="psw" placeholder="PASSWORD">
         </div>
+        <div class="bottom-login">
         <div class="register-link">
-            <a href="/HTML/Register.html">Não tem conta? Crie uma!</a>
+            <div class="center-link">
+            <a class="reg-link" href="/HTML/Register.html">Não tem conta? Crie uma!</a>
+            <div class="underline-link"></div>
         </div>
-        <div class="btn-login-submit">
-            <button>INICIAR SESSÃO</button>
         </div>
-    </form>
+        <button class="btn-login"><span>INICIAR SESSÃO</span></button>
+    </div>
+    <div class="copy">&copy; TALKEY PRIVACIDADE & TERMOS </div>
+    </div>
+</form>
+
+
+
+
 </body>
 </html>

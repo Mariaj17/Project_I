@@ -8,14 +8,12 @@
     font-family: 'Feather', cursive;
 }
 
-/* global selector for impact all the html document */
+/* global selector for impact all the html document (body) */
 *{
-    box-sizing: border-box;
-    overflow: hidden;
+    margin:0;
     font-family: 'Feather', cursive;
 }
 
-/* -------------------------------------------------------------------------------------------DESKTOP VERSION------------------------------------------------------------------------------------------------------------- */
 /* Button HOME to return to the homepage */
 .buttonHome{
     position: absolute;
@@ -55,117 +53,307 @@ transform: rotate(-180deg);
 color:#FFFFFF;
 }
 
-/* Slogan Login Message */
-.header-login-slogan{
-    position: absolute;
-    width: 178px;
-    height: 38px;
-    left: 73px;
-    top: 107px;
-    font-weight: bolder;
-    font-size: 27.3px;
-    line-height: 38px;
-    color: #005086;
+
+/* styles for the login form */
+ .main-login{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.subheader-login-slogan{
-    position: absolute;
-    width: 300px;
-    height: 19px;
-    left: 70px;
-    top: 151px;
+/* styles for the left side login page */
+.left-login{
+    width:50vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* styles for the slogans login */
+.left-login{
+    color:#005086;
     font-weight: bolder;
+}
+
+/* styles for the heading slogan */
+.left-login > .heading-slogan{
+    font-size: 30px;
+}
+
+/* styles for the subheading slogan */
+.left-login > .subheading-slogan{
     font-size: 13px;
-    line-height: 19px;    
-    color: #005086;
 }
 
-/* Login Ilustration */
-.login-ilustration{
-    position: absolute;
-    width: 509px;
-    height: 442px;
-    left: 168px;
-    top: 194px;
+/* styles for the rigth side login page */
+.right-login{
+    width:50vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* login Ilustration animation */
-/* @keyframes */
-
-/* BACKGROUND OF THE FORM */
-.background-form{
-position: absolute;
-width: 491px;
-height: 492px;
-left: 862px;
-top: 165px;
-background: #5259CD;
-border-radius: 12px;
+/* styles for the background form */
+.card-login{
+    /* largura do card */
+    width: 60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* espaçamento no eixo x = 30px e y = 35px */
+    padding:20px 20px;
+    background:#5259CD;
+    border-radius: 12px;
+    box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* student radio button */
-#student{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 940px;
-    top: 234px;
-    background: #FFFFFF;
-    cursor: pointer;
-    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+/*styles for the radio buttons*/
+.radio-buttons{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    color:#FFFFFF;
 }
 
-/* style the check radio button */
+/*styles for the radio buttons*/
+input[type="radio"]{
+    width:20px;
+    height:20px;
+}
+
+/* to change the color of the radio selector */
 #student{
     accent-color:#005086;
 }
 
-/* text of the radio button student option */
-.textstudent{
-position: absolute;
-width: 750px;
-height: 80px;
-left: 971px;
-top: 234px;
-font-weight: bolder;
-font-size: 15px;
-line-height: 19px;
-color: #FFFFFF;
+/* to change the color of the radio selector */
+#teacher{
+    accent-color:#005086;
 }
 
-/* teacher radio button */
-#teacher{
-position: absolute;
-width: 20px;
-height: 20px;
-left: 1160px;
-top: 234px;
+ .student-line-heigth{
+    position: relative;
+    top: -4px;
+}
+
+.teacher-line-heigth{
+    position: relative;
+    top: -4px;
+}
+
+.textfield{
+   display:grid;
+   grid-template-columns: 1fr 98fr;
+   grid-template-rows: 1fr 1fr;
+   grid-gap:55px; 
+}
+
+.textfield{
+    position: relative;
+    left: -28px; 
+}
+
+.textfield{
+width: 350px;
+height: 41px;
+}
+
+/* textfields of the form USERNAME PASSWORD */
+.textfield > input{
+    width: 100%;
+    border:none;
+    border-radius:14px;
+    padding: 12px 15px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color:#5259CD;
+    font-size: 15px;
+    outline:none;
+    box-sizing: border-box;
+}
+
+input[type="text"]::-moz-placeholder{
+    opacity:1;
+    color:#5259CD;
+}
+
+input{
+    font-weight: bolder;
+}
+
+.register-link{
+    display: flex;
+}
+
+/* style the link form */
+.register-link a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.bottom-login{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    margin-top: 240px;
+}
+
+.textfield{
+    margin-top: 15px;
+    padding-top: 10px;;
+}
+
+.bottom-login{
+    transform:translateY(-80%);
+}
+
+.register-link{
+    transform:translateX(1%)
+}
+
+/* styles for the buttom INICIAR SESSÃO */
+.btn-login{
 background: #FFFFFF;
-box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
-}
-
-/* style the check radio button */
-#teacher{
-    accent-color:#005086;
-}
-
-/* text of the radio button teacher option */
-.textteacher{
-position: absolute;
-width: 750px;
-height: 80px;
-left: 1190px;
-top: 234px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+border: none;
+padding:6px;
+color: #005086;
 font-weight: bolder;
-font-size: 15px;
-line-height: 19px;
-color: #FFFFFF;
 }
 
-/*USERNAME INPUTFIED*/
-#username{
-    
+.btn-login{
+    display:flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bolder;
 }
+
+.btn-login{
+    transform:translateY(90%);
+}
+
+.radio-buttons{
+    margin-top: 35px;
+}
+
+.radio-buttons{
+    cursor:pointer;
+}
+
+input::placeholder{
+    color:#005086;
+}
+
+.underline-link{
+width: 233px;
+height: 7px;
+background: #FFFFFF;
+}
+
+.register-link{
+    display:flex;
+    flex-direction: column;
+}
+
+.underline-link{
+    display:flex;
+}
+
+.underline-link{
+    transform:translate(-8%,30%)
+}
+
+.center-link{
+    transform:translateX(6%)
+}
+
+.btn-login{
+    width: 80%;
+    height:45px;
+}
+
+.btn-login span{
+    display:flex;
+}
+
+.btn-login span{
+    transform:translateY(30%)
+}
+
+.btn-login{
+    position: relative;
+    left: 8%;
+}
+
+.copy{
+    font-size:10px;
+    color: #005086;
+    font-weight: bolder;
+}
+
+.copy{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copy{
+    transform:translateY(360%)
+}
+
+/* Slogans */
+.subheading-slogan{
+    line-height:1px;
+}
+
+.left-login p {
+    position: relative;
+    left:-23%;
+    top: 3%;
+}
+
+.left-login p:first-child {
+    text-indent: -85px;
+}
+
+.left-login p:nth-child(even){
+    position: relative;
+    top: 12px;
+}
+/* ilustration */
+.ilustration{
+width: 709px;
+height: 522px;
+}
+
+.ilustration{
+    display: flex;
+}
+
+.ilustration{
+    position: relative;
+    left:10%;
+    top: -5%;
+}
+
+ /* animation for the ilustration */
+ .ilustration{
+    animation:  1.5s Infinite  linear floating;
+    animation-delay: 0s;
+}
+
+/* animation for the ilustration with floating function via Keyframes */
+@keyframes floating {
+    0%{opacity:1; transform:translateY(0px);}
+    50%{ transform: translateY(-10px);}
+    100%{opacity: 1; transform: translateY(0px);}
+} 
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
