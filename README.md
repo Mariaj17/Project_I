@@ -8,7 +8,9 @@ A pasta media contem duas subpastas :
 
 *ficheiros atuais para desenvolvimento
 
-A pasta HTML contem os ficheiros html da aplicação : 
+Mainpage.html => ficheiro principal HTML
+
+A pasta HTML contem os ficheiros html da aplicação : *excluíndo o ficheiro raíz HTML Mainpage.html 
 - Login.html*
 - Register.html*
 
