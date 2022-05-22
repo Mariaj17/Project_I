@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sessão - Talkey</title>
+  <!-- Bootstrap & CSS References -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<!-- Iconify SVG framework from Figma -->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <link rel="stylesheet" href="/CSS/Login.css">
+  <!-- For the icon off the App to show on the tab -->
+  <link rel="icon" href="/Media/images/Talkey - icone.png" />
+</head>
+<body>
+<!-- Button HOME to return to the homepage -->
+<!-- href of the button will change in further updates -->
+<a class="buttonHome" href="/index.html"><span class="iconify" data-icon="material-symbols:exit-to-app"></span><span class="contentbtn">Home</span></a>
+<!-- SLOGAN LOGIN MESSAGE -->
+<p class="header-login-slogan">FAÇA LOGIN</p>
+<p class="subheader-login-slogan">ABRE O SEU CONHECIMENTO AO ALEMÃO</p>
+<!-- Login ilustration -->
+<img class="login-ilustration" src="/Media/images/login-desktop-drawn-svg.svg" alt="login-ilustration">
+
+
+<!-- Background for the form Form -->
+<div class="background-form"></div>
+<!-- LOGIN FORM -->
+<!-- action form will submit for the mainpage, WILL BE CHANGE IN FURTHER UPDATES!! -->
+    <form action="/index.html">
+            <input type="radio" id="student" value="aluno">
+            <label class="textstudent" for="student">aluno</label>
+            <input type="radio" id="teacher" value="professor">
+            <label class="textteacher" for="teacher">professor</label>
+        <!-- USERNAME & PASSWORD INPUTFIELDS -->
+        <!-- REQUIRED WILL BE CHANGED WITH CSS -->
+        <div class="textfield">
+            <label for="username"></label>
+            <input type="text" id="username" required>
+            <br>
+            <label for="psw"></label>
+            <input type="password" id="psw" required>
+        </div>
+        <div class="register-link">
+            <a href="/HTML/Register.html">Não tem conta? Crie uma!</a>
+        </div>
+        <div class="btn-login-submit">
+            <button>INICIAR SESSÃO</button>
+        </div>
+    </form>
+</body>
+</html>
