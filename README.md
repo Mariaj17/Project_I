@@ -7,8 +7,7 @@ A pasta media contem duas subpastas :
 - "videos" para armazenar todos os vídeos referentes as aulas da aplicação.
 
 
-
-Mainpage.html => ficheiro principal HTML
+Index.html => ficheiro principal HTML
 
 A pasta HTML contem os ficheiros html da aplicação :
 - Login.html
