@@ -17,3 +17,7 @@ A pasta CSS contem os ficheiros css de estilização da aplicação :
 - Login.css
 - Register.css
 
+
+A pasta JS contem duas subpastas:
+- Models => para gerir as classes da aplicação
+- Views => para gerir a parte visual da aplicação
