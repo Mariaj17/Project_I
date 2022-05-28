@@ -15,4 +15,6 @@ A pasta TalkeyApp está organizada da seguinte forma:
 - Pasta Media organizado em duas subpastas :
 - Images para armazenar todas as imagens da aplicação 
 - Videos para armazenar os vídeos do tutorial
+
+- Pasta fonts para gerir a(s) font(s) family da aplicação
       
