@@ -2,22 +2,17 @@
 
 Organização da aplicação
 
-A pasta media contem duas subpastas :
-- "images" para armazenar todas as imagens da aplicação;
-- "videos" para armazenar todos os vídeos referentes as aulas da aplicação.
+A pasta TalkeyApp está organizada da seguinte forma:
 
+- Pasta HTML com os ficheiros HTML da app
 
-Index.html => ficheiro principal HTML
+- Pasta CSS com as folhas de estilização da app
 
-A pasta HTML contem os ficheiros html da aplicação :
-- Login.html
-- Register.html
+- PASTA JS com os scripts da app organizados em duas subpastas :
+- Models para modelar as classes da aplicação 
+-Views para gerir a visualização dos elementos das páginas de forma dinâmica
 
-A pasta CSS contem os ficheiros css de estilização da aplicação :
-- Login.css
-- Register.css
-
-
-A pasta JS contem duas subpastas:
-- Models => para gerir as classes da aplicação
-- Views => para gerir a parte visual da aplicação
+- Pasta Media organizado em duas subpastas :
+- Images para armazenar todas as imagens da aplicação 
+- Videos para armazenar os vídeos do tutorial
+      
