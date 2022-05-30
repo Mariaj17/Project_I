@@ -4,65 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Criar Conta - Talkey</title>
-   <!-- Bootstrap & CSS References -->
+   <!-- Bootstrap & CSS References Referências Bootstrap & CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-<!-- Iconify SVG framework from Figma -->
+<!-- Iconify SVG framework from Figma  Framework do Figma-->
 <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 <link rel="stylesheet" href="/CSS/Register.css">
-  <!-- For the icon of the App to show on the tab -->
+  <!-- For the icon of the App to show on the tab ICON DA APP -->
   <link rel="icon" href="/Media/images/Talkey - icone.png" />
 </head>
 <body>
-<!-- Button HOME to return to the homepage -->
-<!-- href of the button will change in further updates -->
-<a class="buttonHome" href="/index.html"><span class="iconify" data-icon="material-symbols:exit-to-app"></span><span class="contentbtn">Home</span></a>
-<!-- REGISTER SECTION -->
-<form action="/HTML/Index.html">
+<!-- Button HOME to return to the homepage  BOTÃO PARA REGRESSAR PARA MAINPAGE-->
+<a class="buttonHome" href="/HTML/Index.html"><span class="iconify" data-icon="material-symbols:exit-to-app"></span><span class="contentbtn">Home</span></a>
+<!-- LEFT SIDE REGISTER LADO ESQUERDA DA PÁGINA -->
     <div class="left-register">
         <p class="heading-slogan">CRIE CONTA</p>
         <p class="subheading-slogan">E ENTRE NO MUNDO ALEMÃO</p>
         <img src="/Media/images/register-desktop-drawn-svg.svg" alt="register-ilustration" class="ilustration">
     </div>
+    <!-- REGISTER SECTION ÁREA DO REGISTRO -->
+    <form action="/HTML/Index.html">
+        <!-- RIGTH SIDE REGISTER LADO DIREITO DA PÁGINA -->
     <div class="right-register">
         <div class="card-register">
+            <!-- OPTIONS STUDENT OR TEACHER(ADMIN)  OPÇÕES ALUNO OU PROFESSOR(ADMIN)-->
             <div class="radio-buttons">
                 <label for="student"><input type="radio" name="student" id="student"><span class="student-line-heigth"> aluno</span></label>
                 <label for="teacher"><input type="radio" name="teacher" id="teacher"><span class="teacher-line-heigth"> professor</span></label>
             </div>
+            <!--TEXTFIELDS-->
             <div class="textfield">
+                <!-- USERNAME -->
                 <label for="username"></label>
                 <input type="text" name="username" id="username" placeholder="USERNAME">
                 <br>
+                <!-- EMAIL -->
                 <label for="email"></label>
                 <input type="email" name="email" id="email" placeholder="EMAIL">
                 <br>
+                <!-- BIRTHDAY SECTION ARÉA DA DATA DE NASCIMENTO-->
                 <div class="birthday-field">
-                    <label for="birthday">Data de Nascimento</label>
-                    <div class="data-birthday">
+                    <label class="heading-birth">Data de Nascimento</label>
+                    <br>
                         <label for="daybirth"></label>
                         <input type="number" name="daybirth" id="daybirth" placeholder="Dia" min="1" max="31">
                         <br>
+                        <label for="birthday"></label>
                         <select name="mouth-birthday" id="birthday">
                             <option selected value="Mês">Mês</option>
-                            <option selected value="Janeiro">janeiro</option>
-                            <option selected value="Mês">fevereiro</option>
-                            <option selected value="Mês">março</option>
-                            <option selected value="Mês">abril</option>
-                            <option selected value="Mês">maio</option>
-                            <option selected value="Mês">junho</option>
-                            <option selected value="Mês">julho</option>
-                            <option selected value="Mês">agosto</option>
-                            <option selected value="Mês">setembro</option>
-                            <option selected value="Mês">outubro</option>
-                            <option selected value="Mês">novembro</option>
-                            <option selected value="Mês">dezembro</option>
+                            <option  value="Janeiro">janeiro</option>
+                            <option  value="Mês">fevereiro</option>
+                            <option  value="Mês">março</option>
+                            <option  value="Mês">abril</option>
+                            <option  value="Mês">maio</option>
+                            <option  value="Mês">junho</option>
+                            <option  value="Mês">julho</option>
+                            <option  value="Mês">agosto</option>
+                            <option  value="Mês">setembro</option>
+                            <option  value="Mês">outubro</option>
+                            <option  value="Mês">novembro</option>
+                            <option  value="Mês">dezembro</option>
                         </select>
-                    </div>
-                </div>
+                        <br>
+                        <label for="year"></label>
+                        <!-- alimentar o máximo com o ano atual sem hardcoded via JS -->
+                        <input type="number" name="year" id="year" placeholder="Ano" min="1922" max="">
+                   </div>
+                   <!-- GENERO GENRER OPTION -->
+                   <div class="genrerop">
+                       <label for="genrer"></label>
+                       <input type="text" name="genrer" id="genrer" placeholder="GÉNERO">
+                   </div>
+                   <!-- PASSWORD SECTION ARÉA DA PASSWORD -->
+                   <div class="psw-section">
+                       <label for="psw"></label>
+                       <input type="password" name="psw" id="psw" placeholder="PASSWORD">
+                   </div>
+                   <div class="confirmpsw">
+                       <label for="confirmpsw"></label>
+                       <input type="password" name="confirmpsw" id="confirmpsw" placeholder="CONFIRMAR PASSWORD">
+                   </div>
+                   <!-- SUBMISSION AREA ÁREA DE SUBMISSÃO -->
+                   <div class="bottom-register">
+                       <!-- LINK PARA PÁGINA DE LOGIN LINK FOR THE LOGIN PAGE -->
+                       <div class="login-link">
+                        <a class="log-link" href="/HTML/Login.html">Já tem conta? Inicie Sessão!</a>
+                        <div class="underline-link"></div>
+                       </div>
+                   </div>
             </div>
         </div>
+        <button class="btn-register"><span>CRIAR CONTA</span></button>
+        <div class="copy">&copy; TALKEY PRIVACIDADE & TERMOS </div>
     </div>
 </form>
 </html>
