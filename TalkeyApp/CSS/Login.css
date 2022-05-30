@@ -180,10 +180,11 @@ height: 41px;
 
 input[type="text"]::-moz-placeholder{
     opacity:1;
-    color:#5259CD;
+    color:#005086;
 }
 
 input{
+    color:#005086;
     font-weight: bolder;
 }
 

@@ -4,55 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iniciar Sessão - Talkey</title>
-  <!-- Bootstrap & CSS References -->
+   <!-- Bootstrap & CSS References Referências Bootstrap & CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-<!-- Iconify SVG framework from Figma -->
+<!-- Iconify SVG framework from Figma  Framework do Figma-->
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   <link rel="stylesheet" href="/CSS/Login.css">
-  <!-- For the icon of the App to show on the tab -->
+ <!-- For the icon of the App to show on the tab ICON DA APP -->
   <link rel="icon" href="/Media/images/Talkey - icone.png" />
 </head>
 <body>
-<!-- Button HOME to return to the homepage -->
-<!-- href of the button will change in further updates -->
-<a class="buttonHome" href="/index.html"><span class="iconify" data-icon="material-symbols:exit-to-app"></span><span class="contentbtn">Home</span></a>
-<!-- LOGIN SECTION -->
-<!-- the action form will be changed in further updates -->
-<form action="/index.html" class="main-login">
+<!-- Button HOME to return to the homepage  BOTÃO PARA REGRESSAR PARA MAINPAGE-->
+<a class="buttonHome" href="/HTML/Index.html"><span class="iconify" data-icon="material-symbols:exit-to-app"></span><span class="contentbtn">Home</span></a>
+<!-- LOGIN SECTION ÁREA DE LOGIN -->
+<form action="/HTML/Index.html" class="main-login">
+    <!-- LEFT SIDE LOGIN LADO ESQUERDA DA PÁGINA -->
     <div class="left-login">
         <p class="heading-slogan">FAÇA LOGIN</p>
         <p class="subheading-slogan">ABRE O SEU CONHECIMENTO AO ALEMÃO</p>
         <img class="ilustration" src="/Media/images/login-desktop-drawn-svg.svg" alt="login-ilustration">
     </div>
+     <!-- RIGTH SIDE LOGIN LADO DIREITO DA PÁGINA -->
     <div class="right-login">
         <div class="card-login">
+               <!-- OPTIONS STUDENT OR TEACHER(ADMIN)  OPÇÕES ALUNO OU PROFESSOR(ADMIN)-->
             <div class="radio-buttons">
                 <label for="student"><input type="radio" name="optradio" id="student"><span class="student-line-heigth"> aluno</span></label>
                 <label for="teacher"><input type="radio" name="optradio" id="teacher"><span class="teacher-line-heigth"> professor</span></label>
         </div>
+             <!--TEXTFIELDS-->
         <div class="textfield">
+             <!-- USERNAME -->
             <label for="username"></label>
             <input type="text" name="username" id="username" placeholder="USERNAME">
+             <!-- PASSWORD SECTION ARÉA DA PASSWORD -->
             <label for="psw"></label>
             <input type="password" name="password" id="psw" placeholder="PASSWORD">
         </div>
+          <!-- SUBMISSION AREA ÁREA DE SUBMISSÃO -->
         <div class="bottom-login">
+               <!-- LINK PARA PÁGINA DE REGISTO LINK FOR THE REGISTER PAGE -->
         <div class="register-link">
             <div class="center-link">
             <a class="reg-link" href="/HTML/Register.html">Não tem conta? Crie uma!</a>
             <div class="underline-link"></div>
         </div>
         </div>
-        <button class="btn-login"><span>INICIAR SESSÃO</span></button>
+        <input type="submit" class="btn-login" value="INICIAR SESSÃO">
     </div>
     <div class="copy">&copy; TALKEY PRIVACIDADE & TERMOS </div>
     </div>
 </form>
-
-
-
 
 </body>
 </html>
