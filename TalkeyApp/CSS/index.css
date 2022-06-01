@@ -1,0 +1,134 @@
+/* Fonts family of App fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Arima+Madurai:wght@800&family=Bree+Serif&family=Bungee+Shade&family=Butcherman&family=Cormorant+SC:wght@300&family=Creepster&family=Diplomata+SC&family=Eater&family=Frijole&family=Germania+One&family=Hanalei+Fill&family=IM+Fell+DW+Pica+SC&family=IM+Fell+Double+Pica+SC&family=IM+Fell+Great+Primer+SC&family=Inknut+Antiqua:wght@300&family=Jomolhari&family=Julius+Sans+One&family=Lacquer&family=Libre+Franklin:wght@300&family=Metal+Mania&family=Monofett&family=Nosifer&family=Pinyon+Script&family=Quintessential&family=Syncopate&family=Trade+Winds&family=UnifrakturMaguntia&display=swap');
+@import url('https://www.cufonfonts.com/font/feather-2');
+
+/* to import the fonts para importar fontes */
+@font-face{
+    src: url(https://www.cufonfonts.com/font/feather-2);
+    font-family: 'Feather', cursive;
+}
+
+/* global selector for impact all the html document (body) 
+selector global para impactar o todo o documento html*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: 'Feather', cursive;
+}
+
+/* header */
+.header{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    background:#005086;
+    width: 1519.5px;
+    height: 86px;
+}
+
+/* header logo */
+.logo{
+    display:flex;
+    position: relative;
+    left:10px;
+    width: 115px;
+    height: 91px;
+}
+
+/* navbarlist */
+.navbar-list{
+    font-size:15px;
+    display:flex;
+    gap:4.8rem;
+    list-style:none;
+}
+
+.navbar-link a:link{
+     display:inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.navbar-list a{
+    color: #fff;
+}
+
+.autentification-links{
+    display:flex;
+    gap:50px;
+}
+
+.navbar-list{
+    display:flex;
+    margin-top: 39.5px;
+    position: relative;
+    left: -24px;
+}
+
+.autentification-links{
+    display: flex;
+    position: relative;
+    left: 28.5rem;
+}
+
+.select-link{
+    display: flex;
+    background-color: #989BD1;
+    height:86px;
+    width:120px;
+    position: relative;
+    left:25px
+}
+
+.navbar{
+    display: flex;
+    margin-left: -70px;
+}
+
+header{
+    display: flex;
+}
+
+.navbar-list  .opacity-link{
+    color: rgba(255, 255, 255, 0.5);
+    cursor:alias
+}
+
+.navbar-link .login-btn{
+    display:flex;
+    background: #989BD1;
+    border-radius: 12px;
+     width: 155px;
+    height: 46px;
+    position: relative;
+    top:-20%;
+}
+
+.navbar-link .register-btn{
+    display:flex;
+    background: #989BD1;
+    border-radius: 12px;
+     width: 155px;
+    height: 46px;
+    position: relative;
+    top:-20%;
+}
+
+.autentification-links span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20%;
+}
+
+
+
+
+
+
+ 
+
+ 
+
