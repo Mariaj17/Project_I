@@ -10,6 +10,8 @@
 
 /* global selector for impact all the html document (body) */
 *{
+    box-sizing: border-box;
+    padding: 0;
     margin:0;
     font-family: 'Feather', cursive;
 }
@@ -98,27 +100,15 @@ color:#FFFFFF;
     align-items: center;
 }
 
-/* styles for the background form */
-.card-login{
-    /* largura do card */
-    width: 60%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* espaçamento no eixo x = 30px e y = 35px */
-    padding:20px 20px;
-    background:#5259CD;
-    border-radius: 12px;
-    box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.25);
-}
 
 /*styles for the radio buttons*/
 .radio-buttons{
     display:grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr 1fr;
-    color:#FFFFFF;
+    color:#005086;
+    font-weight: bolder;
+    margin-left: 65px;
 }
 
 /*styles for the radio buttons*/
@@ -170,9 +160,9 @@ height: 41px;
     border:none;
     border-radius:14px;
     padding: 12px 15px;
-    background: #ffffff;
+    background: #005086;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color:#5259CD;
+    color:#ffff;
     font-size: 15px;
     outline:none;
     box-sizing: border-box;
@@ -180,12 +170,17 @@ height: 41px;
 
 input[type="text"]::-moz-placeholder{
     opacity:1;
-    color:#005086;
+    color:#ffffff;
 }
 
 input{
-    color:#005086;
+    color:#ffffff;
     font-weight: bolder;
+}
+
+/* input on focus */
+input:focus{
+    background:#5259CD;
 }
 
 .register-link{
@@ -194,7 +189,7 @@ input{
 
 /* style the link form */
 .register-link a{
-    color:#FFFFFF;
+    color:#005086;
     text-decoration: none;
 }
 
@@ -220,12 +215,12 @@ input{
 
 /* styles for the buttom INICIAR SESSÃO */
 .btn-login{
-background: #FFFFFF;
+background: #005086;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 12px;
 border: none;
 padding:6px;
-color: #005086;
+color: #fff;
 font-weight: bolder;
 }
 
@@ -249,13 +244,13 @@ font-weight: bolder;
 }
 
 input::placeholder{
-    color:#005086;
+    color:#fff;
 }
 
 .underline-link{
 width: 233px;
 height: 7px;
-background: #FFFFFF;
+background: #005086;
 }
 
 .register-link{
@@ -272,11 +267,11 @@ background: #FFFFFF;
 }
 
 .center-link{
-    transform:translateX(6%)
+    transform:translateX(20%)
 }
 
 .btn-login{
-    width: 80%;
+    width: 50%;
     height:45px;
 }
 
@@ -290,7 +285,16 @@ background: #FFFFFF;
 
 .btn-login{
     position: relative;
-    left: 8%;
+    left: 24%;
+}
+
+/* btn hoover effect */
+.btn-login{
+    transition: 850ms;
+}
+
+.btn-login:hover{
+background: #5259CD;
 }
 
 .copy{
@@ -301,7 +305,9 @@ background: #FFFFFF;
 
 .copy{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-top: -40px;
 }
 
 .copy{
@@ -339,7 +345,7 @@ height: 522px;
 
 .ilustration{
     position: relative;
-    left:10%;
+    left:20%;
     top: -5%;
 }
 

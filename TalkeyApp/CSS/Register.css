@@ -1,0 +1,118 @@
+/* Fonts family of App fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Arima+Madurai:wght@800&family=Bree+Serif&family=Bungee+Shade&family=Butcherman&family=Cormorant+SC:wght@300&family=Creepster&family=Diplomata+SC&family=Eater&family=Frijole&family=Germania+One&family=Hanalei+Fill&family=IM+Fell+DW+Pica+SC&family=IM+Fell+Double+Pica+SC&family=IM+Fell+Great+Primer+SC&family=Inknut+Antiqua:wght@300&family=Jomolhari&family=Julius+Sans+One&family=Lacquer&family=Libre+Franklin:wght@300&family=Metal+Mania&family=Monofett&family=Nosifer&family=Pinyon+Script&family=Quintessential&family=Syncopate&family=Trade+Winds&family=UnifrakturMaguntia&display=swap');
+@import url('https://www.cufonfonts.com/font/feather-2');
+
+/* to import the fonts para importar fontes */
+@font-face{
+    src: url(https://www.cufonfonts.com/font/feather-2);
+    font-family: 'Feather', cursive;
+}
+
+/* global selector for impact all the html document (body) */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: 'Feather', cursive;
+    background: #5259CD;
+}
+
+.buttonHome{
+    position: absolute;
+    width: 203px;
+    height: 46px;
+    left: 27px;
+    top: 29px;
+    background: #ffff;
+    box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+/* Content Text of the Button Home */
+.contentbtn{
+    position: absolute;
+    width: 44px;
+    height: 19px;
+    left: 96px;
+    top: 12.5px;
+    font-weight: bolder;
+    font-size: 17px;
+    line-height: 19px;
+    background: #fff;
+    color: #005086;
+    }
+
+
+    /* Icon of the button Home */
+.iconify{
+    position: absolute;
+    left:15.9%;
+    right: 92.85%;
+    top: 22.36%;
+    bottom: 90.47%;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    transform: rotate(-180deg);
+    color:#005086;
+    }
+
+    /* styles for the register form */
+ .main-register{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styles for the left side register page */
+.left-register{
+    width:50vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* styles for the slogans register */
+.left-register{
+    color:#ffff;
+    font-weight: bolder;
+}
+
+/* styles for the heading slogan */
+.left-register > .heading-slogan{
+    font-size: 30px;
+}
+
+/* styles for the subheading slogan */
+.left-register > .subheading-slogan{
+    font-size: 13px;
+}
+
+/* Slogans */
+.subheading-slogan{
+    line-height:1px;
+}
+
+.left-register p:first-child {
+    text-indent: -10px;
+}
+
+.heading-slogan{
+    display:flex;
+    margin-left: -900px;
+}
+
+.subheading-slogan{
+    display:flex;
+    margin-left: -900px;
+}
+
+.ilustration{
+    margin-left: -300px;
+}
+
+
