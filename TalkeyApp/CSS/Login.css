@@ -247,6 +247,14 @@ input::placeholder{
     color:#fff;
 }
 
+#username{
+    transition: 850ms;
+}
+
+#psw{
+    transition: 850ms;
+}
+
 .underline-link{
 width: 233px;
 height: 7px;
