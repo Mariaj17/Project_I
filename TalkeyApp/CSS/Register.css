@@ -115,4 +115,32 @@
     margin-left: -300px;
 }
 
+.radio-buttons{
+    display:grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    color:#ffff;
+    font-weight: bolder;
+    margin-left: 65px;
+    font-size: 15px;
+}
+
+/*styles for the radio buttons*/
+input[type="radio"]{
+    width:15px;
+    height:15px;
+}
+
+/* to change the color of the radio selector */
+#student{
+    accent-color:#005086;
+}
+
+/* to change the color of the radio selector */
+#teacher{
+    accent-color:#005086;
+}
+
+
+
 
