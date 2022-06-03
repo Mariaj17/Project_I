@@ -35,6 +35,7 @@
                 <label for="teacher"><input type="radio" name="optradio" id="teacher"><span class="teacher-line-heigth"> professor</span></label>
             </div>
             <!--TEXTFIELDS-->
+            <div class="inputfields">
             <div class="textfield">
                 <!-- USERNAME -->
                 <label for="username"></label>
@@ -48,6 +49,7 @@
                 <div class="birthday-field">
                     <label class="heading-birth">Data de Nascimento</label>
                     <br>
+                    <div class="flex-birth">
                         <label for="daybirth"></label>
                         <input type="number" name="daybirth" id="daybirth" placeholder="Dia" min="1" max="31">
                         <br>
@@ -69,11 +71,13 @@
                         </select>
                         <br>
                         <label for="year"></label>
-                        <!-- alimentar o máximo com o ano atual sem hardcoded via JS -->
                         <input type="number" name="year" id="year" placeholder="Ano" min="1922" max="">
                    </div>
+                </div>
                    <!-- GENERO GENRER OPTION -->
-                   <div class="genrerop">
+                   <div class="gap">
+                   <div class="flex-genrer-psw">
+                    <div class="genrerop">
                        <label for="genrer"></label>
                        <input type="text" name="genrer" id="genrer" placeholder="GÉNERO">
                    </div>
@@ -86,6 +90,9 @@
                        <label for="confirmpsw"></label>
                        <input type="password" name="confirmpsw" id="confirmpsw" placeholder="CONFIRMAR PASSWORD">
                    </div>
+                </div>
+            </div>
+                <div class="bottom-form-regis">
                    <!-- SUBMISSION AREA ÁREA DE SUBMISSÃO -->
                    <div class="bottom-register">
                        <!-- LINK PARA PÁGINA DE LOGIN LINK FOR THE LOGIN PAGE -->
@@ -96,10 +103,15 @@
                    </div>
             </div>
         </div>
+        <div class="register-btn">
         <input type="submit" class="btn-register" value="CRIAR CONTA">
+    </div>
         <div class="copy">&copy; TALKEY PRIVACIDADE & TERMOS </div>
     </div>
     </div>
+</div>
+    </div>
 </form>
-
+<!-- referência ao JS -->
+    <script src="/JS/"></script>
 </html>

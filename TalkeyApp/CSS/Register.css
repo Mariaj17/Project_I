@@ -103,12 +103,13 @@
 
 .heading-slogan{
     display:flex;
-    margin-left: -900px;
+    margin-left: -700px;
+    margin-top: 60px;
 }
 
 .subheading-slogan{
     display:flex;
-    margin-left: -900px;
+    margin-left: -700px;
 }
 
 .ilustration{
@@ -141,6 +142,355 @@ input[type="radio"]{
     accent-color:#005086;
 }
 
+.textfield{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-bottom : 2px;  
+}
+
+.heading-birth{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom : 2px;
+}
+
+.flex-birth{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.flex-genrer-psw{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.flex-genrer-psw{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    align-items:center;
+    gap: 30px;
+}
+
+.bottom-register{
+    padding: 25px;
+}
+
+.btn-register{
+    margin-left: 180px;
+    padding: 10px;
+}
+
+.register-btn{
+    display: flex;
+    padding-top: 20px;
+}
+
+.copy{
+    font-size: 10px;
+    color: #fff;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#username{
+    border:none;
+    background: #ffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 8px;
+    width:45%;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 11px;
+}
+
+input::placeholder{
+    color: #005086;
+}
+
+#username:focus{
+    background: #005086;
+    color: #Fff;
+}
+
+#username{
+    color: #005086;
+}
+
+.radio-buttons{
+   margin-left: 110px;
+   padding: 10px;
+}
+
+#email{
+    border:none;
+    background: #ffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 8px;
+    width:45%;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;  
+    font-weight: bolder;
+    margin-left: 11px;
+}
+
+#email{
+    color: #005086;
+}
+
+#email:focus{
+    background: #005086;
+    color: #Fff;
+}
+
+.heading-birth{
+    font-weight: bolder;
+    color: #fff;
+}
+
+#year{
+    width:20%;
+}
+
+#daybirth{
+    border:none;
+    background: #ffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;  
+    font-weight: bolder;
+}
+
+#daybirth{
+    color: #005086;
+}
+
+#daybirth:focus{
+    background: #005086;
+    color: #Fff;
+}
+
+#birthday{
+    border:none;
+    background: #ffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;  
+    font-weight: bolder;
+}
+
+#birthday{
+    color: #005086;
+}
+
+#birthday:focus{
+    background: #005086;
+    color: #Fff;
+}
+
+select option{
+    background: #ffff;
+    color: #005086;
+}
+
+#year{
+    border:none;
+    background: #ffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;  
+    font-weight: bolder;
+}
+
+#year{
+    color: #005086;
+}
+
+#year:focus{
+    background: #005086;
+    color: #Fff;
+}
+
+#genrer{
+    border:none;
+    background: #ffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;  
+    font-weight: bolder;
+}
+
+#genrer{
+    color: #005086;
+}
+
+#genrer:focus{
+    background: #005086;
+    color: #Fff;
+}
+
+.radio-buttons{
+    margin-left: 130px;
+}
+
+#psw{
+    border:none;
+    background: #ffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;  
+    font-weight: bolder;
+}
+
+#psw{
+    color: #005086;
+}
+
+#psw:focus{
+    background: #005086;
+    color: #Fff;
+}
+
+#confirmpsw{
+    border:none;
+    background: #ffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 15px;  
+    font-weight: bolder;
+}
+
+#confirmpsw{
+    color: #005086;
+}
+
+#confirmpsw:focus{
+    background: #005086;
+    color: #Fff;
+}
+
+.log-link{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.log-link:hover{
+    color: #ffff;
+}
+
+.underline-link{
+    width: 233px;
+    height: 7px;
+    background:  #ffff;
+    margin-left: -6px;
+}
+
+.btn-register{
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    border: none;
+    padding:12px;
+    width:40%;
+    color: #005086;
+    font-weight: bolder;
+    margin-left: 148px;
+}
+
+#username{
+    transition: 850ms;
+}
+
+#email{
+    transition: 850ms;
+}
+
+#daybirth{
+    transition: 850ms;
+}
+
+select{
+    transition: 850ms;
+}
+
+#year{
+    transition: 850ms;
+}
+
+#genrer{
+    transition: 850ms;
+}
+
+#psw{
+    transition: 850ms;
+}
+
+#confirmpsw{
+    transition: 850ms;
+}
+
+.btn-register{
+    transition: 850ms;
+}
+
+.btn-register:hover{
+    background: #005086;
+    color: #ffff;
+}
+
+.ilustration{
+    margin-left: 3px;
+    height: 550px;
+}
+
+/* ilustration animation */
+.ilustration{
+    animation:  1.5s Infinite  linear floating;
+    animation-delay: 0s;
+}
+
+/* animation for the ilustration with floating function via Keyframes */
+@keyframes floating {
+    0%{opacity:1; transform:translateY(0px);}
+    50%{ transform: translateY(-10px);}
+    100%{opacity: 1; transform: translateY(0px);}
+} 
 
 
+/* ---------------------------------------Responsive area----------------- */
 
+/* @media all and (max-width:1113px){
+
+} */
