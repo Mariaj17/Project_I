@@ -15,5 +15,3 @@ accordionItemHeaders.forEach(accordionItemHeader => {
     })
 })
 
-
-

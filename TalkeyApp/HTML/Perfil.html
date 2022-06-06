@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Irá surgir o nome do User na tab ex: MariaJ | Perfil | Talkey -->
+  <!-- injetar o nome do user via js através da localstorage e da autentificação na app -->
+  <title id="user"> Username | Perfil | Talkey</title>
+   <!-- Bootstrap & CSS References Referências Bootstrap & CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/CSS/Perfil.css">
+  <!-- Iconify SVG framework from Figma  Framework do Figma-->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+   <!-- For the icon of the App to show on the tab ICON DA APP -->
+   <link rel="icon" href="/Media/images/Talkey - icone.png" />
+</head>
+<!-- ACESSO AS FUNÇÕES DA PÁGINA DE PERFIL APÓS AUTENTIFICAÇÃO -->
+<body>
+<!-- Header section -->
+<!-- Navbar -->
+<header class="header">
+    <img src="/Media/images/Logo.svg" alt="logo" class="logo">
+    <!-- Navigation area Área de navegação -->
+    <div class="select-link"></div>
+    <!--NAVBAR LINKS-->
+    <nav class="navbar">
+        <ul class="navbar-list">
+          <div class="home-link"></div>
+            <li class="navbar-link"><a class="home" href="/HTML/Index.html">HOME</a></li>
+            <li class="navbar-link"><a  class="opacity-link" href="#">AULAS</a></li>
+            <li class="navbar-link"><a  class="opacity-link"href="#">LOJA</a></li>
+            <li class="navbar-link"><a  class="opacity-link"href="#">PERFIL</a></li>
+            <li class="logout-link"><a class="buttonHome" href="/HTML/Index.html"><span class="iconify" data-icon="material-symbols:exit-to-app"></span></a></li>
+        </ul> 
+    </nav>
+</header>
+<!-- Main section Perfil -->
+<main>
+    <div class="card-perfil">
+        <div class="left-perfil">
+            <!-- AVATAR DO USER -->
+            <div class="photo-perfil"><img src="/Media/images/avatar01.png" alt="photo-perfil"></div>
+            <!-- NOME DO USER -->
+            <div class="username"><span id="username">Username</span></div>
+        </div>
+        <div class="middle-perfil">
+            <div class="points-user">
+                <div class="icon"><img src="/Media/images/Key.svg" alt="Key"></div>
+                <!-- OS PONTOS DO USER - ALTERAR VIA INNERHTML VIA JS localstorage -->
+                <div class="points"><span id="points">xxx PTS</span></div>
+            </div>
+            <!-- BOTÃO EDITAR PARA ALTERAR PASSWORD -->
+            <div class="edit-btn"><button id="editBtn">EDITAR</button></div>
+            <!-- BOTÃO PARA ALTERAR O AVATAR DO PERFIL -->
+            <div class="change-avatar-btn"><button id="changeBtn">ALTERAR AVATAR</button></div>
+        </div>
+        <div class="right-perfil">
+            <div class="progress-area">
+                <div class="heading"><span>Progresso do Curso</span></div>
+                <!-- BARRA DE PROGRESSO -->
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
