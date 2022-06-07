@@ -42,7 +42,7 @@
     <div class="card-perfil">
         <div class="left-perfil">
             <!-- AVATAR DO USER -->
-            <div class="photo-perfil"><img src="/Media/images/avatar01.png" alt="photo-perfil"></div>
+            <div class="photo-perfil"><img src="/Media/images/avatar01.png"  alt="photo-perfil"></div>
             <!-- NOME DO USER -->
             <div class="username"><span id="username">Username</span></div>
         </div>
@@ -50,12 +50,36 @@
             <div class="points-user">
                 <div class="icon"><img src="/Media/images/Key.svg" alt="Key"></div>
                 <!-- OS PONTOS DO USER - ALTERAR VIA INNERHTML VIA JS localstorage -->
-                <div class="points"><span id="points">xxx PTS</span></div>
+                <div class="points"><span id="points">000 Pontos</span></div>
             </div>
+            <div class="buttons">
             <!-- BOTÃO EDITAR PARA ALTERAR PASSWORD -->
-            <div class="edit-btn"><button id="editBtn">EDITAR</button></div>
+            <div class="edit-btn"><button type="button" id="editBtn">EDITAR</button>
+                <div class="background"></div>
+                <div id="modal" class="modal">
+                    <span class="close-modal" title="Close Modal">&times;</span>
+                    <form action="#">
+                        <div class="container">
+                            <h3>ALTERAR PASSWORD</h3>
+                              <!-- PASSWORD SECTION ARÉA DA PASSWORD -->
+                   <div class="psw-section">
+                    <label for="newpsw"></label>
+                    <input type="password" name="newpsw" id="newpsw" placeholder="NOVA PASSWORD">
+                </div>
+                <div class="confirmpsw">
+                    <label for="confirmnewpsw"></label>
+                    <input type="password" name="confirmnewpsw" id="confirmnewpsw" placeholder="CONFIRMAR NOVA PASSWORD">
+                </div>
+                <div class="confirm-button">
+                    <!--  -->
+                </div>
+            </div>
+                    </form>
+                </div>
+            </div>
             <!-- BOTÃO PARA ALTERAR O AVATAR DO PERFIL -->
-            <div class="change-avatar-btn"><button id="changeBtn">ALTERAR AVATAR</button></div>
+            <div class="change-avatar-btn"><button type="button" id="changeBtn">ALTERAR AVATAR</button></div>
+        </div>
         </div>
         <div class="right-perfil">
             <div class="progress-area">
@@ -69,6 +93,6 @@
     </div>
 </main>
 
-<script src="/JS/Perfil.js"></script>
+            <script src="/JS/Perfil.js"></script>
 </body>
 </html>
