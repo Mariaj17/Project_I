@@ -59,7 +59,7 @@ selector global para impactar o todo o documento html*/
     display:flex;
     margin-top: 39.5px;
     position: relative;
-    left: -95px;
+    left: -70px;
 }
 
 .select-link{
@@ -68,7 +68,7 @@ selector global para impactar o todo o documento html*/
     height:86px;
     width:120px;
     position: relative;
-    left:120px
+    left:150px
 }
 
 .navbar{
@@ -97,3 +97,4 @@ header{
     height:23px;
     width:23px;
 }
+
