@@ -16,7 +16,7 @@
 <body>
     <!-- ACESSO AS FUNÇÕES DA PÁGINA DA LOJA APÓS AUTENTIFICAÇÃO -->
     <!-- Header section -->
-<!-- Navbar -->
+<!-- Navbar COM AUTENTIFICAÇÃO-->
 <header class="header">
     <img src="/Media/images/Logo.svg" alt="logo" class="logo">
     <!-- Navigation area Área de navegação -->
@@ -26,9 +26,9 @@
         <ul class="navbar-list">
           <div class="home-link"></div>
             <li class="navbar-link"><a class="home" href="/HTML/Index.html">HOME</a></li>
-            <li class="navbar-link"><a  class="aulas" href="#">AULAS</a></li>
-            <li class="navbar-link"><a  class="shop" href="#">LOJA</a></li>
-            <li class="navbar-link"><a  class="perfil" href="#">PERFIL</a></li>
+            <li class="navbar-link"><a  class="aulas" href="/HTML/Level.html">AULAS</a></li>
+            <li class="navbar-link"><a  class="shop" href="/HTML/Shop.html">LOJA</a></li>
+            <li class="navbar-link"><a  class="perfil" href="/HTML/Perfil.html">PERFIL</a></li>
             <!-- LOGOUT BUTTON -->
             <li class="logout-link"><a class="buttonHome" href="/HTML/Index.html"><span class="iconify" data-icon="material-symbols:exit-to-app"></span></a></li>
         </ul> 
@@ -41,32 +41,102 @@
     </div>
     <!-- AVATAR SELECIONADO -->
     <div class="avatar-container">
-        <div class="avatar-perfil"><img id="avatar-user" src="/Media/images/avatar01.png" alt="avatar01"></div>
+        <div class="avatar-perfil"><img id="avatar-user" height="165px" src="/Media/images/avatar01.png" alt="avatar01"></div>
+        <!-- Nome do user -->
         <div class="username"><span id="username">Username</span></div>
-        <div class="background"><img src="/Media/images/Rectangle 661 - loja.svg" alt="#"></div>
-        <div class="second-background"><img src="/Media/images/Rectangle 660 - loja.svg" alt="#"></div>
+        <div class="opacity-background"></div>
+        <div class="avatar"></div>
     </div>
-    <div class="heading--shop"><span class="heading">AVATARES</span></div>
+    <div class="heading-shop-x">
+    <div class="heading-shop"><span class="heading">AVATARES</span></div>
     <div class="underline-heading"></div>
+</div>
     <!-- AVATARES PARA COMPRA -->
     <div class="shop-container">
         <div class="container-avatar01">
-            <div class="image"><img src="/Media/images/avatar02.png" alt="#"></div>
+            <div class="avatar01"><img id="avatar01" height="165px"  src="/Media/images/avatar02.png" alt="#"></div>
             <div class="name-avatar"><span class="name">ARYANNE</span></div>
-            <div class="price"><span class="price01">512</span><img src="/Media/images/small key.svg" alt="#"></div>
-            <div class="button-pay"><button id="buyBtn">COMPRAR</button></div>
+            <div class="price"><span title="Preço" class="price01">512</span><img src="/Media/images/small key.svg" alt="#"></div>
+            <!-- BOTÃO PARA COMPRAR AVATAR -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyModal01" id="buyBtn">COMPRAR</button>
+
+
+            <!-- MODAL CONFIRMAÇÃO PAGAMENTO DO AVATAR01 -->
+            <div class="modal fade" id="buyModal01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content">
+                      <h5 class="heading">Deseja gastar pontos neste avatar ?</h5>
+                      <button id="confirmBuy01">Confirmar</button>
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
+
+
         <div class="container-avatar02">
-            <div class="image"><img src="/Media/images/avatar03.png" alt="#"></div>
+            <div class="avatar02"><img  id="avatar02" height="165px"  src="/Media/images/avatar03.png" alt="#"></div>
             <div class="name-avatar"><span class="name">BEATRIX</span></div>
-            <div class="price"><span class="price02">240</span><img src="/Media/images/small key.svg" alt="#"></div>
-            <div class="button-pay"><button id="buyBtn">COMPRAR</button></div>
+            <div class="price"><span  title="Preço" class="price02">240</span><img src="/Media/images/small key.svg" alt="#"></div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyModal02" id="buyBtn">COMPRAR</button>
+
+             <!-- MODAL CONFIRMAÇÃO PAGAMENTO DO AVATAR02 -->
+             <div class="modal fade" id="buyModal02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content">
+                      <h5 class="heading">Deseja gastar pontos neste avatar ?</h5>
+                      <button id="confirmBuy02">Confirmar</button>
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
-        <div class="container-avatar02">
-            <div class="image"><img src="/Media/images/avatar04.png" alt="#"></div>
+
+        <div class="container-avatar03">
+            <div class="avatar03"><img id="avatar03" height="165px" src="/Media/images/avatar04.png" alt="#"></div>
             <div class="name-avatar"><span class="name">MIST</span></div>
-            <div class="price"><span class="price03">742</span><img src="/Media/images/small key.svg" alt="#"></div>
-            <div class="button-pay"><button id="buyBtn">COMPRAR</button></div>
+            <div class="price"><span title="Preço" class="price03">742</span><img src="/Media/images/small key.svg" alt="#"></div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyModal03" id="buyBtn">COMPRAR</button>
+        
+                <!-- MODAL CONFIRMAÇÃO PAGAMENTO DO AVATAR03 -->
+                <div class="modal fade" id="buyModal03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="content">
+                          <h5 class="heading">Deseja gastar pontos neste avatar ?</h5>
+                          <button id="confirmBuy03">Confirmar</button>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        
         </div>
     </div>
 </main>
