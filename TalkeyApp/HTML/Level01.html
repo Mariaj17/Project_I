@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> NÍVEL 1 - TALKEY </title>
+  <!-- Referências ao CSS e Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/Level.css">
+    <!-- Iconify SVG framework from Figma  Framework do Figma-->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!-- For the icon of the App to show on the tab ICON DA APP -->
+  <link rel="icon" href="/Media/images/Talkey - icone.png" />
+</head>
+<body>
+<!-- ACESSO AS FUNÇÕES DA PÁGINA DE AULAS APÓS AUTENTIFICAÇÃO -->
+<body>
+    <!-- Header section -->
+    <!-- Navbar COM AUTENTIFICAÇÃO-->
+    <header class="header">
+        <img src="/Media/images/Logo.svg" alt="logo" class="logo">
+        <!-- Navigation area Área de navegação -->
+        <div class="select-link"></div>
+        <!--NAVBAR LINKS-->
+        <nav class="navbar">
+            <ul class="navbar-list">
+              <div class="home-link"></div>
+                <li class="navbar-link"><a class="home" href="/HTML/Index.html">HOME</a></li>
+                <li class="navbar-link"><a  class="aulas" href="/HTML/Level.html">AULAS</a></li>
+                <li class="navbar-link"><a  class="shop" href="/HTML/Shop.html">LOJA</a></li>
+                <li class="navbar-link"><a  class="perfil" href="/HTML/Perfil.html">PERFIL</a></li>
+                <!-- LOGOUT BUTTON -->
+                <li class="logout-link"><a class="buttonHome" href="/HTML/Index.html"><span class="iconify" data-icon="material-symbols:exit-to-app"></span></a></li>
+            </ul> 
+        </nav>
+    </header>
+<!-- PÁGINA PRINCIPAL DAS AULAS -->
+<main>
+    <!-- CARDS DA DESCRIÇÃO DAS AULAS EM CAROUSEL -->
+    <div class="carousel">
+        <div class="carousel-nav">
+            <!-- BOTÃO PARA Página do Nível 1 -->
+            <button id="carousel_nvl_One">Nível 1</button>
+            <!-- BOTÃO PARA A PÁGINA DO NÍVEL 2 -->
+            <button id="carousel_nvl_Two">Nível 2</button>
+            <!-- BOTÃO PARA A PÁGINA DO NÍVEL 3 -->
+            <button id="carousel_nvl_Three">Nível 3</button>
+        </div>
+         <!-- PÁGINA NIVEL 1 -->
+        <div class="carousel-content-page-01">
+            <div class="first-container">
+                <!-- TÍTULO DA PRIMEIRA AULA NIVEL 1-->
+                <div class="title-class"><img src="/Media/images/White Key.svg" alt="#"><h4 id="heading_aula_01_01">Título da Aula 01-01</h4></div>
+                <!-- IMAGEM DA PRIMEIRA AULA NIVEL 1 -->
+                <div class="image-content"><img id="imagem-aula-01_01" src="/Media/images/image-first-container.png" alt="imagem-aula01"></div>
+                <!-- BOTTOM DO CARD DA PRIMEIRA AULA NÍVEL 1 -->
+                <div class="bottom-card-01_01">
+                <!-- DESCRIÇÃO DA PRIMEIRA AULA NIVEL 1 -->
+                <div class="description-class"><h4 id="descript_aula_01_01">Descrição da Aula 01-01</h4></div>
+                <!-- BOTÃO PARA CONTINUAR PARA PRIMEIRA AULA NIVEL 1 -->
+                <button id="continue_aula_01_01">CONTINUAR</button>
+            </div>
+            </div>
+            <div class="second-container">
+                 <!-- TÍTULO DA SEGUNDA AULA NIVEL 1-->
+                 <div class="title-class"><img src="/Media/images/White Key.svg" alt="#"><h4 id="heading_aula_02_01">Título da aula 02-01</h4></div>
+                   <!-- IMAGEM DA SEGUNDA AULA NIVEL 1 -->
+                   <div class="image-content"><img id="imagem-aula-02_01" src="/Media/images/image-second-container.png" alt="imagem-aula01"></div>  
+                   <!-- DESCRIÇÃO DA SEGUNDA AULA NIVEL 1 -->
+                   <div class="bottom-card-02_01">
+                      <div class="description-class"><h4 id="descript_aula_02_01">Descrição da Aula 02-01</h4></div>
+                    <!-- BOTÃO PARA CONTINUAR PARA SEGUNDA AULA NIVEL 1 -->
+                    <button id="continue_aula_02_01">CONTINUAR</button>
+                </div>    
+                </div>
+            <div class="third-container">
+               <!-- TÍTULO DA TERCEIRA AULA NIVEL 1-->
+               <div class="title-class"><img src="/Media/images/White Key.svg" alt="#"><h4 id="heading_aula_03_01">Título da aula 03-01</h4></div>
+                 <!-- IMAGEM DA TERCEIRA AULA NIVEL 1 -->
+                 <div class="image-content"><img id="imagem-aula-03_01" src="/Media/images/image-third-container.png" alt="imagem-aula01"></div>
+                 <!-- DESCRIÇÃO DA TERCEIRA AULA NIVEL 1 -->
+                 <div class="bottom-card-03_01">
+                 <div class="description-class"><h4 id="descript_aula_03_01">Descrição da Aula 03-01</h4></div>
+                     <!-- BOTÃO PARA CONTINUAR PARA TERCEIRA AULA NIVEL 1 -->
+                     <button id="continue_aula_03_01">CONTINUAR</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+</main>
+<!-- Referências ao JS e JS bundle incluindo Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!-- script para gerir eventos do carousel dos CARDS da descrição das aulas -->
+<script src="/JS/Level.js"></script>
+</body>
+</html>

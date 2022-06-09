@@ -1,0 +1,672 @@
+/* Fonts family of App fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Arima+Madurai:wght@800&family=Bree+Serif&family=Bungee+Shade&family=Butcherman&family=Cormorant+SC:wght@300&family=Creepster&family=Diplomata+SC&family=Eater&family=Frijole&family=Germania+One&family=Hanalei+Fill&family=IM+Fell+DW+Pica+SC&family=IM+Fell+Double+Pica+SC&family=IM+Fell+Great+Primer+SC&family=Inknut+Antiqua:wght@300&family=Jomolhari&family=Julius+Sans+One&family=Lacquer&family=Libre+Franklin:wght@300&family=Metal+Mania&family=Monofett&family=Nosifer&family=Pinyon+Script&family=Quintessential&family=Syncopate&family=Trade+Winds&family=UnifrakturMaguntia&display=swap');
+@import url('https://www.cufonfonts.com/font/feather-2');
+
+/* to import the fonts para importar fontes */
+@font-face{
+    src: url(https://www.cufonfonts.com/font/feather-2);
+    font-family: 'Feather', cursive;
+}
+
+/* global selector for impact all the html document (body) 
+selector global para impactar o todo o documento html*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: 'Feather', cursive;
+}
+
+body{
+    background-color: #989BD1;
+    height:120vh;
+}
+
+/* header */
+.header{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    background:#005086;
+    width: 98.9vw;
+    height: 86px;
+}
+
+
+/* header logo */
+.logo{
+    display:flex;
+    position: relative;
+    left:10px;
+    width: 115px;
+    height: 91px;
+}
+
+/* navbarlist */
+.navbar-list{
+    font-size:15px;
+    display:flex;
+    gap:4.8rem;
+    list-style:none;
+}
+
+.navbar-link a:link{
+     display:inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.navbar-list a{
+    color: #fff;
+}
+
+.navbar-list{
+    display:flex;
+    margin-top: 19.5px;
+    margin-left: -100px;
+}
+
+.select-link{
+    display: flex;
+    background-color: #989BD1;
+    height:86px;
+    width:120px;
+    position: relative;
+    left:151px;
+}
+
+.navbar{
+    display: flex;
+    margin-left: -70px;
+}
+
+
+/* button logout */
+.buttonHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #989BD1;
+    border-radius: 12px;
+    width:97px;
+    height:46px;
+    margin-top:-17px;
+    margin-left: 730px;
+}
+
+.iconify{
+    height:23px;
+    width:23px;
+}
+
+nav li{
+    margin-top:10px;
+}
+
+.navbar-link a:hover{
+    color: #989BD1;
+}
+
+.navbar-link .aulas:hover{
+    color: #ffff;
+}
+
+.carousel-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 30px;
+}
+
+/* NÍVEL 1 BLOQUEADO */
+#carousel_nvl_One{
+    border:none;
+    outline:none;
+    background: rgba(255, 255, 255, 0.5);
+    color: #005086;
+    font-weight: bolder;
+    border-radius: 12px;
+    width: 7%;
+    padding: 1px;
+}
+
+
+/* NÍVEL 2 DESBLOQUEADO  */
+#carousel_nvl_Two{
+    border:none;
+    outline:none;
+    background:#fff;
+    color: #005086;
+    font-weight: bolder;
+    border-radius: 12px;
+    width: 7%;
+    padding: 1px;
+}
+
+/* NÍVEL 3 BLOQUEADO */
+#carousel_nvl_Three{
+    border:none;
+    outline:none;
+    background: rgba(255, 255, 255, 0.5);
+    color: #005086;
+    font-weight: bolder;
+    border-radius: 12px;
+    width: 7%;
+    padding: 1px;
+}
+
+/* TODOS OS CARDS EM FLEX DO NIVEL 1 */
+.carousel-content-page-01{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+}
+
+/* PRIMEIRO CARD */
+/* TÍTULO DO PRIMEIRO CARD NIVEL 1 */
+.first-container > .title-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #5259CD;
+    color: #fff;
+    font-weight: bolder;
+    height: 10vh;
+}
+
+/* BOTTOM DO PRIMEIRO CARD DO NIVEL 1 */
+.bottom-card-01_01{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background:#5259CD;
+    height:25vh;
+}
+
+/* DESCRIÇÃO DO PRIMEIRO CARD DO NIVEL 1 */
+ #descript_aula_01_01{
+    margin-top: 25px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* BOTÃO CONTINUAR DO PRIMEIRO CARD DO NIVEL 1 */
+#continue_aula_01_01{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    outline:none;
+    background:#989BD1;
+    color: #ffff;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 12px; 
+}
+
+#continue_aula_01_01{
+    transition: 850ms;
+}
+
+#continue_aula_01_01:hover{
+    background:#005086;
+    color:#fff;
+}
+
+/* SEGUNDO CARD */
+/* TÍTULO DO SEGUNDO CARD NIVEL 1 */
+.second-container > .title-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #5259CD;
+    color: #fff;
+    font-weight: bolder;
+    height: 10vh;
+}
+
+/* BOTTOM DO SEGUNDO CARD DO NIVEL 1 */
+.bottom-card-02_01{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background:#5259CD;
+    height:25vh;
+}
+
+/* DESCRIÇÃO DO SEGUNDO CARD DO NIVEL 1 */
+ #descript_aula_02_01{
+    margin-top: 25px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* BOTÃO CONTINUAR DO SEGUNDO CARD DO NIVEL 1 */
+#continue_aula_02_01{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    outline:none;
+    background:#989BD1;
+    color: #ffff;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 12px; 
+}
+
+#continue_aula_02_01{
+    transition: 850ms;
+}
+
+#continue_aula_02_01:hover{
+    background:#005086;
+    color:#fff;
+}
+
+
+/* TERCEIRO CARD */
+/* TÍTULO DO TERCEIRO CARD NIVEL 1 */
+.third-container > .title-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #5259CD;
+    color: #fff;
+    font-weight: bolder;
+    height: 10vh;
+}
+
+/* BOTTOM DO TERCEIRO CARD DO NIVEL 1 */
+.bottom-card-03_01{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background:#5259CD;
+    height:25vh;
+}
+
+/* DESCRIÇÃO DO TERCEIRO CARD DO NIVEL 1 */
+ #descript_aula_03_01{
+    margin-top: 25px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* BOTÃO CONTINUAR DO TERCEIRO CARD DO NIVEL 1 */
+#continue_aula_03_01{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    outline:none;
+    background:#989BD1;
+    color: #ffff;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 12px; 
+}
+
+#continue_aula_03_01{
+    transition: 850ms;
+}
+
+#continue_aula_03_01:hover{
+    background:#005086;
+    color:#fff;
+}
+
+
+/* TODOS OS CARDS EM FLEX DO NIVEL 2 */
+.carousel-content-page-02{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+}
+
+/* PRIMEIRO CARD */
+/* TÍTULO DO PRIMEIRO CARD NIVEL 2 */
+.first-container > .title-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #5259CD;
+    color: #fff;
+    font-weight: bolder;
+    height: 10vh;
+}
+
+/* BOTTOM DO PRIMEIRO CARD DO NIVEL 2 */
+.bottom-card-01_02{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background:#5259CD;
+    height:25vh;
+}
+
+/* DESCRIÇÃO DO PRIMEIRO CARD DO NIVEL 2 */
+ #descript_aula_01_02{
+    margin-top: 25px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* BOTÃO CONTINUAR DO PRIMEIRO CARD DO NIVEL 2 */
+#continue_aula_01_02{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    outline:none;
+    background:#989BD1;
+    color: #ffff;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 12px; 
+}
+
+#continue_aula_01_02{
+    transition: 850ms;
+}
+
+#continue_aula_01_02:hover{
+    background:#005086;
+    color:#fff;
+}
+
+/* SEGUNDO CARD */
+/* TÍTULO DO SEGUNDO CARD NIVEL 2 */
+.second-container > .title-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #5259CD;
+    color: #fff;
+    font-weight: bolder;
+    height: 10vh;
+}
+
+/* BOTTOM DO SEGUNDO CARD DO NIVEL 2 */
+.bottom-card-02_02{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background:#5259CD;
+    height:25vh;
+}
+
+/* DESCRIÇÃO DO SEGUNDO CARD DO NIVEL 2 */
+ #descript_aula_02_02{
+    margin-top: 25px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* BOTÃO CONTINUAR DO SEGUNDO CARD DO NIVEL 2 */
+#continue_aula_02_02{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    outline:none;
+    background:#989BD1;
+    color: #ffff;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 12px; 
+}
+
+#continue_aula_02_02{
+    transition: 850ms;
+}
+
+#continue_aula_02_02:hover{
+    background:#005086;
+    color:#fff;
+}
+
+
+/* TERCEIRO CARD */
+/* TÍTULO DO TERCEIRO CARD NIVEL 2 */
+.third-container > .title-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #5259CD;
+    color: #fff;
+    font-weight: bolder;
+    height: 10vh;
+}
+
+/* BOTTOM DO TERCEIRO CARD DO NIVEL 2 */
+.bottom-card-03_02{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background:#5259CD;
+    height:25vh;
+}
+
+/* DESCRIÇÃO DO TERCEIRO CARD DO NIVEL 2 */
+ #descript_aula_03_02{
+    margin-top: 25px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* BOTÃO CONTINUAR DO TERCEIRO CARD DO NIVEL 2 */
+#continue_aula_03_02{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    outline:none;
+    background:#989BD1;
+    color: #ffff;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 12px; 
+}
+
+#continue_aula_03_02{
+    transition: 850ms;
+}
+
+#continue_aula_03_02:hover{
+    background:#005086;
+    color:#fff;
+}
+
+/* TODOS OS CARDS EM FLEX DO NIVEL 3 */
+.carousel-content-page-03{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+}
+
+/* PRIMEIRO CARD */
+/* TÍTULO DO PRIMEIRO CARD NIVEL 3 */
+.first-container > .title-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #5259CD;
+    color: #fff;
+    font-weight: bolder;
+    height: 10vh;
+}
+
+/* BOTTOM DO PRIMEIRO CARD DO NIVEL 3 */
+.bottom-card-01_03{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background:#5259CD;
+    height:25vh;
+}
+
+/* DESCRIÇÃO DO PRIMEIRO CARD DO NIVEL 3 */
+ #descript_aula_01_03{
+    margin-top: 25px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* BOTÃO CONTINUAR DO PRIMEIRO CARD DO NIVEL 3 */
+#continue_aula_01_03{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    outline:none;
+    background:#989BD1;
+    color: #ffff;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 12px; 
+}
+
+#continue_aula_01_03{
+    transition: 850ms;
+}
+
+#continue_aula_01_03:hover{
+    background:#005086;
+    color:#fff;
+}
+
+/* SEGUNDO CARD */
+/* TÍTULO DO SEGUNDO CARD NIVEL 3 */
+.second-container > .title-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #5259CD;
+    color: #fff;
+    font-weight: bolder;
+    height: 10vh;
+}
+
+/* BOTTOM DO SEGUNDO CARD DO NIVEL 3 */
+.bottom-card-02_03{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background:#5259CD;
+    height:25vh;
+}
+
+/* DESCRIÇÃO DO SEGUNDO CARD DO NIVEL 3 */
+ #descript_aula_02_03{
+    margin-top: 25px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* BOTÃO CONTINUAR DO SEGUNDO CARD DO NIVEL 3 */
+#continue_aula_02_03{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    outline:none;
+    background:#989BD1;
+    color: #ffff;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 12px; 
+}
+
+#continue_aula_02_03{
+    transition: 850ms;
+}
+
+#continue_aula_02_03:hover{
+    background:#005086;
+    color:#fff;
+}
+
+
+/* TERCEIRO CARD */
+/* TÍTULO DO TERCEIRO CARD NIVEL 3 */
+.third-container > .title-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #5259CD;
+    color: #fff;
+    font-weight: bolder;
+    height: 10vh;
+}
+
+/* BOTTOM DO TERCEIRO CARD DO NIVEL 3 */
+.bottom-card-03_03{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background:#5259CD;
+    height:25vh;
+}
+
+/* DESCRIÇÃO DO TERCEIRO CARD DO NIVEL 3 */
+ #descript_aula_03_03{
+    margin-top: 25px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* BOTÃO CONTINUAR DO TERCEIRO CARD DO NIVEL 3 */
+#continue_aula_03_03{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    outline:none;
+    background:#989BD1;
+    color: #ffff;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 12px; 
+}
+
+#continue_aula_03_03{
+    transition: 850ms;
+}
+
+#continue_aula_03_03:hover{
+    background:#005086;
+    color:#fff;
+}
