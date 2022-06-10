@@ -71,25 +71,46 @@ DA PRIMEIRA AULA DO NÍVEL 1  -->
                 <div class="likes"><img id="likes-img" src="/Media/images/Likes-icon-video.svg" alt="#"><span id="likes">0 likes</span></div>
             </div>
           </div>
-            <!-- ZONA DAS ETIQUETAS -->
-            <div class="acordion-guide">
-              <div class="accordion-item">
-                <div class="accordion-item-header">
-                  ETIQUETAS DO VÍDEO
-                </div>
-                <div class="accordion-item-body">
-                  <div class="accordion-item-body-content">
-                    <!-- TIMESTAMPS OU FRAMES DO VÍDEO-->
-                    <!-- ALTERAR A SRC DO TIMESTAMPS OU FRAMES DE ACORDO COM O VÍDEO -->
-                    
+          
+                      <!-- ETIQUETAS -->
+    <div class="second-container">
+      <div class="acordion-guide">
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            ETIQUETAS DO VÍDEO
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+           <!-- TIMESTAMPS OU FRAMES DO VÍDEO -->
+           <!-- PRIMEIRO FRAME EXEMPLO -->
+           <div class="frames">
+          <div class="start"><span id="frame01">00:00</span>Inicío do Vídeo</span></div>
+            <!-- SEGUNDO FRAME EXEMPLO -->
+          <div class="second-frame"><span id="frame02">00:10</span> Segundo Frame</span></div>
+            <!-- TERCEIRO FRAME EXEMPLO -->
+          <div class="third-frame"><span id="frame03">00:20</span>  Terceiro Frame</span></div>
+          <!-- QUARTO FRAME EXEMPLO -->
+          <div class="fourth-frame"><span id="frame04">00:30</span>  Quarto Frame</span></div>
+        </div>
+        </div>
+          </div>
+        </div>
+      </div>
                   </div>
                 </div>
               </div>
             </div>
         </div>
+        <!-- COMENTÁRIOS DO VÍDEO -->
+          <div class="comentarios-container">
+            <!-- ALTEAR COM TEMPLATE STRINGS O Nº DE COMENTÁRIOS eg: `COMENTÁRIOS(${numberComments})` POR EXEMPLO COM UM VALOR DA QUANTIDADE DE COMMENTS ARMAZENADO NA VARIAVEL numberComments-->
+            <div class="heading"><span id="comments-header">COMENTÁRIOS(0)</span></div>
+            
+          </div>
     </main>
 
     <!-- Referências ao JS e JS bundle incluindo Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="/JS/Lesson.js"></script>
 </body>
 </html>
