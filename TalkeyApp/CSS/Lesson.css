@@ -1,0 +1,204 @@
+/* Fonts family of App fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Arima+Madurai:wght@800&family=Bree+Serif&family=Bungee+Shade&family=Butcherman&family=Cormorant+SC:wght@300&family=Creepster&family=Diplomata+SC&family=Eater&family=Frijole&family=Germania+One&family=Hanalei+Fill&family=IM+Fell+DW+Pica+SC&family=IM+Fell+Double+Pica+SC&family=IM+Fell+Great+Primer+SC&family=Inknut+Antiqua:wght@300&family=Jomolhari&family=Julius+Sans+One&family=Lacquer&family=Libre+Franklin:wght@300&family=Metal+Mania&family=Monofett&family=Nosifer&family=Pinyon+Script&family=Quintessential&family=Syncopate&family=Trade+Winds&family=UnifrakturMaguntia&display=swap');
+@import url('https://www.cufonfonts.com/font/feather-2');
+
+/* to import the fonts para importar fontes */
+@font-face{
+    src: url(https://www.cufonfonts.com/font/feather-2);
+    font-family: 'Feather', cursive;
+}
+
+/* global selector for impact all the html document (body) 
+selector global para impactar o todo o documento html*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: 'Feather', cursive;
+}
+
+body{
+    background-color: #989BD1;
+    height:120vh;
+}
+
+/* header */
+.header{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    background:#005086;
+    width: 98.9vw;
+    height: 86px;
+}
+
+
+/* header logo */
+.logo{
+    display:flex;
+    position: relative;
+    left:10px;
+    width: 115px;
+    height: 91px;
+}
+
+/* navbarlist */
+.navbar-list{
+    font-size:15px;
+    display:flex;
+    gap:4.8rem;
+    list-style:none;
+}
+
+.navbar-link a:link{
+     display:inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.navbar-list a{
+    color: #fff;
+}
+
+.navbar-list{
+    display:flex;
+    margin-top: 19.5px;
+    margin-left: -100px;
+}
+
+.select-link{
+    display: flex;
+    background-color: #989BD1;
+    height:86px;
+    width:120px;
+    position: relative;
+    left:151px;
+}
+
+.navbar{
+    display: flex;
+    margin-left: -70px;
+}
+
+
+/* button logout */
+.buttonHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #989BD1;
+    border-radius: 12px;
+    width:97px;
+    height:46px;
+    margin-top:-17px;
+    margin-left: 730px;
+}
+
+.iconify{
+    height:23px;
+    width:23px;
+}
+
+nav li{
+    margin-top:10px;
+}
+
+.navbar-link a:hover{
+    color: #989BD1;
+}
+
+.navbar-link .aulas:hover{
+    color: #ffff;
+}
+
+.container-key-collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-key-collection > .heading{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.container-keys{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 60px;
+    margin-top: -30px;
+}
+
+.nota-jogo{
+    display: flex;
+    color: #005086;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    gap: 10px;
+    margin-top: -7px;
+}
+
+.aula-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aula-container > .heading-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 30px;
+    padding:40px;
+    margin-top: 10px;
+    transform: translateY(40%);
+    letter-spacing: 4px;
+}
+
+.container-likes-shares{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 240px;
+}
+
+.shares{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    color: #005086;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.likes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    color: #005086;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+/* ACORDEÕES */
+
