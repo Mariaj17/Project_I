@@ -150,55 +150,54 @@ nav li{
     margin-top: -7px;
 }
 
-.aula-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.aula-container > .heading-class{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#heading-class{
     color: #fff;
     font-weight: bolder;
-    font-size: 30px;
-    padding:40px;
-    margin-top: 10px;
-    transform: translateY(40%);
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    display:flex;
+    justify-content:flex-start;
+    padding-top: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.video-etiquetas-container{
+    display: flex;
+    margin-left: 20px;
+}
+
+.video-likes-shares{
+    display: flex;
+    flex-direction:column;
 }
 
 .container-likes-shares{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 240px;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 .shares{
+    cursor:pointer;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    gap: 20px;
-    cursor: pointer;
+    gap: 10px;
     color: #005086;
     font-weight: bolder;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .likes{
+    cursor:pointer;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    gap: 20px;
-    cursor: pointer;
+    gap: 10px;
     color: #005086;
     font-weight: bolder;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
-/* ACORDEÕES */
+
 
