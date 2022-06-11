@@ -396,6 +396,198 @@ nav li{
  }
  
  /* COMENTÁRIOS */
- 
- 
+ .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
 
+#comment-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+#userAvatar{
+    height:60px;
+}
+
+.username{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+ #comment{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    border:none;
+    outline: none;
+    border-bottom: 4px solid #00508633;
+    background-color: transparent;
+    transition: 850ms;
+}
+
+#comment::placeholder{
+    color: #005086;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#comment{
+    color: #005086;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    width: 600px;
+    height: 30px;
+}
+
+.comentarios-container > .heading{
+    display:flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    padding: 40px;
+    color: #005086;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.comentarios-container{
+    background-color:#EDEEFF;
+    padding:10px;
+    margin: 40px;
+    border-radius: 12px;
+}
+
+.btns{
+    display: flex;
+    gap: 10px;
+    padding:20px;
+    margin-top: 10px;
+}
+
+.btns{
+    transform: translate(-90%,40%);
+}
+
+#userAvatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cancelbtn{
+    background-color: #EDEEFF;
+    border:none;
+    outline:none;
+    color: #005086;
+    font-weight: bolder;
+    cursor:default;
+}
+
+#commentbtn{
+    display: flex;
+    border:none;
+    outline:none;
+    color:#EDEEFF;
+    border-radius: 12px;
+    background-color: #005086;
+    padding:4px;
+    cursor:default;
+}
+
+#commentbtn{
+    transition: 850ms;
+}
+
+#commentbtn:hover{
+    background: #5259CD;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btns{
+    opacity:0;
+}
+
+.addUserComment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #ffff;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.addUserComment  #username{
+    margin-left: -30px;
+}
+
+#timeComment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13.2px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.commentContent{
+    display: flex;
+    margin-left: -182px;
+}
+
+#timeComment{
+    display: flex;
+    transform: translateY(210%);
+}
+
+.addUserComment{
+    background: #005086;
+    padding:25px;
+    border-radius: 22px;
+    width: 150%;
+}
+
+.addUserComment{
+    display: flex;
+    justify-content:flex-start;
+    
+}
+
+.commentContent{
+    display: flex;
+    transform: translateY(70%)
+}
+
+.addUsercontentComment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    transform: translateY(-2%);
+}
+
+.add-comments-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/* TEMPLATE DO QUESTIONÁRIO DOS TRÊS EXERCICÍOS */
+/* ARÉA DOS TRÊS EXERCICÍOS */

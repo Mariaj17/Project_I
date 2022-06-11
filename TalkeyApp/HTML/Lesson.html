@@ -1,3 +1,4 @@
+<!-- OS CONTEUDOS DA PÁGINA DE EXERCICÍOS É ALTERADO VIA JS -->
 <!-- TEMPLATE DA PÁGINA DE EXERCICÍOS DA VÍDEOAULA - O ALUNO POR DEFEITO SÓ TERÁ ACESSO AS AULAS DO NIVEL 1 - NESTE CASO ESTÁ É A PÁGINA
 DA PRIMEIRA AULA DO NÍVEL 1  -->
 <!DOCTYPE html>
@@ -6,7 +7,8 @@ DA PRIMEIRA AULA DO NÍVEL 1  -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AULA 1 - NÍVEL 1 - TALKEY</title>
+    <!-- O TITULO DA PAGINA ALTERA CONSOANTE A AULA E O NIVEL VIA JS -->
+    <title id="title">AULA 1 - NÍVEL 1 - TALKEY</title>
      <!-- Referências ao CSS e Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="/CSS/Lesson.css">
@@ -105,7 +107,24 @@ DA PRIMEIRA AULA DO NÍVEL 1  -->
           <div class="comentarios-container">
             <!-- ALTEAR COM TEMPLATE STRINGS O Nº DE COMENTÁRIOS eg: `COMENTÁRIOS(${numberComments})` POR EXEMPLO COM UM VALOR DA QUANTIDADE DE COMMENTS ARMAZENADO NA VARIAVEL numberComments-->
             <div class="heading"><span id="comments-header">COMENTÁRIOS(0)</span></div>
-            
+            <!-- CONTAINER DOS COMENTÁRIOS -->
+            <div class="container">
+                <form id="comment-form">
+                  <!-- IMAGEM DO AVATAR DO USER E O NOME DO USER A SER INJETADO VIA JS -->
+                <div class="username">
+                  <img id="userAvatar" src="/Media/images/avatar01.png" alt="#"><span id="username"></span>
+                  <input type="text" id="comment" class="commentUser" placeholder="Adicione um comentário...">
+                    <div class="btns">
+                    <button type="button" name="button" id="cancelbtn">CANCELAR</button>
+                    <button type="button" name="button" id="commentbtn">COMENTAR</button>
+                  </div>  
+                    </div>
+                    <!-- injetado via js -->
+                    <div class="add-comments-container">
+                     
+                    </div>
+                  </form>
+            </div>
           </div>
     </main>
 
