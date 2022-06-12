@@ -103,10 +103,15 @@ DA PRIMEIRA AULA DO NÍVEL 1  -->
               </div>
             </div>
         </div>
-        <!-- COMENTÁRIOS DO VÍDEO -->
+
+       
+        <!-- ACORDEÃO DOS COMENTÁRIOS -->
           <div class="comentarios-container">
-            <!-- ALTEAR COM TEMPLATE STRINGS O Nº DE COMENTÁRIOS eg: `COMENTÁRIOS(${numberComments})` POR EXEMPLO COM UM VALOR DA QUANTIDADE DE COMMENTS ARMAZENADO NA VARIAVEL numberComments-->
+            <div class="accordion">
+              <div class="accordion-header">
             <div class="heading"><span id="comments-header">COMENTÁRIOS(0)</span></div>
+          </div>
+          <div class="accordion-body">
             <!-- CONTAINER DOS COMENTÁRIOS -->
             <div class="container">
                 <form id="comment-form">
@@ -121,11 +126,98 @@ DA PRIMEIRA AULA DO NÍVEL 1  -->
                     </div>
                     <!-- injetado via js -->
                     <div class="add-comments-container">
-                     
                     </div>
                   </form>
             </div>
           </div>
+          </div>
+        </div>
+
+        <!-- TEMPLATE DOS EXERCICIOS -->
+        <!-- EXERCICÍOS -->
+        <!-- O SEU CONTEUDO É ALTERADO VIA JS -->
+        <!--CONTAINER DO EXERCICIO 1 -->
+        <div class="exercise-container-01">
+          <div class="heading">
+          <div class="exercises-heading"><span>PRATIQUE O SEU ALEMÃO</span></div>
+        </div>
+        <!-- EXERCICÍO 1 -->
+          <div class="heading-ex-01">
+            <div class="round-ex01">
+            <span>EXERCICÍO 1</span>
+          </div>
+          </div>
+          <!-- ENUNCIADO DO EXERCÍCIO 1 ALTERADO VIA JS -->
+          <div class="ex01-question">
+            <span id="ex-01question">Questionário do Exercicío 1</span>
+          </div>
+          <!-- AS OPÇÕES DO EXERCICÍO 1  -->
+          <!-- O SEU CONTÚEDO É ALTERADO VIA JS -->
+          <form class="EX01-OPTS">
+          <div class="option-group-ex01">
+            <div class="optionOne-ex01"><button id="op01ex01">OPÇÃO 1</button></div>
+            <div class="optionTwo-ex01"><button id="op02ex01">OPÇÃO 2</button></div>
+            <div class="optionThree-ex01"><button id="op03ex01">OPÇÃO 3</button></div>
+          </div>
+          <!-- BOTÃO DE SUBMISSÃO DA OPÇÃO ESCOLHIDA -->
+         <input type="submit" value="CONFIRMAR" id="submitAnswerEX01">
+        </form>
+        </div>
+        <!-- EXERCICIO 2 -->
+        <div class="exercise-container-02">
+          <div class="heading-ex-02">
+            <div class="round-ex02">
+            <span>EXERCICÍO 2</span>
+          </div>
+          </div>
+            <!-- ENUNCIADO DO EXERCÍCIO 2 ALTERADO VIA JS -->
+            <div class="ex02-question">
+              <span id="ex-02question">ESCOLHA A PALAVRA EM FALTA:</span>
+              <div class="ex-02-subquestion"><span id="ex-02subquestion">ICH BIN EIN______________</span></div>
+            </div> 
+            <form class="EX02-OPTS">
+          <div class="option-group-ex02">
+            <div class="optionOne-ex02"><button id="op01ex02">OPÇÃO 1</button></div>
+            <div class="optionTwo-ex02"><button id="op02ex02">OPÇÃO 2</button></div>
+          </div>
+           <!-- BOTÃO DE SUBMISSÃO DA OPÇÃO ESCOLHIDA -->
+         <input type="submit" value="CONFIRMAR" id="submitAnswerEX02">
+        </form>
+        <!-- EXERCICIO 3 -->
+        <div class="exercise-container-03">
+          <div class="heading-ex-03">
+            <div class="round-ex03">
+            <span>EXERCICÍO 3</span>
+          </div>
+          </div>
+          <div class="ex03-question">
+            <span id="ex-03question">COMBINA OS PARES:</span>
+            <div class="ex-03-subquestion"><span id="ex-03subquestion">NOTA: TENTE COMBINAR OS PARES DE FORMA A TRADUZIR DO PORTUGUÊS PARA O ALEMÃO</span></div>
+          </div> 
+          <form class="EX03-OPTS">
+            <div class="group-opts">
+            <div class="option-group01-ex03">
+              <div class="optionOne-ex03"><button id="op01ex03">OPÇÃO 1</button></div>
+              <div class="optionTwo-ex03"><button id="op02ex03">OPÇÃO 2</button></div>
+              <div class="optionThree-ex03"><button id="op03ex03">OPÇÃO 3</button></div>
+              <div class="optionFour-ex03"><button id="op04ex03">OPÇÃO 4</button></div>
+              <div class="optionFive-ex03"><button id="op05ex03">OPÇÃO 5</button></div>
+            </div>
+            <div class="option-group02-ex03">
+                  <!-- Möglichkeit = OPÇÃO EM PORTUGUÊS -->
+              <div class="option01-ex03"><button id="op01Vex03">Möglichkeit 1</button></div>
+              <div class="option02-ex03"><button id="op02Vex03">Möglichkeit 2</button></div>
+              <div class="option03-ex03"><button id="op03Vex03">Möglichkeit 3</button></div>
+              <div class="option04-ex03"><button id="op04Vex03">Möglichkeit 4</button></div>
+              <div class="option05-ex03"><button id="op05Vex03">Möglichkeit 5</button></div>
+            </div>
+          </div>
+             <!-- BOTÃO DE SUBMISSÃO DA OPÇÃO ESCOLHIDA -->
+           <input type="submit" value="CONFIRMAR" id="submitAnswerEX03">
+          </form>
+          <!--  -->
+        </div>
+        </div>
     </main>
 
     <!-- Referências ao JS e JS bundle incluindo Popper -->

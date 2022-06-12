@@ -449,16 +449,18 @@ nav li{
 .comentarios-container > .heading{
     display:flex;
     justify-content: flex-start;
-    margin-left: 20px;
-    padding: 40px;
+    margin-left: 30px;
+    padding: 60px;
     color: #005086;
     font-weight: bolder;
     font-size: 20px;
+    padding-top: 40px;
 }
 
+
 .comentarios-container{
+    box-shadow:  0 2px 8px 0 rgba(0,0,0,0.5);
     background-color:#EDEEFF;
-    padding:10px;
     margin: 40px;
     border-radius: 12px;
 }
@@ -589,5 +591,48 @@ nav li{
     align-items: center;
     gap: 20px;
 }
+
+/* PARA O ACORDEÃO DOS COMENTÁRIOS */
+.accordion-header{
+    padding: 0.9rem 4rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bolder;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    color:#fff;
+    font-weight: bolder;
+    background: #005086;
+    padding: 10px;
+    border-radius: 12px;
+    border-bottom: 6px solid #ffff;
+    box-shadow:  0 2px 8px 0 rgba(0,0,0,0.5);
+}
+
+.accordion-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 850ms ease-out;
+}
+
+.accordion-header::after{
+    content : url(/Media/images/arrow-down-accordeon.svg);
+    font-size: 25px;
+    position:absolute;
+    right: 1rem;
+    display: flex;
+    justify-content:center;
+}
+
+.accordion-header.actived::after{
+    content: url(/Media/images/arrow-up-accordeon.svg)
+}
+
+
+
 /* TEMPLATE DO QUESTIONÁRIO DOS TRÊS EXERCICÍOS */
 /* ARÉA DOS TRÊS EXERCICÍOS */
