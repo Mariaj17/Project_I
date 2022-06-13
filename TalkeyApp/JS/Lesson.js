@@ -34,6 +34,12 @@ accordionItemHeaders02.forEach(accordionItemHeader => {
     })
 })
 
+// -------------------------------------------PARA SELECIONAR PARES DE BOTÕES----------------------------------------------------------------
+// COMBINAR PARES DE BOTÕES
+
+
+
+
 // -----------------------------------PARA OS COMENTÁRIOS COLOCAR NA LOCALSTORAGE-------------------------------
 const commentField = document.querySelector('#comment');
 const backUp = commentField.getAttribute('placeholder');

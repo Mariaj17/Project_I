@@ -632,7 +632,701 @@ nav li{
     content: url(/Media/images/arrow-up-accordeon.svg)
 }
 
+/* ---------------------------------TEMPLATE DO QUESTIONÁRIO DOS TRÊS EXERCICÍOS */
+/* -----------------------------------------------ARÉA DOS TRÊS EXERCICÍOS */
+.exercise-container-01 > .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing:2px;
+    color: #ffff;
+    font-weight:bolder;
+    background-color: #005086;
+    padding: 20px;
+}
+
+.heading-ex-01{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 30px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.round-ex01{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #005086;
+    padding: 10px;
+    border-radius:22px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.exercise-container-01{
+    background-color: #EDEEFF;
+}
+
+.ex01-question > #ex-01question {
+    display: flex;
+    margin-left:70px;
+    color: #005086;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+/* OPÇÃO 1 DO EXERCICIO 1 */
+.option-group-ex01{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding:60px;
+}
+
+/* OPÇÃO 1 DO EXERCICIO 1 */
+#op01ex01{
+    border:none;
+    outline:none;
+    background:#989BD1;
+    padding: 20px;
+    width: 500px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing:2px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+/* EFEITO HOVER NO BOTÃO */
+#op01ex01{
+    transition: 850ms;
+}
+
+#op01ex01:hover{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+/* OPÇÃO 2 DO EXERCICIO 1 */
+#op02ex01{
+    border:none;
+    outline:none;
+    background:#989BD1;
+    padding: 20px;
+    width: 500px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing:2px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+/* EFEITO HOVER NO BOTÃO */
+#op02ex01{
+    transition: 850ms;
+}
+
+#op02ex01:hover{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+/* OPÇÃO 3 DO EXERCICIO 1 */
+#op03ex01{
+    border:none;
+    outline:none;
+    background:#989BD1;
+    padding: 20px;
+    width: 500px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing:2px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+/* EFEITO HOVER NO BOTÃO */
+#op03ex01{
+    transition: 850ms;
+}
+
+#op03ex01:hover{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+/* EFEITO FOCUS QUANDO SELECIONADO A OPÇÃO */
+#op01ex01:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op02ex01:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op03ex01:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+/* BOTÃO DE CONFIRMAR EXERCICIO 1 */
+.btn-submit-ex01-01{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.btn-submit-ex01-01 > #submitAnswerEX01{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border:none;
+    outline:none;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    background: #005086;
+    padding: 20px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 300px;
+}
+
+.btn-submit-ex01-01 > #submitAnswerEX01{
+    transition: 850ms;
+}
+
+.btn-submit-ex01-01 > #submitAnswerEX01:hover{
+    background: #5259CD;
+}
 
 
-/* TEMPLATE DO QUESTIONÁRIO DOS TRÊS EXERCICÍOS */
-/* ARÉA DOS TRÊS EXERCICÍOS */
+/* EXERCICIO 2 */
+.exercise-container-02 > .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing:2px;
+    color: #ffff;
+    font-weight:bolder;
+    background-color: #005086;
+    padding: 20px;
+}
+
+.heading-ex-02{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 30px;
+    letter-spacing: 2px;
+    color: #005086;
+    font-weight: bolder;
+}
+
+.round-ex02{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #ffff;
+    padding: 10px;
+    border-radius:22px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ex02-question > #ex-02question {
+    display: flex;
+    margin-left:70px;
+    color: #ffff;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+#ex-02subquestion{
+    display: flex;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing:1px;
+    margin-left: 80px;
+    padding: 25px;
+}
+
+/* OPÇÕES DO EXERCICIO 2  */
+/* OPÇÃO 1 EXERCICIO 2 */
+.option-group-ex02{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px;
+}
+
+/* OPÇÃO 1 EXERCICIO 2 */
+#op01ex02{
+    border:none;
+    outline:none;
+    background:#005086;
+    padding: 20px;
+    width: 500px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 24px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 14px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing:2px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+/* OPÇÃO 2 EXERCICIO 2 */
+#op02ex02{
+    border:none;
+    outline:none;
+    background:#005086;
+    padding: 20px;
+    width: 500px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 24px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 14px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing:2px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#op01ex02{
+    transition: 850ms;
+}
+
+#op01ex02:hover{
+    background:#fff;
+    box-shadow: 0px 14px 14px rgba(116, 21, 164, 0.622);
+    color: #005086;
+    font-weight: bolder;
+}
+
+#op02ex02{
+    transition: 850ms;
+}
+
+#op02ex02:hover{
+    background:#fff;
+    box-shadow: 0px 14px 14px rgba(116, 21, 164, 0.622);
+    color: #005086;
+    font-weight: bolder;
+}
+
+/* EFEITO FOCUS COM A OPÇÃO SELECIONADA DO EXERCICIO 2 */
+#op01ex02:focus{
+    background:#fff;
+    box-shadow: 0px 14px 14px rgba(116, 21, 164, 0.622);
+    color: #005086;
+    font-weight: bolder;
+}
+
+#op02ex02:focus{
+    background:#fff;
+    box-shadow: 0px 14px 14px rgba(116, 21, 164, 0.622);
+    color: #005086;
+    font-weight: bolder;
+}
+
+/* BOTÃO DE CONFIRMAR EXERCICIO 2 */
+.btn-submit-ex02-01{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.btn-submit-ex02-01 > #submitAnswerEX02{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border:none;
+    outline:none;
+    color: #005086;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 300px;
+}
+
+.btn-submit-ex02-01 > #submitAnswerEX02{
+    transition: 850ms;
+}
+
+.btn-submit-ex02-01 > #submitAnswerEX02:hover{
+    background: #005086;
+    color: #fff;
+    box-shadow: 0px 14px 14px rgba(116, 21, 164, 0.622);
+}
+
+
+/* EXERCICIO 3 */
+.exercise-container-03{
+    background:#EDEEFF;
+    margin-top: 35px;
+}
+
+.exercise-container-03 > .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing:2px;
+    color: #ffff;
+    font-weight:bolder;
+    background-color: #005086;
+    padding: 20px;
+}
+
+.heading-ex-03{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 30px;
+    letter-spacing: 2px;
+    color: #ffff;
+    font-weight: bolder;
+}
+
+.round-ex03{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #005086;
+    padding: 10px;
+    border-radius:22px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ex03-question > #ex-03question {
+    display: flex;
+    margin-left:70px;
+    color: #005086;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+#ex-03subquestion{
+    display: flex;
+    color: #005086;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-left: 67px;
+    padding: 3px;
+    font-size: 12px;
+}
+
+/* OPÇÕES DO EXERCICÍO 3 */
+.group-opts{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 70px;
+    padding: 70px;
+}
+
+.option-group01-ex03{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.option-group02-ex03{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.option-group01-ex03  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    outline:none;
+    background: #989BD1;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bolder;
+    padding: 16px;
+    width:260px;
+}
+
+.option-group02-ex03  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    outline:none;
+    background: #989BD1;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bolder;
+    padding: 16px;
+    width:260px;
+}
+
+/* EFEITO HOVER NO BOTÃO */
+#op01ex03{
+    transition: 850ms;
+}
+
+#op01ex03:hover{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op02ex03{
+    transition: 850ms;
+}
+
+#op02ex03:hover{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op03ex03{
+    transition: 850ms;
+}
+
+#op03ex03:hover{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op04ex03{
+    transition: 850ms;
+}
+
+#op04ex03:hover{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op05ex03{
+    transition: 850ms;
+}
+
+#op05ex03:hover{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op01Vex03{
+    transition: 850ms;
+}
+
+#op01Vex03:hover{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op02Vex03{
+    transition: 850ms;
+}
+
+#op02Vex03:hover{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op03Vex03{
+    transition: 850ms;
+}
+
+#op03Vex03:hover{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op04Vex03{
+    transition: 850ms;
+}
+
+#op04Vex03:hover{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op05Vex03{
+    transition: 850ms;
+}
+
+#op05Vex03:hover{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+
+
+
+
+
+
+/* EFEITO FOCUS QUANDO SELECIONADO A OPÇÃO */
+#op01ex01:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+/* EFEITO FOCUS QUANDO SELECIONADO A OPÇÃO */
+#op01ex03:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+
+#op02ex03:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op03ex03:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op04ex03:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op05ex03:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op01Vex03:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op02Vex03:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op03Vex03:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op04Vex03:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+#op05Vex03:focus{
+    background: #005086;
+    box-shadow: 0px 14px 14px rgba(21, 57, 164, 0.622);
+    color: #fff;
+}
+
+/* BOTÃO DE CONFIRMAR EXERCICIO 3 */
+.btn-submit-ex03-01{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.btn-submit-ex03-01 > #submitAnswerEX03{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border:none;
+    outline:none;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    background: #005086;
+    padding: 20px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 300px;
+}
+
+.btn-submit-ex03-01 > #submitAnswerEX03{
+    transition: 850ms;
+}
+
+.btn-submit-ex03-01 > #submitAnswerEX03:hover{
+    background: #5259CD;
+}
+
+
+
+
+
+
+
+
