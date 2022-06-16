@@ -61,10 +61,15 @@ selector global para impactar o todo o documento html*/
 
 .navbar-list{
     display:flex;
-    margin-top: 39.5px;
+    margin-top: 2.5px;
     position: relative;
     left: 135px;
 }
+
+ .opacity-link{
+    cursor: default;
+}
+
 
 .autentification-links{
     display: flex;
@@ -92,7 +97,7 @@ header{
 
 .navbar-list  .opacity-link{
     color: rgba(255, 255, 255, 0.5);
-    cursor:alias
+   
 }
 
 .navbar-link .login-btn{
@@ -145,10 +150,6 @@ header{
     background: #fff;
 }
 
-.navbar-link .home:hover{
-   border-bottom: 10px solid #005086
-   
-}
 
 /* background image home */
 .bg-image{
@@ -557,4 +558,133 @@ footer{
     position: relative;
     top: -10px;
 }
+
+li .opacity-link{
+    cursor: default;
+}
+/*---------------------------------- ESTILOS DA NAVBAR COM AUTENTIFICAÇÃO--------------------*/
+
+/* header */
+.header{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    background:#005086;
+    width: 1519.5px;
+    height: 86px;
+}
+
+/* header logo */
+.logov02{
+    display:flex;
+    position: relative;
+    left:10px;
+    width: 115px;
+    height: 91px;
+}
+
+/* navbarlist */
+.navbar-listv02{
+    font-size:15px;
+    display:flex;
+    gap:4.8rem;
+    list-style:none;
+}
+
+.navbar-linkv02 a:link{
+     display:inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.navbar-listv02 a{
+    color: #fff;
+}
+
+.navbar-listv02{
+    display:flex;
+    margin-top: -5.5px;
+    position: relative;
+    left: 167px;
+}
+
+.select-linkv02{
+    display: flex;
+    background-color: #989BD1;
+    height:86px;
+    width:120px;
+    position: relative;
+    left:25px
+}
+
+.navbarv02{
+    display: flex;
+    margin-left: -70px;
+}
+
+header{
+    display: flex;
+}
+
+.navbar-listv02  .opacity-linkv02{
+    color: #ffff;
+   
+}
+
+header{
+    display: flex;
+}
+
+
+.navbarv02{
+    display: flex;
+    position: fixed;
+
+}
+
+.header{
+    display: flex;
+    position:fixed;
+}
+
+.navbarv02{
+    display: flex;
+    margin-left: -101px;
+}
+
+
+/* button logout */
+.buttonHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #989BD1;
+    border-radius: 12px;
+    width:97px;
+    height:46px;
+    margin-top:-10px;
+    margin-left: 710px;
+    position: relative;
+    top: -5px;
+}
+
+.iconify{
+    height:23px;
+    width:23px;
+}
+
+nav li{
+    margin-top:41px;
+}
+
+
+.navbar-linkv02  .opacity-linkv02{
+    transition: 1230ms ease-out;
+}
+
+.navbar-linkv02  .opacity-linkv02:hover{
+    transform:rotate(360deg);
+    color:#989BD1;
+}
+
 

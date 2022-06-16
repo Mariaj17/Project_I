@@ -9,8 +9,10 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 <!-- FontAwesome references Refe^Rencias e biblioteca do Fontawesome para icones -->
-  <link href="/your-path-to-your-compiled-css-including-fontawesome/file.css" rel="stylesheet">
-<link rel="stylesheet" href="/CSS/index.css">
+  <!-- Iconify SVG framework from Figma  Framework do Figma-->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>  
+<link href="/your-path-to-your-compiled-css-including-fontawesome/file.css" rel="stylesheet">
+  <link rel="stylesheet" href="/CSS/index.css">
  <!-- For the icon of the App to show on the tab ICON DA APP -->
  <link rel="icon" href="/Media/images/Talkey - icone.png" />
 </head>
@@ -18,25 +20,10 @@
 <!-- Header section -->
 <!-- Navbar -->
 <header class="header">
-    <img src="/Media/images/Logo.svg" alt="logo" class="logo">
-    <!-- Navigation area Área de navegação -->
-    <div class="select-link"></div>
-    <!-- NAVBAR SEM AUTENTIFICAÇÃO -->
-    <nav class="navbar">
-        <ul class="navbar-list">
-          <div class="home-link"></div>
-            <li class="navbar-link"><a class="home" href="/HTML/Index.html">HOME</a></li>
-            <li class="navbar-link"><a  class="opacity-link" href="#">AULAS</a></li>
-            <li class="navbar-link"><a  class="opacity-link"href="#">LOJA</a></li>
-            <li class="navbar-link"><a  class="opacity-link"href="#">PERFIL</a></li>
-            <div class="autentification-links">
-            <li class="navbar-link"><a class="login-btn" href="/HTML/Login.html"><span>INICIAR SESSÃO</span></a></li>
-            <li class="navbar-link"><a  class="register-btn" href="/HTML/Register.html"><span>CRIAR CONTA</span></a></li>
-          </div>
-            <!-- <li class="toggle"><a href="#"><span class="bars"></span></a></li> -->
-        </ul> 
-    </nav>
+   <!-- navbar injetado via js -->
 </header>
+
+
 <!-- Main section -->
 <main class="bg-image">
     <!-- BACKGROUND IMAGE WITH SLOGAN AND VIDEO -->
@@ -159,5 +146,7 @@ terá acesso na loja de avatares <img src="/Media/images/Shop-icon-mobile.svg" a
 
 <!-- JS REFERENCES REFERÊNCIA AO JS  -->
 <script src="/JS/index.js"></script>
+<script src="/JS/init.js"></script>
+<script type="module" src="/JS/Views/NavbarView.js"></script>
 </body>
 </html>
