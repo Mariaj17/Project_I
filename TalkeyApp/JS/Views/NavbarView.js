@@ -41,6 +41,25 @@ function navbarView() {
                   <li class="logout-link"><a class="buttonHome" href="/HTML/Index.html"><span class="iconify" data-icon="material-symbols:exit-to-app"></span></a></li>
             </ul> 
         </nav>`
+      }if(User.logout()){
+        navbar += `<img src="/Media/images/Logo.svg" alt="logo" class="logo">
+        <!-- Navigation area Área de navegação -->
+        <div class="select-link"></div>
+        <!-- NAVBAR SEM AUTENTIFICAÇÃO -->
+        <nav class="navbar">
+            <ul class="navbar-list">
+              <div class="home-link"></div>
+                <li class="navbar-link"><a class="home" href="/HTML/Index.html">HOME</a></li>
+                <li class="navbar-link"><a  class="opacity-link" href="#">AULAS</a></li>
+                <li class="navbar-link"><a  class="opacity-link"href="#">LOJA</a></li>
+                <li class="navbar-link"><a  class="opacity-link"href="#">PERFIL</a></li>
+                <div class="autentification-links">
+                <li class="navbar-link"><a class="login-btn" href="/HTML/Login.html"><span>INICIAR SESSÃO</span></a></li>
+                <li class="navbar-link"><a  class="register-btn" href="/HTML/Register.html"><span>CRIAR CONTA</span></a></li>
+              </div>
+                <!-- <li class="toggle"><a href="#"><span class="bars"></span></a></li> -->
+            </ul> 
+        </nav>`
       }
 
     navbar += `</div>`
@@ -49,11 +68,13 @@ function navbarView() {
 //CONTÉUDO NA NAVBAR
 document.querySelector(".header").innerHTML = navbar;
 
+
+  //PARA O BOTÃO LOGOUT [<=]
+  document.querySelector(".buttonHome")?.addEventListener('click',()=>{
+    User.logout();
+    location.reload();
+  });
+  
   }
 
 navbarView()
-
-
-
-
-   

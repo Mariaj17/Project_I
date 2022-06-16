@@ -6,13 +6,13 @@ export function init() {
 }
 
 // ADICIONAR UTILIZADOR
-export function add(type, username, password, email, gender, birthday) {
+export function add(username, password, email, gender, birthday,type) {
   if (users.some((user) => user.username === username)) {
     throw Error(`User with username "${username}" already exists!`);
   } else if (users.some((user) => user.email === email)) {
     throw Error(`User with email "${email}" already been used!`);
   }else {
-    users.push(new User(type, username, password, email, gender, birthday));
+    users.push(new User(username, password, email, gender, birthday,type));
     localStorage.setItem("users", JSON.stringify(users));
   }
 }
@@ -53,7 +53,7 @@ class User {
   gender = "";
   birthday = "";
 
-  constructor(type,username, password, email, gender, birthday) {
+  constructor(username, password, email, gender, birthday,type) {
     this.type = type;
     this.username = username;
     this.password = password;
