@@ -1,5 +1,7 @@
 # Project_I
 
+Pasta da aplicação = TalkeyApp
+
 Organização da aplicação
 
 A pasta TalkeyApp está organizada da seguinte forma:
