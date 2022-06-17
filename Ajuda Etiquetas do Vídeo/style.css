@@ -75,22 +75,22 @@
     font-size: 1rem;
 }
 
-#frame01:hover{
+.start:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 
-#frame02:hover{
+.second-frame:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 
-#frame03:hover{
+.third-frame:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 
-#frame04:hover{
+.fourth-frame:hover{
     cursor: pointer;
     text-decoration: underline;
 }

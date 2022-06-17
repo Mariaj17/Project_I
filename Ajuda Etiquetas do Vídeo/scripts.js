@@ -21,10 +21,10 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 const video = document.querySelector("video");
 
 // SELEÇÃO DOS TIMESTAMPS NO ACORDEÃO COM AS ETIQUETAS DO VÍDEO
-const frame01 = document.querySelector('#frame01');
-const frame02 = document.querySelector('#frame02');
-const frame03 = document.querySelector('#frame03');
-const frame04 = document.querySelector('#frame04');
+const frame01 = document.querySelector('.start');
+const frame02 = document.querySelector('.second-frame');
+const frame03 = document.querySelector('.third-frame');
+const frame04 = document.querySelector('.fourth-frame');
 
 // NO CLIQUE DE CADA FRAME DIRECIONA PARA O RESPETIVO FRAME DO VÍDEO COM MÉTODO CURRENTTIME
 
@@ -46,9 +46,9 @@ frame03.addEventListener('click',()=>{
     video.play()
 })
 
-// QUARTO FRAME AVANÇA 30 SEGUNDOS
+// QUARTO FRAME AVANÇA 36 SEGUNDOS
 frame04.addEventListener('click',()=>{
-    video.currentTime = 30;
+    video.currentTime = 36;
     video.play()
 })
 
