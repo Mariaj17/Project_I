@@ -102,12 +102,14 @@
 }
 
 .heading-slogan{
+    background:transparent;
     display:flex;
     margin-left: -700px;
     margin-top: 60px;
 }
 
 .subheading-slogan{
+    background:transparent;
     display:flex;
     margin-left: -700px;
 }
@@ -497,7 +499,7 @@ select{
 }
 
 
-/* MENSAGENS DE ERRO DOS CAMPOS DE REGISTRO */
+/* MENSAGENS DOS CAMPOS DE REGISTRO */
 .sucess-register{
     display:flex;
     justify-content: center;
@@ -528,18 +530,45 @@ select{
     background:transparent;
 }
 
+/* ---------------------------------------------------- */
+/* loading spinner after register sucess */
+.loader{
+ display: flex;   
+}
+
+.loader{
+    border: 9px solid #f3f3f3;
+    border-top: 9px solid  #005086;
+    border-radius: 50%;
+    width:60px;
+    height:60px;
+}
+
+.flex-loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -660px;
+}
+
 /* ----------------------------------------------------------------------------------------- */
 
+
 .ilustration{
-    background: transparent;
+    background:transparent;
     margin-left: 3px;
     height: 550px;
 }
 
 /* ilustration animation */
 .ilustration{
-    animation:  1.5s Infinite  linear floating;
+    animation:  2s.5s Infinite  linear floating;
     animation-delay: 0s;
+}
+
+/* loader animation */
+.loader{
+    animation: spin 2s linear infinite;
 }
 
 /* animation for the ilustration with floating function via Keyframes */
@@ -549,7 +578,15 @@ select{
     100%{opacity: 1; transform: translateY(0px);}
 } 
 
-
+/* animação para o loader após o sucesso do registro */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+}
 /* ---------------------------------------Responsive area----------------- */
 
 /* @media all and (max-width:1113px){
