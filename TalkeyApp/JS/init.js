@@ -172,7 +172,7 @@ function initdata() {
   if (!localStorage.exercises) {
     const exercises = [
       {
-        id:0,
+        id:1,
         exercise:[
         {
         img:"",
@@ -198,7 +198,7 @@ function initdata() {
         ],
       },
       {
-        id:0,
+        id:2,
         exercise:[
         {
         img:"",
