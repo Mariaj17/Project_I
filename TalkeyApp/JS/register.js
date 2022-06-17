@@ -1,11 +1,6 @@
 import * as User from "../JS/Models/UserModel.js"
 
-//para atribuir o ano máximo (atual) ao ano de nascimento
-const year = document.querySelector('#year');
 
-let currentYear = new Date().getFullYear();
-
-year.setAttribute("max",currentYear);
 // VALIDAÇÕES DO REGISTRO
 // AO CLICAR NO BOTÃO CRIAR CONTA
 

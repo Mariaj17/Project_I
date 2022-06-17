@@ -115,6 +115,49 @@ header{
     position: fixed;
 }
 
+/* -----------------------------------------------------EFEITOS HOVER NOS LINKS DA NAVBAR--------------------------- */
+
+.navbar-link .home{
+    transition: 1230ms ease-out;
+}
+
+
+.navbar-link .home:hover{
+    transform:rotate(360deg);
+    color:#989BD1;
+}
+
+.navbar-link .aulas{
+    transition: 1230ms ease-out;
+}
+
+.navbar-link .aulas:hover{
+    color: #ffff;
+}
+
+.navbar-link .shop{
+    transition: 1230ms ease-out;
+}
+
+
+.navbar-link .shop:hover{
+    transform:rotate(360deg);
+    color:#989BD1;
+}
+
+.navbar-link .perfil{
+    transition: 1230ms ease-out;
+}
+
+
+.navbar-link .perfil:hover{
+    transform:rotate(360deg);
+    color:#989BD1;
+}
+
+/* -------------------------------------------------------------------- */
+
+
 .points-to-pay{
     display:flex;
     justify-content: center;
