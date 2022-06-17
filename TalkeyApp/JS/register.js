@@ -21,15 +21,15 @@ document.querySelector('.main-register')?.addEventListener('submit',(event)=>{
         }
         //APÓS SUCESSO NO REGISTRO
         User.add(registerUser, registerPassword)
-        // alterar
+        // alterar PARA A MENSAGEM DE SUCESSO
         dispayMessageRegisterSucess("","");
-        //esperar 2 segundos para a visualização da mensagem de sucesso de registro
+        //esperar 3 segundos para a visualização da mensagem de sucesso de registro
         setTimeout(()=>{
             location.reload();
-        }, 2000);
-        // APÓS A VERIFICAÇÃO DE UMA ANOMALIA NOS CAMPOS DA PASSWORD
+        }, 3000);
+        // APÓS A VERIFICAÇÃO DE UMA ANOMALIA NOS CAMPOS DA PASSWORD RECOLHE O ERRO
     } catch(e){
-        // alterar
+        // alterar PARA MENSAGEM DE ERROS
         dispayMessagePasswordAlert("","")
     }
     

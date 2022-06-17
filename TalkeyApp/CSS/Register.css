@@ -499,7 +499,7 @@ select{
 }
 
 
-/* MENSAGENS DOS CAMPOS DE REGISTRO */
+/* --------------------------------------------------------------MENSAGENS DOS CAMPOS DE REGISTRO------------------------------------------------------------------------------- */
 .sucess-register{
     display:flex;
     justify-content: center;
@@ -530,6 +530,10 @@ select{
     background:transparent;
 }
 
+/* CATCH ERROR DOS INPUTS DAS PASSWORDS = ESTILOS DAS MENSAGENS DE ERRO DAS CAMPOS DAS PASSWORDS */
+
+
+
 /* ---------------------------------------------------- */
 /* loading spinner after register sucess */
 .loader{
@@ -552,7 +556,6 @@ select{
 }
 
 /* ----------------------------------------------------------------------------------------- */
-
 
 .ilustration{
     background:transparent;
