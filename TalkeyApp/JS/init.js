@@ -5,71 +5,71 @@ function initdata() {
   if (!localStorage.levels) {
     const levels = [
       {
-        id: 0,
+        id: 1,
         classes: [
           {
-            id: 0,
-            img:"",
-            title:"",
-            description:"",
+            id: 1,
+            img:"img/alpha.webp",
+            title:"Maneiras de cumprimentar e despedir",
+            description:"Nesta aula aprenda diversas maneiras de se cumprimentar e se despedir em Alemão.Como se comunicar formal e informalmente no quesito cumprimentos e despedidas em Alemão.",
           },
           {
-            id: 0,
-            img:"",
-            title:"",
-            description:"",
+            id: 2,
+            img:"img/num.jpg",
+            title:"Alfabeto em alemão",
+            description:"Nesta aula você vai aprender o alfabeto alemão, a soletrar seu nome e a entender quando algo é soletrado para você.Saber pronunciar as palavras em alemão, principalmente soletrar seu nome é primordial.",
           },
           {
-            id: 0,
-            img:"",
-            title:"",
-            description:"",
+            id: 3,
+            img:"img/german.jpg",
+            title:"Aula de Nomes",
+            description:"Nesta aula vais aprender como pronunciar os nomes alemães.",
           },
         ],
       },
       {
-        id: 0,
+        id: 2,
         classes: [
           {
-            id: 0,
+            id: 4,
             img:"",
-            title:"",
-            description:"",
+            title:"Dias da semana e deuses germânicos",
+            description:"Nesta aula de alemão você aprenderá os dias da semana e também a relação da sua nomenclatura com os Deuses Germânicos! ",
           },
           {
-            id: 0,
+            id: 5,
             img:"",
-            title:"",
-            description:"",
+            title:"Contar até 100",
+            description:"Aprenda Neste vídeo a contar os Números em Alemão a partir de 100!",
           },
           {
-            id: 0,
+            id: 6,
             img:"",
-            title:"",
-            description:"",
+            title:"Pronomes e Conjugação de Verbos",
+            description:"Nesta aula você aprenderá a reconhecer os pronomes pessoais e também a conjugar verbos  regulares em alemão no presente.",
           },
         ],
       },
       {
-        id: 0,
+        id: 3,
         classes: [
           {
-            id: 0,
+            id: 7,
             img:"",
-            title:"",
-            description:"",
+            title:"Como pedir uma bebida",
+            description:" Aprenda neste vídeo como pedir uma bebida em alemão.",
           },
           {
-            id: 0,
+            id: 8,
             img:"",
-            title:"",
-            description:"",
+            title:"Como pedir e pagar uma conta",
+            description:"Nesta aula aprenda como pedir e pagar a sua conta em Alemão.",
           },
           {
-            id: 0,
+            id: 9,
             img:"",
-            title:"",
-            description:"",
+            title:"Comunicação básica",
+            description:"Nesta aula aprenda frases de utilização diaria em Alemão.",
           },
         ],
       },
@@ -97,7 +97,6 @@ function initdata() {
         birthday: "",
       },
     ];
-    console.log("inject");
     localStorage.setItem("users", JSON.stringify(users));
   }
 
@@ -105,65 +104,65 @@ function initdata() {
   if (!localStorage.lessons) {
     const lessons = [
       {
-        id: 0,
+        id: 1,
         video:"",
-        title:"",
+        title:"Aula Comprimento",
         likes: 0,
         shares: 0,
       },
       {
-        id: 0,
+        id: 2,
         video:"",
-        title:"",
+        title:"Aula Números",
         likes: 0,
         shares: 0,
       },
       {
-        id: 0,
+        id: 3,
         video:"",
-        title:"",
+        title:"Aula de Nomes",
         likes: 0,
         shares: 0,
       },
       {
-        id: 0,
+        id: 4,
         video:"",
-        title:"",
+        title:"Dias da semana e deuses germânicos",
         likes: 0,
         shares: 0,
       },
       {
-        id: 0,
+        id: 5,
         video:"",
-        title:"",
+        title:"Contar até 100",
         likes: 0,
         shares: 0,
       },
       {
-        id: 0,
+        id: 6,
         video:"",
-        title:"",
+        title:"Pronomes e Conjugação de Verbos",
         likes: 0,
         shares: 0,
       },
       {
-        id: 0,
+        id: 7,
         video:"",
-        title:"",
+        title:"Como pedir uma bebida",
         likes: 0,
         shares: 0,
       },
       {
-        id: 0,
+        id: 8,
         video:"",
-        title:"",
+        title:"Como pedir e pagar uma conta",
         likes: 0,
         shares: 0,
       },
       {
-        id: 0,
+        id: 9,
         video:"",
-        title:"",
+        title:"Comunicação básica",
         likes: 0,
         shares: 0,
       },
@@ -176,35 +175,55 @@ function initdata() {
     const exercises = [
       {
         id:0,
+        exercise:[
+        {
         img:"",
-        question1:"",
+        question:"",
         answer1:"",
         answer2:"",
-        answer3:"",
-        question2:"",
-        answer4:"",
-        answer5:"",
-        answer6:"",
-        question3:"",
-        answer7:"",
-        answer8:"",
-        answer9:"",
+        answer3:""
+        },
+        {
+        img:"",
+        question:"",
+        answer1:"",
+        answer2:"",
+        answer3:""
+        },
+        {
+        img:"",
+        question:"",
+        answer1:"",
+        answer2:"",
+        answer3:""
+        },
+        ],
       },
       {
         id:0,
+        exercise:[
+        {
         img:"",
-        question1:"",
+        question:"",
         answer1:"",
         answer2:"",
-        answer3:"",
-        question2:"",
-        answer4:"",
-        answer5:"",
-        answer6:"",
-        question3:"",
-        answer7:"",
-        answer8:"",
-        answer9:"",
+        answer3:""
+        },
+        {
+        img:"",
+        question:"",
+        answer1:"",
+        answer2:"",
+        answer3:""
+        },
+        {
+        img:"",
+        question:"",
+        answer1:"",
+        answer2:"",
+        answer3:""
+        },
+        ],
       },
     ];
     localStorage.setItem("exercises", JSON.stringify(exercises));
@@ -264,11 +283,5 @@ function initdata() {
   if (!localStorage.comments) {
     const comments= [];
     localStorage.setItem("comments", JSON.stringify(comments));
-  }
-
-  // NOTIFICATION
-  if (!localStorage.comments) {
-    const notifications= [];
-    localStorage.setItem("notifications", JSON.stringify(notifications));
   }
 }
