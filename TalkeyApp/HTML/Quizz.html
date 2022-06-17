@@ -8,10 +8,10 @@ DA PRIMEIRA AULA DO NÍVEL 1  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- O TITULO DA PAGINA ALTERA CONSOANTE A AULA E O NIVEL VIA JS -->
-    <title id="title">AULA 1 - NÍVEL 1 - TALKEY</title>
+    <title id="title">Quizz-Talkey</title>
      <!-- Referências ao CSS e Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="/CSS/Lesson.css">
+  <link rel="stylesheet" href="/CSS/Quizz.css">
    <!-- Iconify SVG framework from Figma  Framework do Figma-->
    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
    <!-- For the icon of the App to show on the tab ICON DA APP -->
@@ -21,7 +21,21 @@ DA PRIMEIRA AULA DO NÍVEL 1  -->
      <!-- Header section -->
     <!-- Navbar COM AUTENTIFICAÇÃO-->
     <header class="header">
-     
+      <img src="/Media/images/Logo.svg" alt="logo" class="logo">
+      <!-- Navigation area Área de navegação -->
+      <div class="select-link"></div>
+      <!--NAVBAR LINKS-->
+      <nav class="navbar">
+          <ul class="navbar-list">
+            <div class="home-link"></div>
+              <li class="navbar-link"><a class="home" href="/HTML/Index.html">HOME</a></li>
+              <li class="navbar-link"><a  class="aulas" href="/HTML/Level.html">AULAS</a></li>
+              <li class="navbar-link"><a  class="shop" href="/HTML/Shop.html">LOJA</a></li>
+              <li class="navbar-link"><a  class="perfil" href="/HTML/Perfil.html">PERFIL</a></li>
+              <!-- LOGOUT BUTTON -->
+              <li class="logout-link"><a class="buttonHome" href="/HTML/Index.html"><span class="iconify" data-icon="material-symbols:exit-to-app"></span></a></li>
+          </ul> 
+      </nav>
     </header>
 
 
@@ -184,8 +198,7 @@ DA PRIMEIRA AULA DO NÍVEL 1  -->
           </div>
           </div>
           <div class="ex03-question">
-            <span id="ex-03question">COMBINA OS PARES:</span>
-            <div class="ex-03-subquestion"><span id="ex-03subquestion">NOTA: TENTE COMBINAR OS PARES DE FORMA A TRADUZIR DO PORTUGUÊS PARA O ALEMÃO</span></div>
+            <span id="ex-03question">Questionário do EXERCICIO 3</span>
           </div> 
           <form class="EX03-OPTS">
             <div class="group-opts">
@@ -193,16 +206,6 @@ DA PRIMEIRA AULA DO NÍVEL 1  -->
               <div class="optionOne-ex03"><button id="op01ex03">OPÇÃO 1</button></div>
               <div class="optionTwo-ex03"><button id="op02ex03">OPÇÃO 2</button></div>
               <div class="optionThree-ex03"><button id="op03ex03">OPÇÃO 3</button></div>
-              <div class="optionFour-ex03"><button id="op04ex03">OPÇÃO 4</button></div>
-              <div class="optionFive-ex03"><button id="op05ex03">OPÇÃO 5</button></div>
-            </div>
-            <div class="option-group02-ex03">
-                  <!-- Möglichkeit = OPÇÃO EM PORTUGUÊS -->
-              <div class="option01-ex03"><button id="op01Vex03">Möglichkeit 1</button></div>
-              <div class="option02-ex03"><button id="op02Vex03">Möglichkeit 2</button></div>
-              <div class="option03-ex03"><button id="op03Vex03">Möglichkeit 3</button></div>
-              <div class="option04-ex03"><button id="op04Vex03">Möglichkeit 4</button></div>
-              <div class="option05-ex03"><button id="op05Vex03">Möglichkeit 5</button></div>
             </div>
           </div>
           <!-- BOTÃO DE SUBMISSÃO DA OPÇÃO ESCOLHIDA -->
