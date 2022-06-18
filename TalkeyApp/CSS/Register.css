@@ -511,7 +511,7 @@ select{
     justify-content: center;
     align-items: center;
     gap:10px;
-    background: rgba(0, 80, 134, 0.85);
+    background: #3CC662CC;
     padding: 14px;
     border-radius: 13px;
     color: #fff;
@@ -526,12 +526,40 @@ select{
 }
 
 .sucess-icon{
-    background: rgba(0, 80, 134, 0.85);
+    background: #3CC662CC;
     background:transparent;
 }
 
-/* CATCH ERROR DOS INPUTS DAS PASSWORDS = ESTILOS DAS MENSAGENS DE ERRO DAS CAMPOS DAS PASSWORDS */
+/* CATCH ERROR DOS INPUTS DAS PASSWORDS = ESTILOS DAS MENSAGENS DE ERRO DOS CAMPOS DAS PASSWORDS */
+.fail-register{
+    display:flex;
+    justify-content: center;
+    margin-top: -50px;
+}
 
+.FailContent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    background: #DE402BCC;
+    padding: 14px;
+    border-radius: 13px;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing:2px;
+    font-size: 10px;    
+}
+
+.FailContent{
+    position: relative;
+    top: -680px;
+}
+
+.fail-icon{
+    background: #DE402BCC;
+    background:transparent;
+}
 
 
 /* ---------------------------------------------------- */
@@ -565,7 +593,7 @@ select{
 
 /* ilustration animation */
 .ilustration{
-    animation:  2s.5s Infinite  linear floating;
+    animation:  2.0s Infinite  linear floating;
     animation-delay: 0s;
 }
 

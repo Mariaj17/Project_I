@@ -32,8 +32,8 @@
             <!-- OPTIONS STUDENT OR TEACHER(ADMIN)  OPÇÕES ALUNO OU PROFESSOR(ADMIN)-->
             <!--TEXTFIELDS-->
             <div class="radio-buttons">
-                <label for="student"><input type="radio" name="optradio" id="student" value="aluno"><span class="student-line-heigth"> aluno</span></label>
-                <label for="teacher"><input type="radio" name="optradio" id="teacher" value="professor"><span class="teacher-line-heigth"> professor</span></label>
+                <label for="student"><input type="radio" name="optradio" id="student" value="aluno" required><span class="student-line-heigth"> aluno</span></label>
+                <label for="teacher"><input type="radio" name="optradio" id="teacher" value="professor" required><span class="teacher-line-heigth"> professor</span></label>
             </div>
             <div class="inputfields">
             <div class="textfield">
@@ -51,7 +51,7 @@
                    <div class="flex-genrer-psw">
                     <div class="genrerop">
                        <label for="genrer"></label>
-                     <select name="genrerop" id="genrer">
+                     <select name="genrerop" id="genrer" required>
                         <option id="genrerdefault" value="GÉNERO">GÉNERO</option>
                         <option  id="genrerM" value="Masculino">Masculino</option>
                         <option id="genrerF" value="Feminino">Feminino</option>
@@ -89,13 +89,11 @@
     </div>
 </form>
 
-<!-- Mensagem de sucesso após o cadastro -->
-<div class="sucess-register"><span class="SucessContent">REGISTRADO COM SUCESSO, BEM-VINDO USERNAME A TALKEY<img class="sucess-icon" src="/Media/images/sucesso-icone.svg"></span></div>
-    <div class="flex-loader">
-<div class="loader"></div>
-    </div>
-    <!-- Mensagens de erro após o cadastro acerca das passwords-->
+<!-- Mensagens após o cadastro -->
+<div class="register-message"><!-- injetado via js --></div>
+
+
 <!-- Referências ao JS -->
 <script src="/JS/init.js"></script>
-<script type="module" src="/JS/register.js"></script>
+<script type="module" src="/JS/UserRegister.js"></script>
 </html>

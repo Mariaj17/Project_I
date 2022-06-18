@@ -1,4 +1,4 @@
-import * as User from "../JS/Models/UserModel.js"
+import * as User from "./Models/UserModel.js"
 
 
 // VALIDAÇÕES DO REGISTRO
@@ -14,10 +14,10 @@ document.querySelector('.main-register')?.addEventListener('submit',(event)=>{
 
     try{
         if(registerPassword != registerPassword2){
-            throw Error("Password e Confirmar Password não correspondem !!");
+            throw Error("PASSWORDS NÃO CORRESPONDEM !!");
         }
         else if(registerPassword.length < 8){
-            throw Error("Password deve conter no mínimo 8 caracteres !!");
+            throw Error("PASSWORD DEVE CONTER NO MÍNIMO 8 CARACTERES !!");
         }
         //APÓS SUCESSO NO REGISTRO
         User.add(registerUser, registerPassword)
