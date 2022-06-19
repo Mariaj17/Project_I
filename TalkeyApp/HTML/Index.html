@@ -20,8 +20,25 @@
   
 <!-- Header section -->
 <!-- Navbar -->
-<header class="header"><!-- navbar injetado via js --></header>
-   
+<header class="header"><img src="/Media/images/Logo.svg" alt="logo" class="logo">
+  <!-- Navigation area Área de navegação -->
+  <div class="select-link"></div>
+  <!-- NAVBAR SEM AUTENTIFICAÇÃO -->
+  <nav class="navbar">
+      <ul class="navbar-list">
+        <div class="home-link"></div>
+          <li class="navbar-link"><a class="home" href="/HTML/Index.html">HOME</a></li>
+          <li class="navbar-link"><a  class="opacity-link" href="#">AULAS</a></li>
+          <li class="navbar-link"><a  class="opacity-link"href="#">LOJA</a></li>
+          <li class="navbar-link"><a  class="opacity-link"href="#">PERFIL</a></li>
+          <div class="autentification-links">
+          <li class="navbar-link"><a class="login-btn" href="/HTML/Login.html"><span>INICIAR SESSÃO</span></a></li>
+          <li class="navbar-link"><a  class="register-btn" href="/HTML/Register.html"><span>CRIAR CONTA</span></a></li>
+        </div>
+      </ul> 
+      <li id="toggle" class="toggle"><a href="#"><span class="bars"><img src="/Media/images/hamburguer-icon.svg" alt=""></span></a></li>
+    </nav>
+  </header>
  
 
 
@@ -108,7 +125,7 @@ terá acesso na loja de avatares <img src="/Media/images/Shop-icon-mobile.svg" a
       </div>
       <div class="accordion-item">
         <div class="accordion-item-header">
-          Níveis e aulas
+         <span>Níveis e aulas</span>
         </div>
         <div class="accordion-item-body">
           <div class="accordion-item-body-content">
