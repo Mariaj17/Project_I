@@ -10,6 +10,7 @@ document.querySelector('.main-login').addEventListener('submit', (event)=>{
     User.init();
     try{
         // FUNÇÃO LOGIN QUE RECEBE COMO PAREMETROS OS VALORES DOS CAMPOS DE LOGIN
+        // FUNÇÃO LOGIN
         User.login(getRadioValue(), document.querySelector('#username').value, document.querySelector('#psw').value);
          //  PARA A MENSAGEM DE SUCESSO ATRIBUIR VALORES AOS PARAMETROS A DIV E A MENSAGEM ONDE SURGIRÁ A MENSAGEM 
         // DE SUCESSO COM O INNERHTML FAZENDO DISPLAY DA MENSAGEM EDITADA VIA CSS DE SUCESSO

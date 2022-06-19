@@ -22,7 +22,7 @@ document.querySelector('.main-register')?.addEventListener('submit',(event)=>{
         else if(registerPassword.length < 8){
             throw Error("PASSWORD DEVE CONTER NO MÍNIMO 8 CARACTERES !!");
         }
-        //APÓS SUCESSO NO REGISTRO
+        //PARA VERIFICAR AS CONDIÇÕES NA FUNÇÃO ADD NO USERMODEL.JS
         User.add(typeUser,registerUser, registerPassword,emailUser,genderUser)
         //  PARA A MENSAGEM DE SUCESSO ATRIBUIR VALORES AOS PARAMETROS A DIV E A MENSAGEM ONDE SURGIRÁ A MENSAGEM 
         // DE SUCESSO COM O INNERHTML FAZENDO DISPLAY DA MENSAGEM EDITADA VIA CSS DE SUCESSO
@@ -33,9 +33,13 @@ document.querySelector('.main-register')?.addEventListener('submit',(event)=>{
         }, 3000);
         // APÓS A VERIFICAÇÃO DE UMA ANOMALIA NOS CAMPOS DA PASSWORD RECOLHE O ERRO
     } catch(e){
-            //  PARA A MENSAGEM DE SUCESSO ATRIBUIR VALORES AOS PARAMETROS A DIV E A MENSAGEM ONDE SURGIRÁ AS MENSAGEM 
+            //  PARA A MENSAGEM DE ERRO ATRIBUIR VALORES AOS PARAMETROS A DIV E A MENSAGEM ONDE SURGIRÁ AS MENSAGEM 
         // DE ERRO COM O INNERHTML FAZENDO DISPLAY DA MENSAGEM EDITADA VIA CSS DE ERROS
         dispayMessagePasswordAlert("","")
+        // para esperar 5 segundos para user ver a mensagem de erro
+          setTimeout(()=>{
+            location.reload();
+          },5000);
     }
     
 })

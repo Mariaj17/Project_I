@@ -531,6 +531,14 @@ select{
     background:transparent;
 }
 
+.sucess-register{
+    transition: 850ms ease-in;
+}
+
+.fail-register{
+    transition: 850ms ease-in;
+}
+
 /* CATCH ERROR DOS INPUTS DAS PASSWORDS = ESTILOS DAS MENSAGENS DE ERRO DOS CAMPOS DAS PASSWORDS */
 .fail-register{
     display:flex;
