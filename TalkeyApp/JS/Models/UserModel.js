@@ -6,13 +6,13 @@ export function init() {
 }
 
 // ADICIONAR UTILIZADOR
-export function add(username, password, email, gender, birthday,type) {
+export function add(type,username, password, email, gender) {
   if (users.some((user) => user.username === username)) {
-    throw Error(`User with username "${username}" already exists!`);
+    throw Error(`"${username}" JÁ EXISTENTE!!`);
   } else if (users.some((user) => user.email === email)) {
-    throw Error(`User with email "${email}" already been used!`);
+    throw Error(`"${email}" JÁ EXISTENTE!!`);
   }else {
-    users.push(new User(username, password, email, gender, birthday,type));
+    users.push(new User(type,username, password, email, gender));
     localStorage.setItem("users", JSON.stringify(users));
   }
 }
@@ -25,7 +25,7 @@ export function login(type,username, password) {
     sessionStorage.setItem("loggedUser", JSON.stringify(user));
     return true;
   } else {
-    throw Error("Invalid login!");
+    throw Error("LOGIN INVÁLIDO!");
   }
 }
 
