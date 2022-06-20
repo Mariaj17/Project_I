@@ -1,6 +1,5 @@
 let levels;
 
-// CARREGAR BANDAS DA LOCALSTORAGE
 export function init() {
   levels = localStorage.levels ? JSON.parse(localStorage.levels) : [];
 }

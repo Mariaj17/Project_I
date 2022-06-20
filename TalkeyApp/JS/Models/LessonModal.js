@@ -44,3 +44,20 @@ class Level{
         this.classes = classes;
     }
 }
+
+let exercises;
+
+// CARREGAR lessons DA LOCALSTORAGE
+export function init() {
+  exercises = localStorage.exercises ? JSON.parse(localStorage.exercises) : [];
+}
+  
+  // DEFINIR O LEVEL ATUAL
+  export function setCurrentLevel(id) {
+    localStorage.setItem("level", id);
+  }
+  
+  // OBTER O LEVEL ATUAL
+  export function getCurrentLevel() {
+    return level.find((level) => level.id === localStorage.getItem("level"));
+  }
