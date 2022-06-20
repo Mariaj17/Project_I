@@ -6759,28 +6759,109 @@ nav li{
     .about-us{
         width:97.3vw;
    }
+
 }
 
+@media(max-width:1395px){
+    .opacity-layout{
+        max-height:86vh;
+    }
+     .about-us{
+         width: 100vw;
+         height: 14vh;
+   
+     }
+}
 
-
-
-
-
+@media (max-width:1493px){
+   .opacity-layout{
+    max-height: 86vh;
+   }
+   .about-us{
+    width:99.9vw;
+    height: 13.9vh;
     
+   }
+}
 
+@media (max-width: 1493px){
+    .header{
+        width:98.7vw;
+    }
+    .about-us{
+        width: 98.9vw;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .rightside-about{
+        height:54vh;
+    }
     
+    .image-about img{
+         height:54vh;
+         margin-top: 0;
+    }
+    
+    .opacity-about-bg{
+        width:42.9vw;
+        height: 54vh;
+        margin-top: -392px;
+    }
+    
+}
+
+@media (max-width: 1386px){
+    .opacity-layout{
+        height: 60em;
+    }
+    .opacity-about-bg{
+        width:46.56vw;
+    }
+    .about-us{
+        width:98.8vw;
+    }
+}
+
+@media(max-width:1451px){
+    .opacity-layout{
+        height: 60em;
+    }
+    .opacity-about-bg{
+        width:46.56vw;
+    }
+    .about-us{
+        width:98.8vw;
+    }
+     .image-about img{
+        width: 46.6vw;
+    }
+}
+
+@media(max-width:500px){
+   .opacity-layout{
+    max-height: 87.5vh;
+    max-width: 96.4vw;
+   }
+
+   .about-us{
+    width:96.6vw;
+   }
+
+.image-about img{
+    width: 96.6vw;
+}
+
+.opacity-about-bg{
+    width:96.6vw;
+    margin-top: -399px;
+}
+
+.rightside-about{
+    max-width: fit-content;
+}
+
+.ilustrations{
+    display: flex;
+    flex-direction: column;
+}
+
+}
