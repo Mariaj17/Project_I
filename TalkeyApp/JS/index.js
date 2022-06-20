@@ -14,5 +14,3 @@ accordionItemHeaders.forEach(accordionItemHeader => {
         }
     })
 })
-
-//--------------------------------------------------------- PARA A FUNCIONALIDADE RESPONSIVE DO MENU NO ÍCONE HAMUBGUER MENU----------------------------------------------------------------

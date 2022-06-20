@@ -531,11 +531,7 @@ select{
     background:transparent;
 }
 
-.sucess-register{
-    transition: 850ms ease-in;
-}
-
-.fail-register{
+.register-message{
     transition: 850ms ease-in;
 }
 

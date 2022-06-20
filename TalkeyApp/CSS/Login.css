@@ -342,8 +342,6 @@ background: #5259CD;
     top: 12px;
 }
 
-
-
 /* ilustration */
 .ilustration{
 width: 709px;
@@ -360,10 +358,105 @@ height: 522px;
     top: -5%;
 }
 
+.right-login{
+    position: relative;
+    left: 0%;
+}
+
+.card-login{
+    position: relative;
+    left:-58px;
+}
+
+/*----------------------------------------------- MENSAGENS DOS CAMPOS DE LOGIN----------------------------------------------------------------- */
+
+.login-message{
+    margin-top:-100px;
+    display: flex;
+    justify-content: center;
+    margin-left: -300px; 
+}
+.login-message{
+    
+    margin-top: -570px;
+}
+
+
+/* mensagens de sucesso */
+.SucessContent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    background: #3CC662CC;
+    padding: 14px;
+    border-radius: 13px;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing:2px;
+    font-size: 10px;    
+}
+
+/* loading spinner after register sucess */
+.loader{
+    display: flex;
+}
+
+.loader{
+    border: 9px solid #3CC662CC;
+    border-top: 9px solid  #005086;
+    border-radius: 50%;
+    width:60px;
+    height:60px;
+}
+
+.loader{
+    display: flex;
+    margin-left: 130px;
+}
+
+.login-message{
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    left:-190px;
+}
+
+/* mensagens de erro */
+.FailContent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    background: #DE402BCC;
+    padding: 14px;
+    padding-left: 10px;
+    border-radius: 13px;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing:2px;
+    font-size: 13px;    
+    margin-top:-70px;
+}
+
+.fail-login{
+    position: relative;
+    left:70px;
+}
+
+.login-message{
+    transition: 850ms ease-in; 
+}
+
  /* animation for the ilustration */
  .ilustration{
     animation:  1.5s Infinite  linear floating;
     animation-delay: 0s;
+}
+
+/* animation for the loader */
+.loader{
+    animation: spin 2s linear infinite;
 }
 
 /* animation for the ilustration with floating function via Keyframes */
@@ -373,6 +466,15 @@ height: 522px;
     100%{opacity: 1; transform: translateY(0px);}
 } 
 
+/* animação para o loader após o sucesso do registro */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------------------RESPONSIVE SECTION----------------------------------------------------------------------------------------------------- */
