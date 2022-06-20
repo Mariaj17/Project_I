@@ -108,17 +108,17 @@ const opt1_1 = document.getElementById('op01_ex01')
 const opt2_1 = document.getElementById('op02_ex01')
 const opt3_1 = document.getElementById('op03_ex01')
 
-const box_2 = document.getElementById('ex01')
-const submit_2 = document.getElementById('submitAnswerEX01');
-const quizbox_2 = document.getElementById('ex-01question')
-const opt1_2 = document.getElementById('op01_ex01')
-const opt2_2 = document.getElementById('op02_ex01')
-const opt3_2 = document.getElementById('op03_ex01')
+const box_2 = document.getElementById('ex02')
+const submit_2 = document.getElementById('submitAnswerEX02');
+const quizbox_2 = document.getElementById('ex-02question')
+const opt1_2 = document.getElementById('op01_ex02')
+const opt2_2 = document.getElementById('op02_ex02')
+const opt3_2 = document.getElementById('op03_ex02')
 
-const box_3 = document.getElementById('ex01')
-const submit_3 = document.getElementById('submitAnswerEX01');
-const quizbox_3 = document.getElementById('ex-01question')
-const opt1_3 = document.getElementById('op01_ex01')
-const opt2_3 = document.getElementById('op02_ex01')
-const opt3_3 = document.getElementById('op03_ex01')
+const box_3 = document.getElementById('ex03')
+const submit_3 = document.getElementById('submitAnswerEX03');
+const quizbox_3 = document.getElementById('ex-03question')
+const opt1_3 = document.getElementById('op01_ex03')
+const opt2_3 = document.getElementById('op02_ex03')
+const opt3_3 = document.getElementById('op03_ex03')
 
