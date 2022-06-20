@@ -100,3 +100,25 @@ countComment ++;
                                                                                     //CALLBACK DA VARIAVEL DO CONTADOR 
     commentCounter.innerHTML = `<div class="heading"><span id="comments-header">COMENTÁRIOS(${countComment})</span></div>`
 })
+
+const box_1 = document.getElementById('ex01')
+const submit_1 = document.getElementById('submitAnswerEX01');
+const quizbox_1 = document.getElementById('ex-01question')
+const opt1_1 = document.getElementById('op01_ex01')
+const opt2_1 = document.getElementById('op02_ex01')
+const opt3_1 = document.getElementById('op03_ex01')
+
+const box_2 = document.getElementById('ex01')
+const submit_2 = document.getElementById('submitAnswerEX01');
+const quizbox_2 = document.getElementById('ex-01question')
+const opt1_2 = document.getElementById('op01_ex01')
+const opt2_2 = document.getElementById('op02_ex01')
+const opt3_2 = document.getElementById('op03_ex01')
+
+const box_3 = document.getElementById('ex01')
+const submit_3 = document.getElementById('submitAnswerEX01');
+const quizbox_3 = document.getElementById('ex-01question')
+const opt1_3 = document.getElementById('op01_ex01')
+const opt2_3 = document.getElementById('op02_ex01')
+const opt3_3 = document.getElementById('op03_ex01')
+
