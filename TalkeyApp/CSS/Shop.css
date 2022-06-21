@@ -496,3 +496,140 @@ header{
     outline: none;
     overflow:hidden;
 }
+
+
+/* --------------------------NAVBAR COM AUTENTIFICAÇÃO---------------------------------------------------------------- */
+.responsive-links{
+    display: none;
+}
+
+/* header logo */
+.logov02{
+    display:flex;
+    position: relative;
+    left:10px;
+    width: 115px;
+    height: 91px;
+}
+
+/* navbarlist */
+.navbar-listv02{
+    font-size:15px;
+    display:flex;
+    gap:4.8rem;
+    list-style:none;
+}
+
+.responsive-links a {
+    opacity:0;
+    cursor:default;
+}
+
+.navbar-linkv02 a:link{
+     display:inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.navbar-listv02 a{
+    color: #fff;
+}
+
+.navbar-listv02{
+    display:flex;
+    margin-top: -5.5px;
+    position: relative;
+    left: 167px;
+}
+
+.select-linkv02{
+    display: flex;
+    background-color: #989BD1;
+    height:86px;
+    width:120px;
+    position: relative;
+    left:25px
+}
+
+.navbarv02{
+    display: flex;
+    margin-left: -70px;
+}
+
+header{
+    display: flex;
+}
+
+.header{
+    display: flex;
+}
+
+.navbarv02{
+    display: flex;
+    position: fixed;
+}
+
+.navbarv02{
+    display: flex;
+    margin-left: -101px;
+}
+
+/* button logout */
+.buttonHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #989BD1;
+    border-radius: 12px;
+    width:97px;
+    height:46px;
+    margin-top:-10px;
+    margin-left: 710px;
+    position: relative;
+    top: -5px;
+}
+
+.iconify{
+    height:23px;
+    width:23px;
+}
+
+nav li{
+    margin-top:41px;
+}
+
+.select-linkv02{
+    margin-left: 245px;
+}
+
+
+.navbar-linkv02  .opacity-linkv02{
+    transition: 1230ms ease-out;
+}
+
+.navbar-linkv02  .opacity-linkv02:hover{
+    transform:rotate(360deg);
+    color:#989BD1;
+}
+
+a #rotate-shop{
+    transition: 1230ms ease-out;
+}
+
+a #rotate-shop{
+    transform:rotate(360deg);
+    color: #Ffff;
+}
+
+.home{
+    transition: 1230ms ease-out;
+}
+
+.home:hover{
+    transform:rotate(360deg);
+    color:#989BD1;
+}
+
+
+
+

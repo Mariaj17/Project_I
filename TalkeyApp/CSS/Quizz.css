@@ -1370,3 +1370,175 @@ nav li{
 .btn-submit-ex03 > #submitAnswerEX03:hover{
     background: #5259CD;
 }
+
+/* -----------------------------------------NAVBAR COM AUTENTIFICAÇÃO---------------------- */
+.responsive-links{
+    display: none;
+}
+
+.logov02{
+    display:flex;
+    position: relative;
+    left:10px;
+    width: 115px;
+    height: 91px;
+}
+
+/* navbarlist */
+.navbar-listv02{
+    font-size:15px;
+    display:flex;
+    gap:4.8rem;
+    list-style:none;
+}
+
+.responsive-links a {
+    opacity:0;
+    cursor:default;
+}
+
+.navbar-linkv02 a:link{
+     display:inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.navbar-listv02 a{
+    color: #fff;
+}
+
+.navbar-listv02{
+    display:flex;
+    margin-top: -5.5px;
+    position: relative;
+    left: 167px;
+}
+
+.select-linkv02{
+    display: flex;
+    background-color: #989BD1;
+    height:86px;
+    width:120px;
+    position: relative;
+    left:25px
+}
+
+.navbarv02{
+    display: flex;
+    margin-left: -70px;
+}
+
+header{
+    display: flex;
+}
+
+.header{
+    display: flex;
+}
+
+.navbarv02{
+    display: flex;
+    position: fixed;
+}
+
+.navbarv02{
+    display: flex;
+    margin-left: -101px;
+}
+
+/* button logout */
+.buttonHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #989BD1;
+    border-radius: 12px;
+    width:97px;
+    height:46px;
+    margin-top:-10px;
+    margin-left: 710px;
+    position: relative;
+    top: -5px;
+}
+
+.iconify{
+    height:23px;
+    width:23px;
+}
+
+nav li{
+    margin-top:41px;
+}
+
+.header{
+    position:fixed;
+}
+
+.select-linkv02{
+    margin-left: 122px;;
+}
+
+.previous{
+    position: relative;
+    top:  220px;
+    left:120px;
+    color: red;
+}
+
+.previous {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+
+.previous{
+    font-size: 10px;
+    background-color: #005086;
+    color:#ffff;
+    border-radius: 50%;
+    padding: 20px;
+}
+ 
+
+
+ .previous{
+    margin-top: -190px;
+    margin-left: -50px;
+}
+
+.previous{
+    transition: 850ms ease-in;
+}
+
+.previous:hover{
+    background:#ffff;
+    color: #005086;
+}
+
+.homev02{
+    transition: 1230ms ease-out;
+}
+
+.homev02:hover{
+    transform:rotate(360deg);
+    color:#989BD1;
+}
+
+
+.navbar-linkv02{
+    transition: 1230ms ease-out;
+}
+
+.navbar-linkv02:hover{
+    transform:rotate(360deg);
+    color:#989BD1;
+}
+
+#logov02{
+    display:flex;
+    position: relative;
+    left:10px;
+    width: 115px;
+    height: 91px;
+}

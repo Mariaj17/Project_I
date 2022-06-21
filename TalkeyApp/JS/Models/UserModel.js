@@ -5,7 +5,7 @@ export function init() {
   users = localStorage.users ? JSON.parse(localStorage.users) : [];
 }
 
-// ADICIONAR UTILIZADOR
+// ADICIONAR UTILIZADOR = CRIAR CONTA
 export function add(type,username, password, email, gender) {
   if (users.some((user) => user.username === username)) {
     throw Error(`O "${username}" JÁ EXISTE!!`);

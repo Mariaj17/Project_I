@@ -95,7 +95,7 @@ document.querySelector('#commentbtn').addEventListener('click',()=>{
   </div>
   ` 
 
-// INCREMENTAR O Nº DE COMENTÁRIOS
+// INCREMENTAR O Nº DE COMENTÁRIOS ADICIONADOS
 countComment ++;
                                                                                     //CALLBACK DA VARIAVEL DO CONTADOR 
     commentCounter.innerHTML = `<div class="heading"><span id="comments-header">COMENTÁRIOS(${countComment})</span></div>`

@@ -1,7 +1,5 @@
 import * as User from "./Models/UserModel.js"
 
-
-
 // VALIDAÇÕES DO LOGIN
 // AO CLICAR NO BOTÃO INICIAR SESSÃO
 

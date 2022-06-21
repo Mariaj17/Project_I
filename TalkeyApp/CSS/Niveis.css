@@ -387,4 +387,172 @@ nav li{
     color: #fff;
 }
 
+/* ---------------------NAVBAR COM AUTENTIFICAÇÃO------------------------------------------------- */
+.responsive-links{
+    display: none;
+}
+
+/* header logo */
+.logov02{
+    display:flex;
+    position: relative;
+    left:10px;
+    width: 115px;
+    height: 91px;
+}
+
+/* navbarlist */
+.navbar-listv02{
+    font-size:15px;
+    display:flex;
+    gap:4.8rem;
+    list-style:none;
+}
+
+.responsive-links a {
+    opacity:0;
+    cursor:default;
+}
+
+.navbar-linkv02 a:link{
+     display:inline-block;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.navbar-listv02 a{
+    color: #fff;
+}
+
+.navbar-listv02{
+    display:flex;
+    margin-top: -5.5px;
+    position: relative;
+    left: 167px;
+}
+
+.select-linkv02{
+    display: flex;
+    background-color: #989BD1;
+    height:86px;
+    width:120px;
+    position: relative;
+    left:25px
+}
+
+.navbarv02{
+    display: flex;
+    margin-left: -70px;
+}
+
+header{
+    display: flex;
+}
+
+.header{
+    display: flex;
+}
+
+.navbarv02{
+    display: flex;
+    position: fixed;
+}
+
+.navbarv02{
+    display: flex;
+    margin-left: -101px;
+}
+
+/* button logout */
+.buttonHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #989BD1;
+    border-radius: 12px;
+    width:97px;
+    height:46px;
+    margin-top:-10px;
+    margin-left: 710px;
+    position: relative;
+    top: -5px;
+}
+
+.iconify{
+    height:23px;
+    width:23px;
+}
+
+nav li{
+    margin-top:41px;
+}
+
+
+.navbar-linkv02  .opacity-linkv02{
+    transition: 1230ms ease-out;
+}
+
+.navbar-linkv02  .opacity-linkv02:hover{
+    transform:rotate(360deg);
+    color:#989BD1;
+}
+
+.select-linkv02{
+    margin-left: 122px;
+}
+
+.homev02{
+    transition: 1230ms ease-out;
+}
+
+.homev02:hover{
+    transform:rotate(360deg);
+    color:#989BD1;
+}
+
+#rotate-aulas{
+    transition: 1230ms ease-out;
+}
+
+#rotate-aulas:hover{
+    transform:rotate(360deg);
+    color: #ffff;
+}
+
+.first-container{
+    margin-top: -100px;
+}
+
+.second-container{
+    margin-top: -100px;
+}
+
+.third-container{
+    margin-top: 40px;
+}
+
+.third-container{
+    position: relative;
+    top: -70px;
+}
+
+body{
+    overflow: hidden;
+}
+
+#carousel_nvl_Three{
+    margin-top:-20px;
+}
+
+#carousel_nvl_Two{
+    margin-top:-20px;
+}
+
+#carousel_nvl_One{
+    margin-top:-20px;
+}
+
+.header{
+    width: 120vw;
+}
 

@@ -10,6 +10,7 @@ DA PRIMEIRA AULA DO NÍVEL 1  -->
     <!-- O TITULO DA PAGINA ALTERA CONSOANTE A AULA E O NIVEL VIA JS -->
     <title id="title">Quizz-Talkey</title>
      <!-- Referências ao CSS e Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="/CSS/Quizz.css">
    <!-- Iconify SVG framework from Figma  Framework do Figma-->
@@ -20,28 +21,18 @@ DA PRIMEIRA AULA DO NÍVEL 1  -->
 <body>
      <!-- Header section -->
     <!-- Navbar COM AUTENTIFICAÇÃO-->
-    <header class="header">
-      <img src="/Media/images/Logo.svg" alt="logo" class="logo">
-      <!-- Navigation area Área de navegação -->
-      <div class="select-link"></div>
-      <!--NAVBAR LINKS-->
-      <nav class="navbar">
-          <ul class="navbar-list">
-            <div class="home-link"></div>
-              <li class="navbar-link"><a class="home" href="/HTML/Index.html">HOME</a></li>
-              <li class="navbar-link"><a  class="aulas" href="/HTML/Level.html">AULAS</a></li>
-              <li class="navbar-link"><a  class="shop" href="/HTML/Shop.html">LOJA</a></li>
-              <li class="navbar-link"><a  class="perfil" href="/HTML/Perfil.html">PERFIL</a></li>
-              <!-- LOGOUT BUTTON -->
-              <li class="logout-link"><a class="buttonHome" href="/HTML/Index.html"><span class="iconify" data-icon="material-symbols:exit-to-app"></span></a></li>
-          </ul> 
-      </nav>
-    </header>
+    <header class="header"><!-- injetado via js --></header>
+
 
 
     <!-- MAIN SECTION DA PÁGINA DA AULA COM O VÍDEO, ZONA DE COMENTÁRIOS E DE GOSTOS E COM OS TRÊS EXERCICÍOS ASSOCIADOS AO RESPETIVO
     VÍDEO -->
     <main>
+      
+      <!-- BOTÃO PARA REGRESSAR PARA PÁGINA PRINCIPAL DOS EXERCICÍOS  -->
+      <a href="/HTML/Niveis.html" class="previous"><span class="iconify back" data-icon="bx:arrow-back"></span></a>
+
+
         <!-- CONTAINER COM O TITULO, COM O JOGO DAS CHAVES E A NOTA -->
         <div class="container-key-collection">
             <div class="heading"><span>COLECIONE AS 3 CHAVES</span></div>
@@ -217,5 +208,7 @@ DA PRIMEIRA AULA DO NÍVEL 1  -->
     <!-- Referências ao JS e JS bundle incluindo Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="/JS/Lesson.js"></script>
+<script src="/JS/init.js"></script>
+<script type="module" src="/JS/Views/NavbarView.js"></script>
 </body>
 </html>
