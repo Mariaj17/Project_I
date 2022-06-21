@@ -4,76 +4,62 @@ function initdata() {
   // LEVELS
   if (!localStorage.levels) {
     const levels = [
-      {
-        id: 1,
-        classes: [
           {
             id: 1,
-            img:"img/alpha.webp",
+            img:"Media\images\greet.jpg",
             title:"Maneiras de cumprimentar e despedir",
             description:"Nesta aula aprenda diversas maneiras de se cumprimentar e se despedir em Alemão.Como se comunicar formal e informalmente no quesito cumprimentos e despedidas em Alemão.",
           },
           {
             id: 2,
-            img:"img/num.jpg",
+            img:"Media\images\alpha.webp",
             title:"Alfabeto em alemão",
             description:"Nesta aula você vai aprender o alfabeto alemão, a soletrar seu nome e a entender quando algo é soletrado para você.Saber pronunciar as palavras em alemão, principalmente soletrar seu nome é primordial.",
           },
           {
             id: 3,
-            img:"img/german.jpg",
-            title:"Aula de Nomes",
-            description:"Nesta aula vais aprender como pronunciar os nomes alemães.",
+            img:"Media\images\num.jpg",
+            title:"Aula de Números",
+            description:"Nesta aula vais aprender a contar em alemão até 100.",
           },
-        ],
-      },
-      {
-        id: 2,
-        classes: [
+
           {
             id: 4,
-            img:"",
+            img:"Media\images\calendar.jpg",
             title:"Dias da semana e deuses germânicos",
             description:"Nesta aula de alemão você aprenderá os dias da semana e também a relação da sua nomenclatura com os Deuses Germânicos! ",
           },
           {
             id: 5,
-            img:"",
-            title:"Contar até 100",
+            img:"Media\images\100.jpg",
+            title:"Contar apartir de 100",
             description:"Aprenda Neste vídeo a contar os Números em Alemão a partir de 100!",
           },
           {
             id: 6,
-            img:"",
+            img:"Media\images\pronouns.jpg",
             title:"Pronomes e Conjugação de Verbos",
             description:"Nesta aula você aprenderá a reconhecer os pronomes pessoais e também a conjugar verbos  regulares em alemão no presente.",
           },
-        ],
-      },
-      {
-        id: 3,
-        classes: [
           {
             id: 7,
-            img:"",
+            img:"Media\images\drinks.webp",
             title:"Como pedir uma bebida",
             description:" Aprenda neste vídeo como pedir uma bebida em alemão.",
           },
           {
             id: 8,
-            img:"",
+            img:"Media\images\pay.jpg",
             title:"Como pedir e pagar uma conta",
             description:"Nesta aula aprenda como pedir e pagar a sua conta em Alemão.",
           },
           {
             id: 9,
-            img:"",
+            img:"Media\images\german.jpg",
             title:"Comunicação básica",
             description:"Nesta aula aprenda frases de utilização diaria em Alemão.",
           },
-        ],
-      },
-    ];
+        ];
     localStorage.setItem("levels", JSON.stringify(levels));
   }
 
@@ -88,10 +74,24 @@ function initdata() {
         gender: "Male",
       },
       {
+        type: "Aluno",
+        username: "user3",
+        password: "pass3",
+        email: "user3@example.com",
+        gender: "Female",
+      },
+      {
         type: "Professor",
         username: "user2",
         password: "pass2",
         email: "user2@example.com",
+        gender: "Female",
+      },
+      {
+        type: "Professor",
+        username: "user4",
+        password: "pass4",
+        email: "user4@example.com",
         gender: "Female",
       },
     ];
@@ -111,14 +111,14 @@ function initdata() {
       {
         id: 2,
         src_video:"Media/Videos/Alemão para Iniciantes 02 COMO SOLETRAR SEU NOME e o ALFABETO Alemão.mp4",
-        title:"Aula Números",
+        title:"Aula Alfabeto",
         likes: 0,
         shares: 0,
       },
       {
         id: 3,
         src_video:"Media/Videos/Os Números em Alemão  Zahlen auf Deutsch - COMO CONTAR DE 0 A 100 EM ALEMÃO.mp4",
-        title:"Aula de Nomes",
+        title:"Aula de Números",
         likes: 0,
         shares: 0,
       },
@@ -132,7 +132,7 @@ function initdata() {
       {
         id: 5,
         src_video:"Media/Videos/Alemão para iniciantes 05 - Números a partir do 100.mp4",
-        title:"Contar até 100",
+        title:"Contar apartir de 100",
         likes: 0,
         shares: 0,
       },
@@ -375,24 +375,24 @@ function initdata() {
         id:9,
         exercise:[
         {
-        question:"Como se pronuncia V em alemão?",
-        option1:"fau",
-        option2:"we",
-        option3:"de",
-        answer:1,
-        },
-        {
-        question:"Como se pronuncia C em alemão?",
-        option1:"ka",
-        option2:"tse",
+        question:"Qual o significado de: Wie ist das auf Deutsch?",
+        option1:"O que esta escrito em alemão?",
+        option2:"O que significa em alemão?",
+        option3:"Como aprendo a escrever em alemão?",
         answer:2,
         },
         {
-        question:"Como se pronuncia Q em alemão?",
-        option1:"ku",
-        option2:"gue",
-        option3:"te",
+        question:"Qual o significado de: Wo finde ich Toiletten?",
+        option1:"Onde posso encontrar a casa de banho?",
+        option2:"Aqui tem uma casa de banho?",
         answer:1,
+        },
+        {
+        question:"Qual o significado de: Entschuldigung, wie bitte?",
+        option1:"Com licença, você pode passar isso?",
+        option2:"Com licença, você pode fazer isso de novo?",
+        option3:"Com licença, você pode dizer isso de novo?",
+        answer:3,
         },
         ],
       },
@@ -430,13 +430,13 @@ function initdata() {
     const rankings = [
       {
         place:1,
-        username: "",
-        totalPoints: 0,
+        username: "user3",
+        totalPoints: 160,
       },
       {
         place:2,
-        username: "",
-        totalPoints: 0,
+        username: "user1",
+        totalPoints: 90,
       },
       {
         place:3,

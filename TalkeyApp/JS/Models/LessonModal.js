@@ -1,60 +1,66 @@
-let levels;
+let exercises;
 
-// CARREGAR lessons DA LOCALSTORAGE
 export function init() {
-  levels = localStorage.levels ? JSON.parse(localStorage.levels) : [];
+  exercises = localStorage.lessons ? JSON.parse(localStorage.exercises) : [];
 }
   
-  // DEFINIR O LEVEL ATUAL
-  export function setCurrentLevel(id) {
-    localStorage.setItem("level", id);
-  }
+export function setCurrentExercise(id) {
+    localStorage.setItem("exercise", id);
+}
   
-  // OBTER O LEVEL ATUAL
-  export function getCurrentLevel() {
-    return level.find((level) => level.id === localStorage.getItem("level"));
-  }
+export function getCurrentExercise() {
+    return exercises.find((exercise) => exercise.id === localStorage.getItem("exercise"));
+}
   
-
-class Level{
-    id= 1;
+class Exercise{
     classes= [
           {
+            id: 0,
             img:"",
             title:"",
             description:"",
         },
-        {
-          img:"",
-          title:"",
-          description:"",
-        },
-        {
-          img:"",
-          title:"",
-          description:"",
-        },
     ]
 
-    constructor(id,classes) {
-        this.id = id;
-        this.classes = classes;
+    constructor(id,img,title,description) {
+        this.id = id+classes.length+1;
+        this.img = img;
+        this.title = title;
+        this.description = description;
     }
 }
 
-let exercises;
 
-// CARREGAR lessons DA LOCALSTORAGE
+let lessons;
+
 export function init() {
-  exercises = localStorage.exercises ? JSON.parse(localStorage.exercises) : [];
+  lessons = localStorage.lessons ? JSON.parse(localStorage.lessons) : [];
 }
   
-  // DEFINIR O LEVEL ATUAL
-  export function setCurrentLevel(id) {
-    localStorage.setItem("level", id);
-  }
+export function setCurrentLesson(id) {
+    localStorage.setItem("lesson", id);
+}
   
-  // OBTER O LEVEL ATUAL
-  export function getCurrentLevel() {
-    return level.find((level) => level.id === localStorage.getItem("level"));
+export function getCurrentLesson() {
+    return levels.find((level) => level.id === localStorage.getItem("lesson"));
+}
+
+class Lesson{
+  lessons = [
+  {
+    id: 0,
+    src_video:"",
+    title:"",
+    likes: 0,
+    shares: 0,
+  },
+  ]
+
+  constructor(id,src_video,title,likes,shares) {
+      this.id = id+lessons.length+1;
+      this.src_video = src_video;
+      this.title = title;
+      this.likes = likes;
+      this.shares = shares;
   }
+}

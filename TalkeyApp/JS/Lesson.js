@@ -128,10 +128,16 @@ opt1_1.addEventListener("click", corretion())
 opt2_1.addEventListener("click", corretion())
 opt3_1.addEventListener("click", corretion())
 
-function submissao() {
+let points=[]
 
+function submissao() {
+    if(points.length=3){
+        
+    }
 }
 
 function corretion() {
-    
+    if(points.length=0){
+        
+    }
 }
