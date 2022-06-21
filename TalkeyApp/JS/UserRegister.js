@@ -27,6 +27,7 @@ document.querySelector('.main-register')?.addEventListener('submit',(event)=>{
         //  PARA A MENSAGEM DE SUCESSO ATRIBUIR VALORES AOS PARAMETROS A DIV E A MENSAGEM ONDE SURGIRÁ A MENSAGEM 
         // DE SUCESSO COM O INNERHTML FAZENDO DISPLAY DA MENSAGEM EDITADA VIA CSS DE SUCESSO
         dispayMessageRegisterSucess(".register-message",`REGISTRADO COM SUCESSO, BEM-VINDO ${registerUser} A TALKEY`);
+    
         
         // ---------------REGISTRO COM SUCESSO RECARREGAR A PÁGINA PARA HOME
         //esperar 5 segundos para a visualização da mensagem de sucesso de registro

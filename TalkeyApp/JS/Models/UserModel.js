@@ -14,6 +14,7 @@ export function add(type,username, password, email, gender) {
   }else {
     users.push(new User(type,username, password, email, gender));
     localStorage.setItem("users", JSON.stringify(users));
+    sessionStorage.setItem("loggedUser",JSON.stringify(users));
   }
 }
 
@@ -29,6 +30,7 @@ export function login(type,username, password) {
   }
 }
 
+
 // LOGOUT DO UTILIZADOR
 export function logout() {
   sessionStorage.removeItem("loggedUser");
@@ -38,6 +40,8 @@ export function logout() {
 export function isLogged() {
   return sessionStorage.getItem("loggedUser") ? true : false;
 }
+
+
 
 // DEVOLVE UTILZIADOR AUTENTICADO
 export function getUserLogged() {
