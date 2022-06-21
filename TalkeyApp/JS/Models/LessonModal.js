@@ -6,30 +6,32 @@ export function init() {
 }
   
   // DEFINIR O LEVEL ATUAL
-  export function setCurrentLevel(id) {
+export function setCurrentLevel(id) {
     localStorage.setItem("level", id);
-  }
+}
   
   // OBTER O LEVEL ATUAL
-  export function getCurrentLevel() {
-    return level.find((level) => level.id === localStorage.getItem("level"));
-  }
+export function getCurrentLevel() {
+    return levels.find((level) => level.id === localStorage.getItem("level"));
+}
   
-
 class Level{
     id= 1;
     classes= [
           {
+            id: 1,
             img:"",
             title:"",
             description:"",
         },
         {
+          id: 2,
           img:"",
           title:"",
           description:"",
         },
         {
+          id:3,
           img:"",
           title:"",
           description:"",
@@ -44,17 +46,7 @@ class Level{
 
 let exercises;
 
-// CARREGAR lessons DA LOCALSTORAGE
 export function init() {
   exercises = localStorage.exercises ? JSON.parse(localStorage.exercises) : [];
 }
-  
-  // DEFINIR O LEVEL ATUAL
-  export function setCurrentLevel(id) {
-    localStorage.setItem("level", id);
-  }
-  
-  // OBTER O LEVEL ATUAL
-  export function getCurrentLevel() {
-    return level.find((level) => level.id === localStorage.getItem("level"));
-  }
+
