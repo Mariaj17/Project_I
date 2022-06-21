@@ -20,19 +20,16 @@ class Level{
     id= 1;
     classes= [
           {
-            id: 1,
             img:"",
             title:"",
             description:"",
         },
         {
-          id: 2,
           img:"",
           title:"",
           description:"",
         },
         {
-          id: 3,
           img:"",
           title:"",
           description:"",

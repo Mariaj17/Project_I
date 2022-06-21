@@ -122,3 +122,16 @@ const opt1_3 = document.getElementById('op01_ex03')
 const opt2_3 = document.getElementById('op02_ex03')
 const opt3_3 = document.getElementById('op03_ex03')
 
+
+submit_1.addEventListener("click", submissao())
+opt1_1.addEventListener("click", corretion())
+opt2_1.addEventListener("click", corretion())
+opt3_1.addEventListener("click", corretion())
+
+function submissao() {
+
+}
+
+function corretion() {
+    
+}
