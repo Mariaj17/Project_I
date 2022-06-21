@@ -32,7 +32,7 @@ document.querySelector('.main-register')?.addEventListener('submit',(event)=>{
         //esperar 5 segundos para a visualização da mensagem de sucesso de registro
         setTimeout(()=>{
             location.reload();
-            location.href = ''
+            window.location.href = "/HTML/Index.html";
         }, 5000);
         // SE VERIFICAR ALGUM ERRO É LANÇADO PARA O CATCH
     } catch(error){

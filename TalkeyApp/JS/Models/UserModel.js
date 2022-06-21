@@ -44,6 +44,8 @@ export function getUserLogged() {
   return JSON.parse(sessionStorage.getItem("loggedUser"));
 }
 
+
+
 class User {
   type = "";
   username = "";

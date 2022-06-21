@@ -1,7 +1,7 @@
 import * as User from "./Models/UserModel.js"
 
 
-// SCCRIPT INCOMPLETO !!
+
 // VALIDAÇÕES DO LOGIN
 // AO CLICAR NO BOTÃO INICIAR SESSÃO
 
@@ -18,7 +18,8 @@ document.querySelector('.main-login').addEventListener('submit', (event)=>{
         // para esperar 3 segundos para user ver a mensagem de sucesso
         setTimeout(()=>{
             location.reload();
-        },3000);
+            window.location.href = "/HTML/Index.html";
+        },5000);
     } catch(error){
         displayErrorMessage(".login-message",error.message);
     }
@@ -47,13 +48,3 @@ function  displayErrorMessage(div,message) {
         divMessage.innerHTML = '';
     },3000);
 }
-
-
-
-
-
-
-
-
-
-

@@ -77,7 +77,7 @@ function initdata() {
     localStorage.setItem("levels", JSON.stringify(levels));
   }
 
-  // USERS
+  // // USERS
   if (!localStorage.users) {
     const users = [
       {
@@ -283,3 +283,4 @@ function initdata() {
     localStorage.setItem("comments", JSON.stringify(comments));
   }
 }
+

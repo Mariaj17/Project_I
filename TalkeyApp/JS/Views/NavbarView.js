@@ -26,7 +26,7 @@ function navbarView() {
 
     // VERSÃO NAVBAR COM USER AUTENTIFICADO
       if(User.isLogged()){
-        navbar += `<img src="/Media/images/Logo.svg" alt="logo" class="logov02">
+        navbar = `<img src="/Media/images/Logo.svg" alt="logo" class="logov02">
         <!-- Navigation area Área de navegação -->
         <div class="select-linkv02"></div>
         <!-- NAVBAR COM AUTENTIFICAÇÃO -->
@@ -49,7 +49,7 @@ function navbarView() {
       <a href="/HTML/Perfil.html"><img class="perfilres" height="40px" src="/Media/images/Perfil-icon-mobile.svg" alt="#"></a>
       </div>`
       }if(User.logout()){
-        navbar += `<img src="/Media/images/Logo.svg" alt="logo" class="logo">
+        navbar = `<img src="/Media/images/Logo.svg" alt="logo" class="logo">
         <!-- Navigation area Área de navegação -->
         <div class="select-link"></div>
         <!-- NAVBAR SEM AUTENTIFICAÇÃO -->
@@ -82,6 +82,6 @@ document.querySelector(".header").innerHTML = navbar;
     location.reload();
   });
   
-  }
+} 
 
 navbarView()
