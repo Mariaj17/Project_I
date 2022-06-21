@@ -18,6 +18,10 @@ export function add(type,username, password, email, gender) {
   }
 }
 
+export function changePsw(password){
+  users.push(User.password = password);
+}
+
 // LOGIN DO UTILIZADOR
 export function login(type,username, password) {
   const user = users.find(
@@ -31,6 +35,7 @@ export function login(type,username, password) {
 }
 
 
+
 // LOGOUT DO UTILIZADOR
 export function logout() {
   sessionStorage.removeItem("loggedUser");
@@ -40,6 +45,7 @@ export function logout() {
 export function isLogged() {
   return sessionStorage.getItem("loggedUser") ? true : false;
 }
+
 
 
 

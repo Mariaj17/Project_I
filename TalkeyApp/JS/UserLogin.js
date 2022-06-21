@@ -15,8 +15,8 @@ document.querySelector('.main-login').addEventListener('submit', (event)=>{
         displaySucessMessage(".login-message",`BEM-VINDO DE VOLTA ${document.querySelector('#username').value}`)
         // para esperar 3 segundos para user ver a mensagem de sucesso
         setTimeout(()=>{
-            location.reload();
-            window.location.href = "/HTML/Index.html";
+            location.reload();    
+            window.location.href = "/HTML/Index.html";            
         },5000);
     } catch(error){
         displayErrorMessage(".login-message",error.message);
@@ -46,3 +46,5 @@ function  displayErrorMessage(div,message) {
         divMessage.innerHTML = '';
     },3000);
 }
+
+
