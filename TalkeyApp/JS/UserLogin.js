@@ -14,17 +14,13 @@ document.querySelector('.main-login').addEventListener('submit', (event)=>{
         User.login(getRadioValue(), document.querySelector('#username').value, document.querySelector('#psw').value);
          //  PARA A MENSAGEM DE SUCESSO ATRIBUIR VALORES AOS PARAMETROS A DIV E A MENSAGEM ONDE SURGIRÁ A MENSAGEM 
         // DE SUCESSO COM O INNERHTML FAZENDO DISPLAY DA MENSAGEM EDITADA VIA CSS DE SUCESSO
-        displaySucessMessage("","")
+        displaySucessMessage(".login-message",`BEM-VINDO DE VOLTA ${document.querySelector('#username').value}`)
         // para esperar 3 segundos para user ver a mensagem de sucesso
         setTimeout(()=>{
             location.reload();
         },3000);
-    } catch(e){
-        displayErrorMessage("","");
-        // para esperar 5 segundos para user ver a mensagem de erro
-        setTimeout(()=>{
-            location.reload();
-        },5000);
+    } catch(error){
+        displayErrorMessage(".login-message",error.message);
     }
 });
 
@@ -35,21 +31,29 @@ const getRadioValue = () => {let radio = document.getElementsByName('optradio');
 
 // mensagem de sucesso 
 function  displaySucessMessage(div,message) {
-    
+    const divMessage = document.querySelector(div);
+    divMessage.innerHTML = `<div class="sucess-login"><span class="SucessContent">${message}<img class="sucess-icon" src="/Media/images/sucesso-icone.svg"></span></div>
+    <div class="flex-loader">
+      <div class="loader"></div>
+    </div>`
 }
 
 // mensagens de erro
 function  displayErrorMessage(div,message) {
-    
+    const divMessage = document.querySelector(div);
+    divMessage.innerHTML = `<div class="fail-login"><span class="FailContent">${message}<img class="fail-icon" src="/Media/images/Close-icon.svg" height="20px"></span></div>
+    `
+    setTimeout(() =>{
+        divMessage.innerHTML = '';
+    },3000);
 }
 
 
-// EXEMPLO PARA DISPLAY MESSAGE
-// function displayMessage(modal, message, type) {
-//     const divMessage = document.getElementById(modal);
-//     divMessage.innerHTML = `<div class="alert alert-${type}" role="alert">${message}</div>`;
-//     // DEMORAR 12 SEGUNDOS PARA DESAPARECER A MENSAGEM
-//     setTimeout(() => {
-//       divMessage.innerHTML = "";
-//     }, 12000);
-//   }
+
+
+
+
+
+
+
+

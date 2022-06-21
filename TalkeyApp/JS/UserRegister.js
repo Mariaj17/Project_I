@@ -1,6 +1,6 @@
 import * as User from "./Models/UserModel.js"
 
-// SCRIPT INCOMPLETO !!
+
 // VALIDAÇÕES DO REGISTRO
 // AO CLICAR NO BOTÃO CRIAR CONTA
 
@@ -26,20 +26,19 @@ document.querySelector('.main-register')?.addEventListener('submit',(event)=>{
         User.add(typeUser,registerUser, registerPassword,emailUser,genderUser)
         //  PARA A MENSAGEM DE SUCESSO ATRIBUIR VALORES AOS PARAMETROS A DIV E A MENSAGEM ONDE SURGIRÁ A MENSAGEM 
         // DE SUCESSO COM O INNERHTML FAZENDO DISPLAY DA MENSAGEM EDITADA VIA CSS DE SUCESSO
-        dispayMessageRegisterSucess("","");
-        //esperar 3 segundos para a visualização da mensagem de sucesso de registro
+        dispayMessageRegisterSucess(".register-message",`REGISTRADO COM SUCESSO, BEM-VINDO ${registerUser} A TALKEY`);
+        
+        // ---------------REGISTRO COM SUCESSO RECARREGAR A PÁGINA PARA HOME
+        //esperar 5 segundos para a visualização da mensagem de sucesso de registro
         setTimeout(()=>{
             location.reload();
-        }, 3000);
-        // APÓS A VERIFICAÇÃO DE UMA ANOMALIA NOS CAMPOS DA PASSWORD RECOLHE O ERRO
-    } catch(e){
+            location.href = ''
+        }, 5000);
+        // SE VERIFICAR ALGUM ERRO É LANÇADO PARA O CATCH
+    } catch(error){
             //  PARA A MENSAGEM DE ERRO ATRIBUIR VALORES AOS PARAMETROS A DIV E A MENSAGEM ONDE SURGIRÁ AS MENSAGEM 
         // DE ERRO COM O INNERHTML FAZENDO DISPLAY DA MENSAGEM EDITADA VIA CSS DE ERROS
-        dispayMessagePasswordAlert("","")
-        // para esperar 5 segundos para user ver a mensagem de erro
-          setTimeout(()=>{
-            location.reload();
-          },5000);
+        dispayMessageAlert(".register-message",error.message)
     }
     
 })
@@ -53,11 +52,21 @@ const getGenrerValue = () => {let select = document.getElementById('genrer'); fo
 
 
 // mensagem de sucesso
-function dispayMessageRegister(div,message) {
-
+function dispayMessageRegisterSucess(div,message) {
+ const divMessage = document.querySelector(div);
+ divMessage.innerHTML = `<div class="sucess-register"><span class="SucessContent">${message}<img class="sucess-icon" src="/Media/images/sucesso-icone.svg"></span></div>
+ <div class="flex-loader">
+ <div class="loader"></div>
+ </div>`
 }
 
-// mensagens de erro da password
-function dispayMessagePasswordAlert(div,message){
-    
+// mensagens de erro
+function dispayMessageAlert(div,message){
+const divMessage = document.querySelector(div);
+divMessage.innerHTML = `<div class="fail-register"><span class="FailContent">${message}<img class="fail-icon" src="/Media/images/Close-icon.svg" height="20px"></span></div>
+`
+ setTimeout(() => {
+    divMessage.innerHTML = '';
+ },3000);
 }
+

@@ -8,9 +8,9 @@ export function init() {
 // ADICIONAR UTILIZADOR
 export function add(type,username, password, email, gender) {
   if (users.some((user) => user.username === username)) {
-    throw Error(`"${username}" JÁ EXISTENTE!!`);
+    throw Error(`O "${username}" JÁ EXISTE!!`);
   } else if (users.some((user) => user.email === email)) {
-    throw Error(`"${email}" JÁ EXISTENTE!!`);
+    throw Error(`"O ENDEREÇO ${email}" JÁ EXISTE!!`);
   }else {
     users.push(new User(type,username, password, email, gender));
     localStorage.setItem("users", JSON.stringify(users));
@@ -52,12 +52,11 @@ class User {
   gender = "";
   birthday = "";
 
-  constructor(username, password, email, gender, birthday,type) {
+  constructor(type,username, password, email, gender) {
     this.type = type;
     this.username = username;
     this.password = password;
     this.email = email;
     this.gender = gender;
-    this.birthday = birthday;
   }
 }

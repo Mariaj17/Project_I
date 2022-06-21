@@ -532,7 +532,7 @@ select{
 }
 
 .register-message{
-    transition: 850ms ease-in;
+    transition: 1050ms ease-in;
 }
 
 /* CATCH ERROR DOS INPUTS DAS PASSWORDS = ESTILOS DAS MENSAGENS DE ERRO DOS CAMPOS DAS PASSWORDS */
