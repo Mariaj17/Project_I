@@ -23,7 +23,7 @@ function navbarView() {
             <!-- <li class="toggle"><a href="#"><span class="bars"></span></a></li> -->
         </ul> 
     </nav>`;
-
+    
     // VERSÃO NAVBAR COM USER AUTENTIFICADO
       if(User.isLogged()){
         navbar = `<img src="/Media/images/Logo.svg" alt="logo" class="logov02">
@@ -83,5 +83,10 @@ document.querySelector(".header").innerHTML = navbar;
   });
   
 } 
+
+
+
+
+
 
 navbarView()
