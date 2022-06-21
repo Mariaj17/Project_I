@@ -175,7 +175,6 @@ function initdata() {
         id:1,
         exercise:[
         {
-        img:"",
         question:"Que frase deves usar para cumprimentar alguem de noite?",
         option1:"Guten Tag",
         option2:"Guten Abend",
@@ -183,14 +182,12 @@ function initdata() {
         answer:2,
         },
         {
-        img:"",
         question:"O que dizes quando te queres despedir de alguem?",
         option1:"Wiedersehen",
         option2:"Moin moin",
         answer:1,
         },
         {
-        img:"",
         question:"Que frase serve para perguntar como a outra pessoa esta?",
         option1:"Und bei dir?",
         option2:"Danke gut! Und dir?",
@@ -203,7 +200,6 @@ function initdata() {
         id:2,
         exercise:[
         {
-        img:"",
         question:"Como se pronuncia V em alemão?",
         option1:"fau",
         option2:"we",
@@ -211,14 +207,12 @@ function initdata() {
         answer:1,
         },
         {
-        img:"",
         question:"Como se pronuncia C em alemão?",
         option1:"ka",
         option2:"tse",
         answer:2,
         },
         {
-        img:"",
         question:"Como se pronuncia Q em alemão?",
         option1:"ku",
         option2:"gue",
@@ -231,7 +225,6 @@ function initdata() {
         id:3,
         exercise:[
         {
-        img:"",
         question:"Como se escreve 8 em alemão?",
         option1:"eins",
         option2:"drei",
@@ -239,14 +232,12 @@ function initdata() {
         answer:3,
         },
         {
-        img:"",
         question:"Como se escreve 17 em alemão?",
         option1:"siebzehn",
         option2:"vierzehn",
         answer:1,
         },
         {
-        img:"",
         question:"Como se escreve 88 em alemão?",
         option1:"achtundacchzig",
         option2:"zweiundachzig",
@@ -259,27 +250,24 @@ function initdata() {
         id:4,
         exercise:[
         {
-        img:"",
         question:"Os dias da semana são inspiradas nos ...",
-        option1:"Sete corpos celestiais",
+        option1:"Sete deuses germânicos",
         option2:"Sete cores do arco-íris",
         option3:"Sete anões da branca de neve",
         answer:1,
         },
         {
-        img:"",
-        question:"Como se pronuncia C em alemão?",
-        option1:"ka",
-        option2:"tse",
-        answer:2,
+        question:"Como se escreve sábado em alemão?",
+        option1:"samstag",
+        option2:"der Montag",
+        answer:1,
         },
         {
-        img:"",
-        question:"Como se pronuncia Q em alemão?",
-        option1:"ku",
-        option2:"gue",
-        option3:"te",
-        answer:1,
+        question:"Como se escreve quarta-feira em alemão?",
+        option1:"Dienstag",
+        option2:"Mittwoch",
+        option3:"Donnerstag",
+        answer:2,
         },
         ],
       },
@@ -287,27 +275,24 @@ function initdata() {
         id:5,
         exercise:[
         {
-        img:"",
-        question:"Como se pronuncia V em alemão?",
-        option1:"fau",
-        option2:"we",
-        option3:"de",
+        question:"Como se escreve 1000 em alemão?",
+        option1:"hundert",
+        option2:"dreihundert",
+        option3:"tausend",
+        answer:3,
+        },
+        {
+        question:"Como se escreve 571 em alemão?",
+        option1:"achthundertsiebzehn",
+        option2:"zweihundertsechs",
         answer:1,
         },
         {
-        img:"",
-        question:"Como se pronuncia C em alemão?",
-        option1:"ka",
-        option2:"tse",
-        answer:2,
-        },
-        {
-        img:"",
-        question:"Como se pronuncia Q em alemão?",
-        option1:"ku",
-        option2:"gue",
-        option3:"te",
-        answer:1,
+        question:"Como se escreve 2117 em alemão?",
+        option1:"zweitausenhundersiebzig",
+        option2:"zweitausendsiebzehn",
+        option3:"zweitausenhundertsiebzehn",
+        answer:3,
         },
         ],
       },
@@ -315,7 +300,6 @@ function initdata() {
         id:6,
         exercise:[
         {
-        img:"",
         question:"Como se pronuncia V em alemão?",
         option1:"fau",
         option2:"we",
@@ -323,14 +307,12 @@ function initdata() {
         answer:1,
         },
         {
-        img:"",
         question:"Como se pronuncia C em alemão?",
         option1:"ka",
         option2:"tse",
         answer:2,
         },
         {
-        img:"",
         question:"Como se pronuncia Q em alemão?",
         option1:"ku",
         option2:"gue",
@@ -343,7 +325,6 @@ function initdata() {
         id:7,
         exercise:[
         {
-        img:"",
         question:"Como se pronuncia V em alemão?",
         option1:"fau",
         option2:"we",
@@ -351,14 +332,12 @@ function initdata() {
         answer:1,
         },
         {
-        img:"",
         question:"Como se pronuncia C em alemão?",
         option1:"ka",
         option2:"tse",
         answer:2,
         },
         {
-        img:"",
         question:"Como se pronuncia Q em alemão?",
         option1:"ku",
         option2:"gue",
@@ -371,7 +350,6 @@ function initdata() {
         id:8,
         exercise:[
         {
-        img:"",
         question:"Como se pronuncia V em alemão?",
         option1:"fau",
         option2:"we",
@@ -379,14 +357,12 @@ function initdata() {
         answer:1,
         },
         {
-        img:"",
         question:"Como se pronuncia C em alemão?",
         option1:"ka",
         option2:"tse",
         answer:2,
         },
         {
-        img:"",
         question:"Como se pronuncia Q em alemão?",
         option1:"ku",
         option2:"gue",
@@ -399,7 +375,6 @@ function initdata() {
         id:9,
         exercise:[
         {
-        img:"",
         question:"Como se pronuncia V em alemão?",
         option1:"fau",
         option2:"we",
@@ -407,14 +382,12 @@ function initdata() {
         answer:1,
         },
         {
-        img:"",
         question:"Como se pronuncia C em alemão?",
         option1:"ka",
         option2:"tse",
         answer:2,
         },
         {
-        img:"",
         question:"Como se pronuncia Q em alemão?",
         option1:"ku",
         option2:"gue",
@@ -434,21 +407,18 @@ function initdata() {
         id: 0,
         avatar:"",
         img:"",
-        link:"",
         price: 0,
       },
       {
         id: 0,
         avatar:"",
         img:"",
-        link:"",
         price: 0,
       },
       {
         id: 0,
         avatar:"",
         img:"",
-        link:"",
         price: 0,
       },
     ];
