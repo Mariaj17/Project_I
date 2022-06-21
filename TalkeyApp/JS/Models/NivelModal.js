@@ -3,70 +3,30 @@ let levels;
 export function init() {
   levels = localStorage.levels ? JSON.parse(localStorage.levels) : [];
 }
+  
+export function setCurrentLevel(id) {
+    localStorage.setItem("level", id);
+}
+  
+export function getCurrentLevel() {
+    return levels.find((level) => level.id === localStorage.getItem("level"));
+}
+  
+class Level{
+  classes= [
+        {
+          id: 0,
+          img:"",
+          title:"",
+          description:"",
+      },
+  ]
 
-// ADICIONAR BANDA
-export function add(name, genre, cover, description, music) {
-  if (level.some((level) => level.id === id)) {
-    throw Error(`Band with name "${name}" already exists!`);
-  } else {
-    bands.push(new Band(name, genre, cover, description, music));
-    localStorage.setItem("bands", JSON.stringify(bands));
+  constructor(id,img,title,description) {
+      this.id = id+classes.length+1;
+      this.img = img;
+      this.title = title;
+      this.description = description;
   }
 }
 
-// REMOVER BANDA
-export function removeBand(name) {
-  bands = bands.filter((band) => band.name !== name);
-  localStorage.setItem("bands", JSON.stringify(bands));
-}
-
-// DEFINIR A BANDA ATUAL (AQUELA QUE SERÁ VISTA NO DETALHE DA BANDA)
-export function setCurrentBand(name) {
-  localStorage.setItem("band", name);
-}
-
-// OBTER A BANDA ATUAL (TODO O OBJETO)
-export function getCurrentBand() {
-  return bands.find((band) => band.name === localStorage.getItem("band"));
-}
-
-// ORDENAR BANDAS
-export function sortBands() {
-  bands.sort((a, b) => a.name.localeCompare(b.name));
-  //localStorage.setItem("bands", JSON.stringify(bands));
-}
-
-// OBTER BANDAS (COM SUPORTE A FILTROS E ORDENAÇÕES)
-export function getBands(filterName = "", filterGenre = "", isSorted = false) {
-  let filteredBands = bands.filter(
-    (band) =>
-      (band.name.toLowerCase().includes(filterName.toLowerCase()) ||
-        filterName === "") &&
-      (band.genre == filterGenre || filterGenre === "")
-  );
-
-  filteredBands = isSorted
-    ? filteredBands.sort((a, b) => a.name.localeCompare(b.name))
-    : filteredBands;
-
-  return filteredBands;
-}
-
-/**
- * Classe que modela uma banda de música
- */
-class Band {
-  name = "";
-  genre = "";
-  cover = "";
-  desc = "";
-  music = "";
-
-  constructor(name, genre, cover, desc, music) {
-    this.name = name;
-    this.genre = genre;
-    this.cover = cover;
-    this.desc = desc;
-    this.music = music;
-  }
-}

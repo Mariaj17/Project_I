@@ -4,9 +4,6 @@ function initdata() {
   // LEVELS
   if (!localStorage.levels) {
     const levels = [
-      {
-        id: 1,
-        classes: [
           {
             id: 1,
             img:"Media\images\greet.jpg",
@@ -25,11 +22,7 @@ function initdata() {
             title:"Aula de Números",
             description:"Nesta aula vais aprender a contar em alemão até 100.",
           },
-        ],
-      },
-      {
-        id: 2,
-        classes: [
+
           {
             id: 4,
             img:"Media\images\calendar.jpg",
@@ -48,11 +41,6 @@ function initdata() {
             title:"Pronomes e Conjugação de Verbos",
             description:"Nesta aula você aprenderá a reconhecer os pronomes pessoais e também a conjugar verbos  regulares em alemão no presente.",
           },
-        ],
-      },
-      {
-        id: 3,
-        classes: [
           {
             id: 7,
             img:"Media\images\drinks.webp",
@@ -71,9 +59,7 @@ function initdata() {
             title:"Comunicação básica",
             description:"Nesta aula aprenda frases de utilização diaria em Alemão.",
           },
-        ],
-      },
-    ];
+        ];
     localStorage.setItem("levels", JSON.stringify(levels));
   }
 
