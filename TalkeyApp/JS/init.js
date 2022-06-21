@@ -176,24 +176,26 @@ function initdata() {
         exercise:[
         {
         img:"",
-        question:"",
-        answer1:"",
-        answer2:"",
-        answer3:""
+        question:"Que frase deves usar para cumprimentar alguem de noite?",
+        option1:"Guten Tag",
+        option2:"Guten Abend",
+        option3:"Guten Morgen",
+        answer:2,
         },
         {
         img:"",
-        question:"",
-        answer1:"",
-        answer2:"",
-        answer3:""
+        question:"O que dizes quando te queres despedir de alguem?",
+        option1:"Wiedersehen",
+        option2:"Moin moin",
+        answer:1,
         },
         {
         img:"",
-        question:"",
-        answer1:"",
-        answer2:"",
-        answer3:""
+        question:"Que frase serve para perguntar como a outra pessoa esta?",
+        option1:"Und bei dir?",
+        option2:"Danke gut! Und dir?",
+        option3:"Hallo, wie geht?",
+        answer:3
         },
         ],
       },
@@ -202,24 +204,26 @@ function initdata() {
         exercise:[
         {
         img:"",
-        question:"",
-        answer1:"",
-        answer2:"",
-        answer3:""
+        question:"Como se pronuncia V em alemão?",
+        option1:"fau",
+        option2:"we",
+        option3:"de",
+        answer:1,
         },
         {
         img:"",
-        question:"",
-        answer1:"",
-        answer2:"",
-        answer3:""
+        question:"Como se pronuncia C em alemão?",
+        option1:"ka",
+        option2:"tse",
+        answer:2,
         },
         {
         img:"",
-        question:"",
-        answer1:"",
-        answer2:"",
-        answer3:""
+        question:"Como se pronuncia Q em alemão?",
+        option1:"ku",
+        option2:"gue",
+        option3:"te",
+        answer:1,
         },
         ],
       },
