@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questions</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="/CSS/Quizz.css">
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header section -->
+    <!-- Navbar COM AUTENTIFICAÇÃO-->
+    <header class="header">
+        <img src="/Media/images/Logo.svg" alt="logo" class="logo">
+        <!-- Navigation area Área de navegação -->
+        <div class="select-link"></div>
+        <!--NAVBAR LINKS-->
+        <nav class="navbar">
+            <ul class="navbar-list">
+              <div class="home-link"></div>
+                <li class="navbar-link"><a class="home" href="Index.html">HOME</a></li>
+                <li class="navbar-link"><a  class="aulas" href="Level.html">AULAS</a></li>
+                <li class="navbar-link"><a  class="shop" href="Shop.html">LOJA</a></li>
+                <li class="navbar-link"><a  class="perfil" href="Perfil.html">PERFIL</a></li>
+                <!-- LOGOUT BUTTON -->
+                <li class="logout-link"><a class="buttonHome" href="Index.html"><span class="iconify" data-icon="material-symbols:exit-to-app"></span></a></li>
+            </ul> 
+        </nav>
+      </header>
+  
+  
+      <!-- MAIN SECTION DA PÁGINA DA AULA COM O VÍDEO, ZONA DE COMENTÁRIOS E DE GOSTOS E COM OS TRÊS EXERCICÍOS ASSOCIADOS AO RESPETIVO
+      VÍDEO -->
+      <main>
+          <!-- CONTAINER COM O TITULO, COM O JOGO DAS CHAVES E A NOTA -->
+          <div class="container-key-collection">
+              <div class="heading"><span>COLECIONE AS 3 CHAVES</span></div>
+              <div class="container-keys">
+                  <!-- AS 3 CHAVES POR DEFAULT NO INICIO DO JOGO -->
+                  <!-- ADICIONAR A CHAVE COM  A IMAGEM GUARDADA VIA JS QUANDO O ALUNO COMPLETAR A AULA
+                  ISTO É, QUANDO ACERTAR OS 3 EXERCICIOS DA AULA ADICIONAR UMA IMAGEM DA CHAVE AO CONTAINER -->
+                  <div class="first-key"><img src="/Media/images/First-key.svg" alt="#"></div>
+                  <div class="second-key"><img src="/Media/images/First-key.svg" alt="#"></div>
+                  <div class="third-key"><img src="/Media/images/First-key.svg" alt="#"></div>
+              </div>
+              <!-- LEGENDA DO JOGO -->
+              <div class="nota-jogo"><img src="/Media/images/Warning-sign-game-collection.svg" alt="#"><span>complete esta aula para colecionar uma chave</span></div>
+          </div>
+          <!-- CONTAINER COM O TITULO DA AULA, VÍDEO, ZONA DE COMENTÁRIOS, ETIQUETAS E LIKES DO VÍDEO E SHARES -->
+          <div class="aula-container">
+              <!-- TÍTULO DA AULA -->
+              <div class="heading-class"><span id="heading-class">TÍTULO DA AULA 01</span>
+              </div>
+              <!-- VÍDEO DA AULA -->
+              <!-- COLOCO UMA IMAGEM PROVISÓRIA COM MESMA WIDTH E HEIGTH DO VÍDEO -->
+                <div class="video-etiquetas-container">
+                  <div class="video-likes-shares">
+                    <!-- COLOCAR VÍDEO -->
+            <video class="video" id="video" controls src="" height="400px"></video>
+               <!-- ZONA DE SHARES E LIKES -->
+               <div class="container-likes-shares">
+                <!-- SHARES -->
+                  <div class="shares"><img id="shares-img" src="/Media/images/shares-icon-video.svg" alt="#"><span id="shares">0 shares</span></div>
+                  <!-- LIKES -->
+                  <div class="likes"><img id="likes-img" src="/Media/images/Likes-icon-video.svg" alt="#"><span id="likes">0 likes</span></div>
+              </div>
+            </div>
+            
+                        <!-- ETIQUETAS -->
+      <div class="second-container">
+        <div class="acordion-guide">
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              ETIQUETAS DO VÍDEO
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+             <!-- TIMESTAMPS OU FRAMES DO VÍDEO -->
+             <!-- PRIMEIRO FRAME EXEMPLO -->
+             <div class="frames">
+            <div class="start"><span id="frame01">00:00</span>Inicío do Vídeo</span></div>
+              <!-- SEGUNDO FRAME EXEMPLO -->
+            <div class="second-frame"><span id="frame02">00:10</span> Segundo Frame</span></div>
+              <!-- TERCEIRO FRAME EXEMPLO -->
+            <div class="third-frame"><span id="frame03">00:20</span>  Terceiro Frame</span></div>
+            <!-- QUARTO FRAME EXEMPLO -->
+            <div class="fourth-frame"><span id="frame04">00:30</span>  Quarto Frame</span></div>
+          </div>
+          </div>
+            </div>
+          </div>
+        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+  
+         
+          <!-- ACORDEÃO DOS COMENTÁRIOS -->
+            <div class="comentarios-container">
+              <div class="accordion">
+                <div class="accordion-header">
+              <div class="heading"><span id="comments-header">COMENTÁRIOS(0)</span></div>
+            </div>
+            <div class="accordion-body">
+              <!-- CONTAINER DOS COMENTÁRIOS -->
+              <div class="container">
+                  <form id="comment-form">
+                    <!-- IMAGEM DO AVATAR DO USER E O NOME DO USER A SER INJETADO VIA JS -->
+                  <div class="username">
+                    <img id="userAvatar" src="/Media/images/avatar01.png" alt="#"><span id="username"></span>
+                    <input type="text" id="comment" class="commentUser" placeholder="Adicione um comentário...">
+                      <div class="btns">
+                      <button type="button" name="button" id="cancelbtn">CANCELAR</button>
+                      <button type="button" name="button" id="commentbtn">COMENTAR</button>
+                    </div>  
+                      </div>
+                      <!-- injetado via js -->
+                      <div class="add-comments-container">
+                      </div>
+                    </form>
+              </div>
+            </div>
+            </div>
+          </div>
+
+
+    <div class="ex-body">
+        <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+                <h2 id="question">Question text</h2>
+            <ul>
+                <li><input type="radio" 
+                    id="a" 
+                    name="answer"
+                    class="answer">
+                    <label id="a_text" for="a">Question</label>
+                </li>
+                <li><input type="radio" 
+                    id="b" 
+                    name="answer"
+                    class="answer">
+                    <label id="b_text" for="b">Question</label>
+                </li>
+                <li><input type="radio" 
+                    id="c" 
+                    name="answer"
+                    class="answer">
+                    <label id="c_text" for="c">Question</label>
+                </li>
+                
+            </ul>
+            </div>
+            
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+    
+</body>
+
+<script src="quizView.js" defer></script>
+</html>
