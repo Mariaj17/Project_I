@@ -5,6 +5,7 @@ function showuser(){
     user.innerHTML = `${User.getUserLogged().username}`
 }
 
+
 function showprogress() {
     let progress= document.querySelector('.progress');
     progress.innerHTML = `<div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>`
@@ -56,6 +57,8 @@ function displayMessageWrong(div,message) {
         divmessage.innerHTML = "";
     },5000);
 }
+
+
 
 
 showprogress()
